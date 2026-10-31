@@ -1,0 +1,329 @@
+/* Your original Ghost code injection, unchanged apart from the color variables now living in colors.css. */
+:root {
+    --genesisblue: var(--genesis-blue);
+    --genesisgray: var(--genesis-gray);
+}
+
+        :root {
+            --color-background: #1c1c1c!important;
+            --color-text: var(--genesisblue) !important;
+            --color-primary-text: var(--genesisblue) !important;
+            --color-secondary-text: var(--genesisblue) !important;
+            --color-white: #1c1c1c !important;
+            --color-light-gray: #000000 !important;
+            --color-mid-gray: #000000 !important;
+            --color-dark-gray: var(--genesisblue) !important;
+            --color-black: var(--genesisblue) !important;
+            --color-border: var(--genesisblue) !important;
+        }
+
+        /* Base Elements */
+        body, 
+        .site, 
+        .post-full, 
+        .post-card {
+            background-color: var(--color-background) !important;
+            color: var(--color-text) !important;
+        }
+
+        /* Links */
+        a {
+            color: var(--color-primary-text) !important;
+        }
+
+        /* Headers */
+        h1, h2, h3, h4, h5, h6,
+        .post-title,
+        .gh-article-title,
+        .gh-content h1,
+        .gh-content h2,
+        .gh-content h3,
+        .gh-content h4,
+        .gh-content h5,
+        .gh-content h6,
+        .entry-title,
+        .post-full-title {
+            color: var(--genesisblue) !important;
+            text-shadow: none !important;
+        }
+
+        /* Content Text */
+        .post-excerpt,
+        .gh-post-meta,
+        .gh-content p,
+        .gh-content blockquote {
+            color: var(--genesisblue) !important;
+        }
+
+        /* Header/Navigation */
+        .gh-head {
+            background: var(--color-background) !important;
+        }
+
+        .gh-head a,
+        .site-nav a,
+        .site-nav-item a,
+        .nav a {
+            color: var(--genesisblue) !important;
+            text-shadow: none !important;
+        }
+
+        .gh-head a:hover,
+        .site-nav a:hover,
+        .site-nav-item a:hover,
+        .nav a:hover {
+            color: var(--genesisblue) !important;
+        }
+
+        /* Subscribe Button */
+        .subscribe-button,
+        .gh-subscribe-button {
+            background-color: var(--color-background) !important;
+            color: var(--genesisblue) !important;
+            border-color: var(--color-border) !important;
+        }
+
+        .subscribe-button:hover {
+            background-color: var(--genesisgray) !important;
+            color: var(--genesisblue) !important;
+        }
+
+        /* Hamburger Menu Icon */
+        .gh-head .gh-burger,
+        .menu-toggle,
+        .nav-toggle,
+        .mobile-menu-toggle,
+        .hamburger,
+        .gh-nav-toggle,
+        .gh-head-menu-toggle {
+            color: var(--genesisblue) !important;
+            background-color: transparent !important;
+        }
+
+        /* Hamburger Menu Lines */
+        .gh-head .gh-burger-box,
+        .gh-head .gh-burger-inner,
+        .gh-head .gh-burger-inner::before,
+        .gh-head .gh-burger-inner::after,
+        .gh-head .gh-burger span,
+        .gh-head .gh-burger div,
+        .menu-toggle span,
+        .nav-toggle span,
+        .mobile-menu-toggle span,
+        .hamburger span,
+        .gh-nav-toggle span {
+            background-color: var(--genesisblue) !important;
+            border-color: var(--genesisblue) !important;
+        }
+
+        /* Hamburger Menu Active State */
+        .gh-head .gh-burger.is-active .gh-burger-inner,
+        .gh-head .gh-burger.is-active .gh-burger-inner::before,
+        .gh-head .gh-burger.is-active .gh-burger-inner::after {
+            background-color: var(--genesisblue) !important;
+        }
+
+        /* SVG Icons */
+        .gh-head svg,
+        .menu-toggle svg,
+        .nav-toggle svg {
+            fill: var(--genesisblue) !important;
+            stroke: var(--genesisblue) !important;
+        }
+
+        /* Mobile Menu Background - FIXED */
+        @media (max-width: 991px) {
+            .gh-head-menu,
+            .gh-head-menu-wrapper,
+            .gh-head-open .gh-head-menu,
+            .mobile-menu,
+            .nav-menu {
+                background-color: var(--genesisgray) !important; /* Dark gray background */
+            }
+            
+            /* Menu items should remain cyan text on dark background */
+            .gh-head-menu a,
+            .gh-head-menu .nav a {
+                color: var(--genesisblue) !important;
+                background-color: transparent !important; /* No background on individual items */
+            }
+
+            /* Ensure hamburger is visible and properly styled */
+            .gh-head .gh-burger {
+                display: block !important;
+                color: var(--genesisblue) !important;
+            }
+
+            .gh-head .gh-burger-inner::before,
+            .gh-head .gh-burger-inner,
+            .gh-head .gh-burger-inner::after {
+                background-color: var(--genesisblue) !important;
+            }
+        }
+
+        /* Additional Mobile Styling */
+        @media (max-width: 480px) {
+            /* Hamburger button and icon */
+            .gh-head .gh-burger,
+            .gh-head .menu-toggle,
+            .gh-head .nav-toggle,
+            .gh-head .mobile-toggle,
+            .gh-head-actions button,
+            .gh-head-actions .gh-burger,
+            [class*="burger"],
+            [class*="toggle"],
+            [class*="menu-btn"] {
+                color: var(--genesisblue) !important;
+                background-color: transparent !important; /* Keep button background transparent */
+            }
+            
+            /* Hamburger lines/spans */
+            .gh-head .gh-burger span,
+            .gh-head .gh-burger div,
+            .gh-head .gh-burger::before,
+            .gh-head .gh-burger::after,
+            .gh-head-actions button span,
+            .gh-head-actions button div {
+                background-color: var(--genesisblue) !important;
+                border-color: var(--genesisblue) !important;
+            }
+            
+            /* SVG icons */
+            .gh-head svg,
+            .gh-head-actions svg,
+            .gh-head [class*="icon"],
+            .gh-head-actions [class*="icon"] {
+                fill: var(--genesisblue) !important;
+                color: var(--genesisblue) !important;
+                stroke: var(--genesisblue) !important;
+            }
+
+            /* Menu text should remain cyan, but NO cyan backgrounds */
+            .gh-head-actions a,
+            .gh-head-menu a {
+                color: var(--genesisblue) !important;
+                background-color: transparent !important; /* This prevents cyan backgrounds */
+            }
+        }
+
+
+/* Genesis Address Brand Colors */
+/* Custom footer styling for company info */
+.legal-disclaimer {
+  background: var(--genesisgray);
+  color: var(--genesisblue);
+  padding: 30px 20px;
+  font-size: 12px;
+  line-height: 1.6;
+  border-top: 2px solid var(--genesisblue);
+  margin-top: 40px;
+}
+
+.legal-disclaimer .copyright-notice {
+  font-weight: 600;
+  color: var(--genesisblue);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.legal-disclaimer .company-info {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(10, 189, 198, 0.1);
+  border: 1px solid rgba(10, 189, 198, 0.3);
+  border-radius: 5px;
+}
+
+.legal-disclaimer .contact-links {
+  margin-top: 15px;
+}
+
+.legal-disclaimer .contact-links a {
+  color: var(--genesisblue);
+  text-decoration: none;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.legal-disclaimer .contact-links a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .legal-disclaimer {
+    padding: 20px 15px;
+    font-size: 11px;
+  }
+
+  .legal-disclaimer .contact-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}
+
+/* Added for the new site */
+
+/* Link cards were white on the Ghost site, because the injection never covered them. */
+.kg-bookmark-card a.kg-bookmark-container,
+.kg-bookmark-card a.kg-bookmark-container:hover {
+    background: var(--genesis-gray) !important;
+    border: 1px solid var(--genesis-notice-border) !important;
+    box-shadow: none !important;
+    color: var(--genesis-blue) !important;
+}
+.kg-bookmark-title,
+.kg-bookmark-description,
+.kg-bookmark-metadata,
+.kg-bookmark-author,
+.kg-bookmark-publisher {
+    color: var(--genesis-blue) !important;
+}
+
+/* The footer signup text was #1c1c1c on #15171a, so it could not be read on the Ghost site. */
+.gh-foot,
+.gh-foot .gh-subscribe,
+.gh-foot .gh-subscribe-title,
+.gh-foot .gh-subscribe-description,
+.gh-foot .gh-copyright {
+    color: var(--genesis-blue) !important;
+}
+.gh-foot {
+    background-color: var(--genesis-footer-bg) !important;
+}
+.gh-subscribe-btn,
+.gh-head-btn.gh-primary-btn,
+.genesis-signup-button {
+    display: inline-flex;
+    background-color: var(--genesis-blue) !important;
+    color: var(--genesis-gray) !important;
+    border: 0 !important;
+    text-decoration: none !important;
+}
+
+/* Replaces Ghost's signup box inside episodes. */
+.genesis-signup {
+    padding: 32px;
+    text-align: center;
+    background-color: var(--genesis-notice-bg);
+    border: 1px solid var(--genesis-notice-border);
+    border-radius: 5px;
+}
+.gh-content .genesis-signup h2 {
+    margin: 0 0 12px;
+}
+.gh-content .genesis-signup p {
+    margin: 0 0 20px;
+}
+.gh-content .genesis-signup .genesis-signup-note {
+    margin: 16px 0 0;
+    font-size: 14px;
+}
+.genesis-tip {
+    text-align: center;
+}
+
+/* The Ghost header had a search icon on the left. Without it, keep Subscribe on the right. */
+.is-head-stacked .gh-head-actions {
+    justify-content: flex-end;
+}

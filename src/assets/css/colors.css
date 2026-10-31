@@ -1,0 +1,23 @@
+/* The Genesis Address colors and type, read from www.thegenesisaddress.ai on 2026-10-31.
+   Source: Ghost code injection (see ghost-code-injection-head.html and -foot.html)
+   on top of Ghost's stock Headline theme. */
+:root {
+  /* Main colors */
+  --genesis-blue: #0abdc6;              /* all text, links, headings, rules */
+  --genesis-gray: #1c1c1c;              /* page background */
+
+  /* Footer */
+  --genesis-footer-bg: #15171a;         /* band above the legal notice */
+  --genesis-notice-bg: rgba(10, 189, 198, 0.1);
+  --genesis-notice-border: rgba(10, 189, 198, 0.3);
+  --genesis-footer-link-hover: #ffffff;
+
+  /* Set in Ghost, but overridden almost everywhere by --genesis-blue */
+  --genesis-accent: #19c0ff;
+
+  /* Type */
+  --genesis-font-heading: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --genesis-font-body: Lora, Georgia, Times, serif;
+  --genesis-body-size: 17px;
+  --genesis-body-line-height: 1.6;
+}

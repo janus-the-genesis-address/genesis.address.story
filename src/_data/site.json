@@ -1,0 +1,25 @@
+{
+  "title": "The Genesis Address",
+  "description": "SCIENCE FICTION SERIAL: Weekly thriller about AI manipulation and cryptocurrency deception. All technologies fictional - entertainment only, not investment advice.",
+  "url": "https://www.thegenesisaddress.ai",
+  "author": "Janus",
+  "authorSlug": "janus",
+  "authorImage": "/content/images/2025/09/janus-5.jpg",
+  "twitter": "JanusGenesisAdd",
+  "timezone": "America/New_York",
+  "subscribeUrl": "https://addressgenesisjanus.substack.com/subscribe",
+  "tipUrl": "",
+  "nav": [
+    { "label": "Home", "url": "/" },
+    { "label": "Episodes", "url": "/episodes/" },
+    { "label": "Characters", "url": "/characters/" },
+    { "label": "Extras", "url": "/extras/" },
+    { "label": "Support", "url": "/support/" },
+    { "label": "About", "url": "/about/" }
+  ],
+  "sections": [
+    { "name": "Episodes", "slug": "episodes" },
+    { "name": "Characters", "slug": "characters" },
+    { "name": "Extras", "slug": "extras" }
+  ]
+}

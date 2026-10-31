@@ -1,0 +1,59 @@
+---
+layout: base.njk
+isPost: true
+bodyClass: post-template
+---
+<main class="gh-main">
+    <article class="gh-article post">
+        <header class="gh-article-header gh-canvas">
+            {% if topics and topics.length %}
+            <a class="gh-article-tag" href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] }}</a>
+            {% endif %}
+
+            <h1 class="gh-article-title">{{ title }}</h1>
+
+            {% if excerpt %}
+            <p class="gh-article-excerpt">{{ excerpt | trimText }}</p>
+            {% endif %}
+
+            <aside class="gh-article-sidebar">
+                <div class="gh-author-image-list instapaper_ignore">
+                    <a class="gh-author-image" href="/author/{{ site.authorSlug }}/"><img src="{{ site.authorImage }}" alt="{{ site.author }}"></a>
+                </div>
+                <div class="gh-author-name-list">
+                    <h4 class="gh-author-name"><a href="/author/{{ site.authorSlug }}/">{{ site.author }}</a></h4>
+                </div>
+                <div class="gh-article-meta">
+                    <div class="gh-article-meta-inner">
+                        <time class="gh-article-date" datetime="{{ page.date | isoDay }}">{{ page.date | displayDate }}</time>
+                        <span class="gh-article-meta-sep"></span>
+                        <span class="gh-article-length">{{ content | readingTime }} min</span>
+                    </div>
+                </div>
+            </aside>
+
+            {% include "feature-image.njk" %}
+        </header>
+
+        <section class="gh-content gh-canvas">
+            {{ content | safe }}
+        </section>
+    </article>
+
+    {% set nextPosts = collections.posts | readNext({ topics: topics, page: page }) %}
+    {% if nextPosts.length %}
+    <div class="gh-read-next gh-canvas">
+        <section class="gh-pagehead">
+            <h4 class="gh-pagehead-title">Read next</h4>
+        </section>
+        <div class="gh-topic gh-topic-grid">
+            <div class="gh-topic-content">
+                {%- for post in nextPosts %}
+                {% set large = false %}{% set showExcerpt = true %}
+                {% include "card.njk" %}
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+</main>

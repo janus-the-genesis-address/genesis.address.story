@@ -1,0 +1,21 @@
+<article class="gh-card post{% if large %} large{% endif %}">
+    <a class="gh-card-link" href="{{ post.url }}">
+        {% if post.data.feature_image %}
+        <figure class="gh-card-image">
+            <img srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
+        </figure>
+        {% endif %}
+        <div class="gh-card-wrapper">
+            <header class="gh-card-header">
+                <h3 class="gh-card-title">{{ post.data.title }}</h3>
+            </header>
+            {% if post.data.excerpt and showExcerpt %}
+            <div class="gh-card-excerpt">{{ post.data.excerpt | trimText }}</div>
+            {% endif %}
+            <footer class="gh-card-footer">
+                <span class="gh-card-author">{{ site.author }}</span>
+                <time class="gh-card-date" datetime="{{ post.date | isoDay }}">{{ post.date | displayDate }}</time>
+            </footer>
+        </div>
+    </a>
+</article>

@@ -1,0 +1,16 @@
+---
+permalink: /sitemap.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url><loc>{{ site.url }}/</loc></url>
+    {%- for section in site.sections %}
+    <url><loc>{{ site.url }}/{{ section.slug }}/</loc></url>
+    {%- endfor %}
+    <url><loc>{{ site.url }}/about/</loc></url>
+    <url><loc>{{ site.url }}/support/</loc></url>
+    {%- for post in collections.posts %}
+    <url><loc>{{ site.url }}{{ post.url }}</loc><lastmod>{{ post.data.updated | iso }}</lastmod></url>
+    {%- endfor %}
+</urlset>

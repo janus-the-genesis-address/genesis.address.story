@@ -1,0 +1,18 @@
+# Private: chat history and the raw Claude export
+claude-project/
+drafts/
+knowledge/
+
+# Private: writing rules and local tool settings
+CLAUDE.md
+.claude/
+
+# Private: the Ghost export includes subscriber emails
+ghost-export/
+*.ghost.*.json
+*members*.csv
+*.zip
+
+.DS_Store
+node_modules/
+_site/
