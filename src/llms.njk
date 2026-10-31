@@ -1,0 +1,25 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
+# {{ site.title | safe }}
+
+> {{ site.description | safe }}
+
+{% include "llms-notice.njk" %}
+The complete text of every post below is at {{ site.url }}/llms-full.txt.
+{% for section in site.llmsSections %}
+## {{ section.name | safe }}
+{% if section.note %}
+{{ section.note | safe }}
+{% endif %}
+{% for post in collections.posts | inLlmsSection(section.topics) -%}
+- [{{ post.data.title | plainTitle | safe }}]({{ site.url }}{{ post.url }}){% if post.data.excerpt | trimText %}: {{ post.data.excerpt | trimText | safe }}{% endif %}
+{% endfor %}{% endfor %}
+## Optional
+
+- [About]({{ site.url }}/about/): What The Genesis Address is
+- [Support]({{ site.url }}/support/): How to support the project
+- [Newsletter]({{ site.subscribeUrl | safe }}): New episodes by email on Substack
+- [RSS feed]({{ site.url }}/rss.xml): Every post, newest first
+- [Sitemap]({{ site.url }}/sitemap.xml): Every page on the site

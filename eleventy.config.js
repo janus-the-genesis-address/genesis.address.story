@@ -21,6 +21,48 @@ function tipCard() {
   return `<p class="genesis-tip"><a class="gh-btn genesis-signup-button" href="${site.tipUrl}">Support The Genesis Address with a tip</a></p>`;
 }
 
+const absolute = (url) => (url.startsWith("/") ? site.url + url : url);
+const stripTags = (html) => html.replace(/<\/?[a-z][a-z0-9-]*(\s[^>]*)?\/?>/gi, "");
+const decodeEntities = (text) =>
+  text
+    .replace(/&nbsp;/g, " ")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&#x27;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&amp;/g, "&");
+const captionOf = (figure) => {
+  const match = figure.match(/<figcaption>([\s\S]*?)<\/figcaption>/);
+  return match ? decodeEntities(stripTags(match[1])).trim() : "";
+};
+
+// Turns a post's Markdown into plain Markdown for AI readers: no HTML cards, full URLs.
+function markdownForLlms(markdown) {
+  const text = markdown
+    .replace(/<style[\s\S]*?<\/style>/g, "")
+    .replace(/<!-- (signup|tip-card) -->/g, "")
+    .replace(/<figure class="kg-card kg-bookmark-card[\s\S]*?<\/figure>/g, (figure) => {
+      const href = figure.match(/href="([^"]+)"/)?.[1] || "";
+      const title = decodeEntities(stripTags(figure.match(/kg-bookmark-title">([\s\S]*?)<\/div>/)?.[1] || ""))
+        .trim()
+        .replace(/^#\s*/, "");
+      const caption = captionOf(figure);
+      return `Related: [${title}](${absolute(href)})${caption ? `. ${caption}` : ""}`;
+    })
+    .replace(/<figure[\s\S]*?<\/figure>/g, (figure) => {
+      const video = figure.match(/<iframe[^>]*src="([^"]+)"/)?.[1];
+      const caption = captionOf(figure);
+      if (video) return `[Video: ${video}]${caption ? ` ${caption}` : ""}`;
+      return caption ? `[Image: ${caption}]` : "";
+    })
+    .replace(/<iframe[^>]*src="([^"]+)"[\s\S]*?<\/iframe>/g, "[Video: $1]")
+    .replace(/\]\(\//g, `](${site.url}/`);
+  return decodeEntities(stripTags(text))
+    .replace(/\\([\\`*_{}\[\]()#+\-.!<>~|])/g, "$1")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
 export default function (eleventyConfig) {
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: true });
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -41,6 +83,11 @@ export default function (eleventyConfig) {
     return [...topics.values()].sort((a, b) => b.posts.length - a.posts.length);
   });
 
+  eleventyConfig.addFilter("inLlmsSection", (posts, topics) =>
+    posts.filter((post) => topics.includes(slugify((post.data.topics || [])[0] || ""))).sort((a, b) => a.date - b.date),
+  );
+  eleventyConfig.addFilter("plainTitle", (title) => title.replace(/^#\s*/, ""));
+  eleventyConfig.addFilter("forLlms", markdownForLlms);
   eleventyConfig.addFilter("displayDate", (date) => dateFormat.format(date));
   eleventyConfig.addFilter("isoDay", (date) => date.toISOString().slice(0, 10));
   eleventyConfig.addFilter("iso", (date) => new Date(date).toISOString());
