@@ -49,7 +49,7 @@ This disclaimer and all terms contained herein, along with any dispute or claim 
 
 ### 7\. Intellectual Property Rights
 
-All intellectual property rights in and to "The Genesis Address", including but not limited to copyright, trademarks, trade names, characters, and narrative elements, are the sole and exclusive property of Genesis Address Publishing LLC. U.S. Copyright Registration: 1-14970280741. No rights are granted to the User except as expressly stated herein. By submitting, posting, or displaying any content, text, images, or other materials (collectively, "User-Generated Content") on any platform associated with the Project, the User grants the creators a worldwide, non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User-Generated Content in any media.
+All intellectual property rights in and to "The Genesis Address", including but not limited to copyright, trademarks, trade names, characters, and narrative elements, are the sole and exclusive property of The Genesis Address Publishing LLC. U.S. Copyright Registration: 1-14970280741. No rights are granted to the User except as expressly stated herein. By submitting, posting, or displaying any content, text, images, or other materials (collectively, "User-Generated Content") on any platform associated with the Project, the User grants the creators a worldwide, non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User-Generated Content in any media.
 
 ### 8\. Indemnification
 
@@ -90,7 +90,7 @@ The Project is subject to the trade laws and economic sanctions regulations of t
 ## Copyright & Publishing Information
 
 **U.S. Copyright Registration:** 1-14970280741  
-**Publisher:** Genesis Address Publishing LLC  
+**Publisher:** The Genesis Address Publishing LLC  
 **Incorporated:** Wyoming, United States  
 **Official Website:** [www.thegenesisaddress.ai](/)
 
@@ -105,4 +105,4 @@ Instagram: [@the\_genesis\_address](https://instagram.com/the_genesis_address)
 
 *Thanks for reading The Genesis Address! Subscribe for free to receive new posts and support my work.*
 
-*For questions regarding this disclaimer or the fictional nature of this project, please contact Genesis Address Publishing LLC at the above email address.*
+*For questions regarding this disclaimer or the fictional nature of this project, please contact The Genesis Address Publishing LLC at the above email address.*

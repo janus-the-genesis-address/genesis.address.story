@@ -61,6 +61,6 @@ npm start
 
 ## Copyright
 
-© 2025 Genesis Address Publishing LLC. All Rights Reserved. U.S. Copyright Registration: 1-14970280741. The story, characters and images may not be reused without permission.
+© 2025 The Genesis Address Publishing LLC. All Rights Reserved. U.S. Copyright Registration: 1-14970280741. The story, characters and images may not be reused without permission.
 
 The site design is based on Ghost's Headline theme, used under the MIT License. See `src/assets/HEADLINE-THEME-LICENSE.txt`.
