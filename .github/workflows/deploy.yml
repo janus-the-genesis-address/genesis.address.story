@@ -24,8 +24,7 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      # Remove --pathprefix once www.thegenesisaddress.ai points at GitHub Pages.
-      - run: npx eleventy --pathprefix=/genesis.address.story/
+      - run: npx eleventy
       - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
