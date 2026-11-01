@@ -327,3 +327,35 @@
 .is-head-stacked .gh-head-actions {
     justify-content: flex-end;
 }
+
+/* Code blocks, dark instead of the Ghost theme's white. */
+.gh-content pre {
+    padding: 20px 24px;
+    overflow-x: auto;
+    background: var(--genesis-code-bg);
+    color: var(--genesis-blue);
+    border: 1px solid var(--genesis-blue);
+    border-radius: 2px;
+    box-shadow: 0 0 8px rgba(10, 189, 198, 0.5), 0 0 28px rgba(10, 189, 198, 0.2);
+    font-size: 15px;
+    line-height: 1.6;
+    text-shadow: 0 0 6px rgba(10, 189, 198, 0.45);
+}
+.gh-content pre code {
+    background: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+/* In-story receipts. */
+.gh-content pre.receipt {
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 3px solid var(--genesis-receipt-magenta);
+}
+.gh-content pre.receipt .receipt-fee {
+    color: var(--genesis-receipt-amber);
+    text-shadow: 0 0 6px rgba(255, 176, 0, 0.45);
+}

@@ -6,6 +6,11 @@
   --genesis-blue: #0abdc6;              /* all text, links, headings, rules */
   --genesis-gray: #1c1c1c;              /* page background */
 
+  /* Code blocks and in-story receipts */
+  --genesis-code-bg: #0a0e14;
+  --genesis-receipt-amber: #ffb000;
+  --genesis-receipt-magenta: #ff2a9d;
+
   /* Footer */
   --genesis-footer-bg: #15171a;         /* band above the legal notice */
   --genesis-notice-bg: rgba(10, 189, 198, 0.1);
