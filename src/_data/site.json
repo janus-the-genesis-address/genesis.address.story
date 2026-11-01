@@ -9,6 +9,7 @@
   "timezone": "America/New_York",
   "subscribeUrl": "https://addressgenesisjanus.substack.com/subscribe",
   "tipUrl": "https://donate.stripe.com/bJebJ098Xf0h8ffe4Z8g000",
+  "cloudflareAnalyticsToken": "89ff125564864bffac8106a54e5baf17",
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },

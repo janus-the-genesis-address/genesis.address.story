@@ -1,7 +1,7 @@
 ---
 title: "Legal Disclaimer & Terms of Use"
 date: "2025-07-30T14:28:07.000Z"
-updated: "2025-09-20T00:01:40.000Z"
+updated: "2026-11-01T12:00:00.000Z"
 excerpt: "🚨FICTION NOTICE 🚨"
 feature_image: "/content/images/2025/09/janus.jpg"
 topics: ["Legal","FAQ"]
@@ -85,6 +85,10 @@ The User acknowledges and accepts that certain interactive elements of the Proje
 
 The Project is subject to the trade laws and economic sanctions regulations of the United States and other applicable jurisdictions. The Project and its associated services and Collectibles are not offered or intended for use by any person or entity in any jurisdiction where their provision or use would be contrary to applicable law or regulation. By accessing, using, or participating in any aspect of the Project, the User represents and warrants that they: (i) are not located in, a resident of, or a national of any country or territory subject to comprehensive U.S. trade sanctions or other significant trade restrictions (including, without limitation, Cuba, Iran, North Korea, Syria, and the Crimea, Donetsk People's Republic, and Luhansk People's Republic regions of Ukraine); (ii) are not a person or entity identified on any U.S. or other applicable government restricted party list, such as the Specially Designated Nationals and Blocked Persons List (SDN List) maintained by the U.S. Department of the Treasury's Office of Foreign Assets Control (OFAC); and (iii) will not use the Project or any of its services in any manner that would violate any applicable trade sanctions or export control laws. Access to the Project from any jurisdiction where its content is illegal or restricted is strictly prohibited. The creators of "The Genesis Address" reserve the right to implement technical controls, such as geoblocking, to restrict access from any prohibited jurisdiction.
 
+### 14\. Website Analytics
+
+The website www.thegenesisaddress.ai uses Cloudflare Web Analytics to count visits. It reports totals such as pages viewed, referring sites, countries and device types. It does not set cookies, and the creators do not receive information that identifies individual visitors.
+
 ---
 
 ## Copyright & Publishing Information
@@ -99,7 +103,7 @@ Email: [address.genesis.janus@gmail.com](mailto:address.genesis.janus@gmail.com)
 Twitter/X: [@JanusGenesisAdd](https://x.com/JanusGenesisAdd)  
 Instagram: [@the\_genesis\_address](https://instagram.com/the_genesis_address)
 
-**Last Updated:** September 2025
+**Last Updated:** November 2026
 
 ---
 

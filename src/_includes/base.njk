@@ -99,6 +99,9 @@
 {% include "pswp.njk" %}
 
 <script src="/assets/built/main.min.js"></script>
+{%- if site.cloudflareAnalyticsToken and eleventy.env.runMode == "build" %}
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflareAnalyticsToken }}"}'></script>
+{%- endif %}
 
 <footer class="legal-disclaimer">
   <div class="company-info">
