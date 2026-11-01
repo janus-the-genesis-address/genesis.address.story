@@ -335,6 +335,13 @@
     box-shadow: 0 0 6px rgba(255, 176, 0, 0.6), 0 0 18px rgba(255, 176, 0, 0.25);
 }
 
+/* The line after the "Read next" heading, same amber as the scene dividers. */
+.gh-read-next .gh-pagehead-title:after {
+    height: 2px;
+    background-color: var(--genesis-amber);
+    box-shadow: 0 0 6px rgba(255, 176, 0, 0.6), 0 0 18px rgba(255, 176, 0, 0.25);
+}
+
 /* Code blocks, dark instead of the Ghost theme's white. */
 .gh-content pre {
     padding: 20px 24px;

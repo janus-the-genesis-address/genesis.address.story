@@ -391,7 +391,7 @@ The mathematical frameworks developed in these foundational papers provide the t
 
 \### Development Resources
 
-\- \*\*GitHub Repository:\*\* \<https://github.com/janus-the-genesis-address/alembic-core>
+\- \*\*GitHub Repository:\*\* \<https://github.com/janus-the-genesis-address/alembic-protocol>
 
 \- \*\*Documentation:\*\* \<https://docs.genesisaddress.ai>
 
