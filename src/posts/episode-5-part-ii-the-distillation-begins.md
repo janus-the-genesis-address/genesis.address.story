@@ -257,4 +257,6 @@ The harvest was beginning.
 
 **\[END EPISODE 5\]**
 
-*Next: Episode 6 - "The Heartland Express"*
+*Next on The Genesis Address:*
+
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-6-part-1-the-heartland-express/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 6 part 1: “The Heartland Express”</div><div class="kg-bookmark-description">The fastest train in the world leaves Harrisburg on the first morning of the Democratic Participation Fee, and the first receipt charges it on the sales tax. Kathy watches Kansas. Jack watches a number. The woman who built the train asks what it earns.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-17.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/heartland-express.jpg" alt=""></div></a></figure>

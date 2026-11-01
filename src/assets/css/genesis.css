@@ -328,6 +328,13 @@
     justify-content: flex-end;
 }
 
+/* Scene dividers, glowing amber. The theme's black line vanished on the dark page. */
+.gh-content hr {
+    height: 2px;
+    background: var(--genesis-amber);
+    box-shadow: 0 0 6px rgba(255, 176, 0, 0.6), 0 0 18px rgba(255, 176, 0, 0.25);
+}
+
 /* Code blocks, dark instead of the Ghost theme's white. */
 .gh-content pre {
     padding: 20px 24px;
@@ -356,6 +363,6 @@
     border-top: 3px solid var(--genesis-receipt-magenta);
 }
 .gh-content pre.receipt .receipt-fee {
-    color: var(--genesis-receipt-amber);
+    color: var(--genesis-amber);
     text-shadow: 0 0 6px rgba(255, 176, 0, 0.45);
 }
