@@ -14,7 +14,7 @@ The Genesis Address is a work of fiction. Its tokens, protocols, companies, peop
 ## Posts
 
 <!-- posts:start -->
-Latest post: [Episode 5 part II: "The Distillation Begins"](https://www.thegenesisaddress.ai/episode-5-part-ii-the-distillation-begins/), 2025-11-21.
+Latest post: [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisaddress.ai/episode-6-part-1-the-heartland-express/), 2026-11-01.
 
 ### Episodes
 
@@ -27,6 +27,7 @@ Latest post: [Episode 5 part II: "The Distillation Begins"](https://www.thegenes
 - [Episode 4 part 2: "The Concordance"](https://www.thegenesisaddress.ai/episode-4-part-2-the-concordance/) (2025-10-23)
 - [Episode 5 part I: "The FOMO Harvest"](https://www.thegenesisaddress.ai/fomo-harvest/) (2025-11-12)
 - [Episode 5 part II: "The Distillation Begins"](https://www.thegenesisaddress.ai/episode-5-part-ii-the-distillation-begins/) (2025-11-21)
+- [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisaddress.ai/episode-6-part-1-the-heartland-express/) (2026-11-01)
 
 ### Characters
 
