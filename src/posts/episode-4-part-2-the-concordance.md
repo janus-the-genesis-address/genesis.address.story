@@ -222,7 +222,7 @@ And in the policy briefings, the reasonable analysts explained why every step ma
 
 Backwards bloom, forward doom.
 
-<figure class="kg-card kg-image-card"><img src="/content/images/2025/10/BDFD-2.png" class="kg-image" alt="" loading="lazy" width="1660" height="958" srcset="/content/images/size/w600/2025/10/BDFD-2.png 600w, /content/images/size/w1000/2025/10/BDFD-2.png 1000w, /content/images/size/w1600/2025/10/BDFD-2.png 1600w, /content/images/2025/10/BDFD-2.png 1660w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-4-part-2.jpg" class="kg-image" alt="The Backwards bloom poster glued to a utility box on a West Village street at night, under a screen showing three interlocking circles" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-4-part-2.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-4-part-2.jpg 1000w, /content/images/2026/11/sign-off-episode-4-part-2.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>West Village, three months in.</em></figcaption></figure>
 
 The prophecy was in motion.
 

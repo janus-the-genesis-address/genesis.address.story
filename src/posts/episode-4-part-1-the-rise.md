@@ -160,7 +160,7 @@ Sterling arranged his tulips with careful attention.
 
 Backwards bloom. Forward doom.
 
-<figure class="kg-card kg-image-card"><img src="/content/images/2025/10/BDFD-1.png" class="kg-image" alt="" loading="lazy" width="1660" height="958" srcset="/content/images/size/w600/2025/10/BDFD-1.png 600w, /content/images/size/w1000/2025/10/BDFD-1.png 1000w, /content/images/size/w1600/2025/10/BDFD-1.png 1600w, /content/images/2025/10/BDFD-1.png 1660w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-4-part-1.jpg" class="kg-image" alt="The Backwards bloom poster pasted over a wall of From Chaos, Concord campaign posters at night" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-4-part-1.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-4-part-1.jpg 1000w, /content/images/2026/11/sign-off-episode-4-part-1.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Columbus, after the rally.</em></figcaption></figure>
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/brannon/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Brannon</div><div class="kg-bookmark-description">He provides pseudo-intellectual framework</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-6.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/9566d898-d447-462c-bf8a-e79164e63e5e.jpg" alt=""></div></a></figure>
 

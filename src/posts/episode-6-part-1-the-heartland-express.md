@@ -233,4 +233,6 @@ He turned the ruby ring once on his finger. Behind the counter the television ha
 
 Backwards bloom, forward doom.
 
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-6-part-1.jpg" class="kg-image" alt="The Backwards bloom poster glued to the tail of a maglev train racing toward the mountains" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-6-part-1.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-6-part-1.jpg 1000w, /content/images/2026/11/sign-off-episode-6-part-1.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Eastern Colorado, 520 mph.</em></figcaption></figure>
+
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/legal-disclaimer-and-terms-of-use-e7f/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Legal Disclaimer &amp; Terms of Use</div><div class="kg-bookmark-description">🚨FICTION NOTICE 🚨</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/favicon-4.ico" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/janus.jpg" alt=""></div></a></figure>
