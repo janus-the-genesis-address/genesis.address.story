@@ -3,9 +3,9 @@ title: "A Citizen's Guide to the Concordance"
 date: "2026-11-02T19:00:00.000Z"
 updated: "2026-11-02T19:00:00.000Z"
 excerpt: "The Democratic Participation Fee, the coordination requirements and the Chain of Democracy, explained by the office that wrote them. An official Concordance publication, reproduced as found."
-feature_image: "/content/images/2025/10/The-Concordance-Seal.jpeg"
-feature_image_caption: "<em>Issued under the seal. Three circles, one node.</em>"
-feature_image_alt: "The Concordance seal: three interlocking dark blue circles with gold trim, an eye-shaped node where they meet, and the word CONCORDANCE below"
+feature_image: "/content/images/2026/11/citizens-guide-to-the-concordance.jpg"
+feature_image_caption: "<em>Harrisburg station, the counter by the stairs, September 1.</em>"
+feature_image_alt: "A Concordance pamphlet with the seal lying open on a café counter beside a card terminal, a long receipt and a coffee, with the seal glowing on a screen behind"
 topics: ["Extras"]
 ---
 
@@ -126,7 +126,7 @@ Your platform. Your platform will contact us.
 
 ---
 
-*Found in the seat pocket of the Heartland Express on the first morning of the fee, folded between the safety card and the café menu.*
+*Found on the counter of the coffee stand at Harrisburg station on the first morning of the fee, under the receipt.*
 
 <!-- signup -->
 
