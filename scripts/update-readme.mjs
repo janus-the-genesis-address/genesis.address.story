@@ -19,11 +19,12 @@ const posts = readdirSync(postsDir)
     return {
       slug: file.replace(/\.md$/, ""),
       title: field(text, "title").replace(/^#\s*/, ""),
+      time: field(text, "date"),
       date: field(text, "date").slice(0, 10),
       topic: slugify((field(text, "topics") || [])[0] || ""),
     };
   })
-  .sort((a, b) => a.date.localeCompare(b.date));
+  .sort((a, b) => a.time.localeCompare(b.time));
 
 const lines = [];
 for (const section of site.llmsSections) {

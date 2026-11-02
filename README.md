@@ -14,7 +14,7 @@ The Genesis Address is a work of fiction. Its tokens, protocols, companies, peop
 ## Posts
 
 <!-- posts:start -->
-Latest post: [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisaddress.ai/episode-6-part-1-the-heartland-express/), 2026-11-01.
+Latest post: [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/), 2026-11-02.
 
 ### Episodes
 
@@ -31,12 +31,12 @@ Latest post: [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisa
 
 ### Characters
 
-- [Janus™ (AI Agent 7.3)](https://www.thegenesisaddress.ai/janus-ai-agent-7-3/) (2025-09-18)
 - [Dr. Robert Sterling](https://www.thegenesisaddress.ai/sterling/) (2025-09-18)
-- [Brannon](https://www.thegenesisaddress.ai/brannon/) (2025-09-19)
+- [Janus™ (AI Agent 7.3)](https://www.thegenesisaddress.ai/janus-ai-agent-7-3/) (2025-09-18)
 - [Jack Miller](https://www.thegenesisaddress.ai/jack-miller/) (2025-09-19)
 - [Kathy Bates](https://www.thegenesisaddress.ai/kathy-bates/) (2025-09-19)
 - [President Octavius](https://www.thegenesisaddress.ai/president-octavius/) (2025-09-19)
+- [Brannon](https://www.thegenesisaddress.ai/brannon/) (2025-09-19)
 
 ### Extras
 
@@ -44,6 +44,8 @@ Latest post: [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisa
 - [Alembic Protocol White Paper](https://www.thegenesisaddress.ai/alembic-protocol/) (2025-07-30)
 - [Galactic Species Database - Field Report #7432](https://www.thegenesisaddress.ai/galactic-species-database-field-report/) (2025-08-24)
 - [Trailer Teaser](https://www.thegenesisaddress.ai/trailer-teaser/) (2025-09-25)
+- [Glossary](https://www.thegenesisaddress.ai/glossary/) (2026-11-02)
+- [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/) (2026-11-02)
 
 ### Legal and FAQ
 

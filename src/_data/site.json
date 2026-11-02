@@ -21,7 +21,7 @@
   "llmsSections": [
     { "name": "Episodes", "note": "Read in this order.", "topics": ["episodes"] },
     { "name": "Characters", "note": "Spoiler-free profiles.", "topics": ["characters"] },
-    { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional.", "topics": ["extras"] },
+    { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional, plus a reader's glossary.", "topics": ["extras"] },
     { "name": "Legal and FAQ", "note": "", "topics": ["legal", "faq"] }
   ],
   "sections": [

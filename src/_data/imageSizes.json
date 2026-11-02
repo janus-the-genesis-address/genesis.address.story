@@ -192,5 +192,14 @@
       720
     ],
     "width": 1168
+  },
+  "/content/images/2026/11/missing-library.jpg": {
+    "height": 1152,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1712
   }
 }
