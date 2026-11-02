@@ -6,7 +6,7 @@ excerpt: "The words the story uses, from the Alembic Protocol to the mash, defin
 feature_image: "/content/images/2026/11/missing-library.jpg"
 feature_image_caption: "<em>Sterling reading the repository. The part that's supposed to work isn't in the folder.</em>"
 feature_image_alt: "Sterling at his laptop in The Colonial Leaves reading a file list marked missing, with Brannon on the television behind him"
-topics: ["Extras", "FAQ"]
+topics: ["World", "FAQ"]
 ---
 
 The Genesis Address has its own vocabulary, and the story hands it out slowly. This page collects the terms in one place. Every definition stops where the published episodes stop, so if an entry seems to end early, that's the story keeping something back.

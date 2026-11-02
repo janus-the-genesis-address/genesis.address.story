@@ -18,7 +18,7 @@ bodyClass: home-template
             </footer>
         </section>
 
-        {%- for topic in collections.topics | batch(3) | first %}
+        {%- for topic in collections.topics | batch(4) | first %}
         <section class="gh-topic gh-topic-grid">
             <h2 class="gh-topic-name"><a href="/tag/{{ topic.slug }}/">{{ topic.name }}</a></h2>
             <div class="gh-topic-content">
@@ -35,7 +35,7 @@ bodyClass: home-template
 
         <div class="gh-topic-list">
             {%- for topic in collections.topics %}
-            {%- if loop.index > 3 %}
+            {%- if loop.index > 4 %}
             <section class="gh-topic gh-topic-minimal">
                 <header class="gh-topic-header">
                     <h2 class="gh-topic-name"><a href="/tag/{{ topic.slug }}/">{{ topic.name }}</a></h2>

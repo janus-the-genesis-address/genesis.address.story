@@ -6,7 +6,7 @@ excerpt: "Citizen Bulletin No. 1 from the Office of Democratic Participation: wh
 feature_image: "/content/images/2026/11/citizens-guide-to-the-concordance.jpg"
 feature_image_caption: "<em>Citizen Bulletin No. 1, on the counter of every participation point from September 1.</em>"
 feature_image_alt: "A printed government pamphlet with a seal of three interlocking circles lying on a shop counter beside a card reader and a long receipt"
-topics: ["Extras"]
+topics: ["World"]
 ---
 
 *Reproduced as found. The Concordance's own words, unedited.*

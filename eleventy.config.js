@@ -80,7 +80,11 @@ export default function (eleventyConfig) {
         topics.get(slug).posts.push(post);
       }
     }
-    return [...topics.values()].sort((a, b) => b.posts.length - a.posts.length);
+    const order = (topic) => {
+      const index = site.sections.findIndex((section) => section.slug === topic.slug);
+      return index === -1 ? site.sections.length : index;
+    };
+    return [...topics.values()].sort((a, b) => order(a) - order(b) || b.posts.length - a.posts.length);
   });
 
   eleventyConfig.addFilter("inLlmsSection", (posts, topics) =>

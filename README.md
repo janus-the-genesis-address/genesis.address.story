@@ -38,14 +38,17 @@ Latest post: [A Citizen's Guide to the Concordance](https://www.thegenesisaddres
 - [President Octavius](https://www.thegenesisaddress.ai/president-octavius/) (2025-09-19)
 - [Brannon](https://www.thegenesisaddress.ai/brannon/) (2025-09-19)
 
+### World
+
+- [Glossary](https://www.thegenesisaddress.ai/glossary/) (2026-11-02)
+- [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/) (2026-11-02)
+
 ### Extras
 
 - [The Genesis Address](https://www.thegenesisaddress.ai/the-genesis-address/) (2025-07-27)
 - [Alembic Protocol White Paper](https://www.thegenesisaddress.ai/alembic-protocol/) (2025-07-30)
 - [Galactic Species Database - Field Report #7432](https://www.thegenesisaddress.ai/galactic-species-database-field-report/) (2025-08-24)
 - [Trailer Teaser](https://www.thegenesisaddress.ai/trailer-teaser/) (2025-09-25)
-- [Glossary](https://www.thegenesisaddress.ai/glossary/) (2026-11-02)
-- [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/) (2026-11-02)
 
 ### Legal and FAQ
 

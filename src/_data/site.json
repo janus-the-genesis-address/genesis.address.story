@@ -14,7 +14,7 @@
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },
     { "label": "Characters", "url": "/characters/" },
-    { "label": "Glossary", "url": "/glossary/" },
+    { "label": "World", "url": "/world/" },
     { "label": "Extras", "url": "/extras/" },
     { "label": "Support", "url": "/support/" },
     { "label": "About", "url": "/about/" }
@@ -22,12 +22,14 @@
   "llmsSections": [
     { "name": "Episodes", "note": "Read in this order.", "topics": ["episodes"] },
     { "name": "Characters", "note": "Spoiler-free profiles.", "topics": ["characters"] },
-    { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional, plus a reader's glossary.", "topics": ["extras"] },
+    { "name": "World", "note": "The story's world: a glossary of its terms, and documents from inside it.", "topics": ["world"] },
+    { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional.", "topics": ["extras"] },
     { "name": "Legal and FAQ", "note": "", "topics": ["legal", "faq"] }
   ],
   "sections": [
     { "name": "Episodes", "slug": "episodes" },
     { "name": "Characters", "slug": "characters" },
+    { "name": "World", "slug": "world" },
     { "name": "Extras", "slug": "extras" }
   ]
 }
