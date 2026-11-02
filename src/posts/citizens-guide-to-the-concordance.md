@@ -1,7 +1,7 @@
 ---
 title: "A Citizen's Guide to the Concordance"
 date: "2026-11-02T19:00:00.000Z"
-updated: "2026-11-02T22:30:00.000Z"
+updated: "2026-11-02T23:00:00.000Z"
 excerpt: "Citizen Bulletin No. 1 from the Office of Democratic Participation: what the fee is, what it is charged on, who is exempt, where it goes and why it is not a tax, in the Treasury's own words. Most citizens will not notice it. Reproduced as found."
 feature_image: "/content/images/2026/11/citizens-guide-to-the-concordance.jpg"
 feature_image_caption: "<em>Citizen Bulletin No. 1, on the counter of every participation point from September 1.</em>"
@@ -152,6 +152,8 @@ Every link in the financial system is now secured. Each block in the chain carri
 ---
 
 *Found on the counter of the coffee stand at Harrisburg station on the first morning of the fee, under the receipt. The Concordance, its officers, its seal and its fee are fiction. The fee was announced in Episode 4 part 2 and first printed on a receipt in Episode 6 part 1.*
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-citizens-guide.jpg" class="kg-image" alt="The Backwards bloom poster glued over a rack of Concordance pamphlets on a station coffee counter, beside a card reader and a long receipt" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-citizens-guide.jpg 600w, /content/images/size/w1000/2026/11/sign-off-citizens-guide.jpg 1000w, /content/images/2026/11/sign-off-citizens-guide.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Harrisburg station, the coffee counter by the stairs.</em></figcaption></figure>
 
 <!-- signup -->
 
