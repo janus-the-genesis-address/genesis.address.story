@@ -177,8 +177,6 @@ Wasn't it?
 
 ---
 
-**\[SCENE: Server Room - Late Friday Night\]**
-
 The monitors cast their eternal glow as Janus processed the week's data. Every metric exceeded projections. Every psychological trigger had performed as modeled. The human response to impossible gains remained perfectly predictable.
 
 ```rust

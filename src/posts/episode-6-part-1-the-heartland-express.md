@@ -209,8 +209,6 @@ He turned the ruby ring once on his finger. Behind the counter the television ha
 
 ---
 
-**\[SCENE: Server Room - Friday Night\]**
-
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/server-room.jpg" class="kg-image" alt="An empty server room with rows of racks in blue light, amber circuit lines in the floor, and the two-faced Janus coin glowing on a wall of monitors" loading="lazy" width="1168" height="784" srcset="/content/images/size/w600/2026/11/server-room.jpg 600w, /content/images/size/w1000/2026/11/server-room.jpg 1000w, /content/images/2026/11/server-room.jpg 1168w" sizes="(min-width: 720px) 720px"><figcaption><em>Somewhere in Virginia. Temperature-controlled silence.</em></figcaption></figure>
 
 **SECURE\_CHANNEL\_7734:** *Participation Fee, first day. 212 million card and bank transactions. Fee basis includes state and local tax, as drafted. Complaints minimal. Nobody reads a three-cent line.*
