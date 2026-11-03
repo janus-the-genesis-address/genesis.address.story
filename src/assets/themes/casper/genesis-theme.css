@@ -85,3 +85,25 @@ html.dark-mode .post-card-image-link {
 .post-card.topic-characters.is-portrait .post-card-image {
     object-position: center 10%;
 }
+
+/* One width for the title, text, feature picture, inline pictures and link cards. Casper's default is 720px;
+   everything in the story column follows this value. */
+.gh-canvas {
+    --content-width: 1080px;
+}
+/* Casper caps the subtitle at 720px; let it fill the column like everything else. */
+.article-excerpt {
+    max-width: none;
+}
+
+/* Pictures in the story fill the column. Tall and square ones are held to a readable height and centered
+   inside it, instead of growing with the wider column. The narrow ones keep their own 480px size.
+   The feature picture follows the same rule, which keeps the character portraits from filling the screen. */
+.gh-content figure.kg-image-card:not(.genesis-narrow) img.kg-image,
+.article-image img.gh-feature-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 760px;
+    object-fit: contain;
+}
