@@ -40,7 +40,7 @@
     { "name": "Legal and FAQ", "note": "", "topics": ["legal", "faq"] }
   ],
   "sections": [
-    { "name": "Episodes", "slug": "episodes" },
+    { "name": "Episodes", "slug": "episodes", "readingOrder": true },
     { "name": "Characters", "slug": "characters" },
     { "name": "World", "slug": "world" },
     { "name": "Extras", "slug": "extras" }

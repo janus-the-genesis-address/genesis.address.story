@@ -200,6 +200,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("topicSlug", slugify);
   eleventyConfig.addFilter("trimText", (text) => (text || "").trim());
   eleventyConfig.addFilter("withTopic", (posts, slug) => posts.filter((post) => (post.data.topics || []).some((t) => slugify(t) === slug)));
+  // Sections marked readingOrder in site.json, such as Episodes, list their posts oldest first.
+  eleventyConfig.addFilter("sectionOrder", (posts, slug) =>
+    site.sections.some((section) => section.slug === slug && section.readingOrder) ? [...posts].sort((a, b) => a.date - b.date) : posts,
+  );
   eleventyConfig.addFilter("readNext", (posts, current) => {
     const mine = new Set((current.topics || []).map(slugify));
     return posts.filter((post) => post.url !== current.page.url && (post.data.topics || []).some((t) => mine.has(slugify(t)))).slice(0, 3);

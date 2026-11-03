@@ -8,6 +8,6 @@ permalink: "/tag/{{ topic.slug }}/"
 eleventyComputed:
   title: "{{ topic.name }}"
 ---
-{%- set feedPosts = topic.posts %}
+{%- set feedPosts = topic.posts | sectionOrder(topic.slug) %}
 {%- set largeFirst = true %}
 {% include "themes/" + theme + "/feed.njk" %}

@@ -8,5 +8,5 @@ permalink: "/{{ section.slug }}/"
 eleventyComputed:
   title: "{{ section.name }}"
 ---
-{%- set feedPosts = collections.posts | withTopic(section.slug) %}
+{%- set feedPosts = collections.posts | withTopic(section.slug) | sectionOrder(section.slug) %}
 {% include "themes/" + theme + "/feed.njk" %}
