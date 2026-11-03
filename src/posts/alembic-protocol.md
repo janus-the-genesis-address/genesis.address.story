@@ -1,10 +1,10 @@
 ---
 title: "# Alembic Protocol White Paper"
 date: "2025-07-30T14:10:08.000Z"
-updated: "2026-11-03T12:09:00.000Z"
+updated: "2026-11-03T13:01:00.000Z"
 excerpt: "A Revolutionary Layer 1 Blockchain. Geek extra alembic protocol white paper featuring cutting edge breakthroughs in blockchain technology"
 feature_image: "/content/images/2025/09/tachyon_token.jpeg"
-topics: ["Extras"]
+topics: ["World"]
 ---
 
 \# Alembic Protocol: A Revolutionary Layer 1 Blockchain
