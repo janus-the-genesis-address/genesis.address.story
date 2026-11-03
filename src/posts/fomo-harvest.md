@@ -149,11 +149,9 @@ The morning light streaming through Jack's apartment window felt different someh
 
 He scrolled through his phone over coffee, and everywhere he looked, people were talking about the same thing. The Alembic Protocol. The Tachyon Token. The impossible gains.
 
-His college roommate had texted at 2 AM: *"BRO ARE YOU SEEING THIS?? I'm up 4x already!!!"*
+His college roommate had texted at 2 AM. His sister. Even his boss.
 
-His sister: *"Jack, please tell me you got in on this crypto thing. Mom's book club invested yesterday and they're all up huge."*
-
-Even his boss: *"Grabbed some $TACHYON last night. Already covered my kid's college fund. Wild times."*
+<figure class="kg-card kg-image-card genesis-narrow"><img src="/content/images/2026/11/phone-morning-after-launch.jpg" class="kg-image" alt="Jack's lock screen at 6:42 with three texts. Boss, 6:31 AM: Grabbed some $TACHYON last night. Already covered my kid's college fund. Wild times. Sister, 6:20 AM: Jack, please tell me you got in on this crypto thing. Mom's book club invested yesterday and they're all up huge. College Roommate, 2:03 AM: BRO ARE YOU SEEING THIS?? I'm up 4x already!!!" loading="lazy" width="900" height="1200" srcset="/content/images/size/w600/2026/11/phone-morning-after-launch.jpg 600w, /content/images/2026/11/phone-morning-after-launch.jpg 900w" sizes="(min-width: 720px) 480px"></figure>
 
 Jack set down his phone and stared at his coffee. Everyone. Literally everyone seemed to be making money except him.
 

@@ -119,7 +119,9 @@ Sarah from engineering leaned over from her desk. "My brother-in-law's a physics
 
 Jack turned back to his drafting software, trying to focus on the blueprint for a warehouse renovation. But the lines kept blurring. All he could think about was the number: $150. People were making more in a day than he made in a month.
 
-His phone buzzed. Kathy: *"Don't forget dinner at my place tonight. 7pm?"*
+His phone buzzed. Kathy.
+
+<figure class="kg-card kg-image-card genesis-narrow"><img src="/content/images/2026/11/phone-kathy-dinner.jpg" class="kg-image" alt="A text on Jack's phone from Kathy: Don't forget dinner at my place tonight. 7pm?" loading="lazy" width="900" height="1200" srcset="/content/images/size/w600/2026/11/phone-kathy-dinner.jpg 600w, /content/images/2026/11/phone-kathy-dinner.jpg 900w" sizes="(min-width: 720px) 480px"></figure>
 
 Right. Dinner. He texted back a confirmation and tried to refocus on work.
 

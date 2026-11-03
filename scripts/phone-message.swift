@@ -13,6 +13,10 @@
 //       { "chart": { "label": "RETURN SINCE FRI", "value": "+$61,240.18" } }   a screenshot of gains
 //     ]
 //   }
+// For several texts from different people at once, draw the lock screen instead: leave out
+// "sender" and "messages" and give "date" (optional) and "notifications":
+//   { "time": "6:42", "date": "Tuesday, August 15",
+//     "notifications": [ { "sender": "Sister", "text": "Jack, please tell me...", "when": "6:20 AM" } ] }
 import AppKit
 import Foundation
 
@@ -24,12 +28,15 @@ guard args.count >= 3 else {
 
 struct Chart: Decodable { let label: String; let value: String }
 struct Message: Decodable { let text: String?; let from: String?; let chart: Chart? }
+struct Note: Decodable { let sender: String; let text: String; let when: String? }
 struct Spec: Decodable {
-    let sender: String
+    let sender: String?
     let detail: String?
     let time: String
     let stamp: String?
-    let messages: [Message]
+    let date: String?
+    let messages: [Message]?
+    let notifications: [Note]?
 }
 
 let spec = try JSONDecoder().decode(Spec.self, from: Data(contentsOf: URL(fileURLWithPath: args[1])))
@@ -85,7 +92,7 @@ func glow(_ color: NSColor, _ blur: CGFloat, _ draw: () -> Void) {
 struct Placed { let rect: NSRect; let message: Message; let text: NSAttributedString? }
 var placed: [Placed] = []
 var y: CGFloat = 0
-for m in spec.messages {
+for m in spec.messages ?? [] {
     let mine = m.from == "me"
     if m.chart != nil {
         let w = bubbleMax, h: CGFloat = 250
@@ -150,14 +157,50 @@ let bp = NSBezierPath(roundedRect: battery, xRadius: 6, yRadius: 6); bp.lineWidt
 green.setFill(); NSBezierPath(roundedRect: battery.insetBy(dx: 4, dy: 4), xRadius: 3, yRadius: 3).fill()
 NSColor.white.setFill(); NSBezierPath(roundedRect: NSRect(x: battery.maxX + 3, y: battery.midY - 4, width: 3, height: 8), xRadius: 1, yRadius: 1).fill()
 
+if let notes = spec.notifications {
+    // Lock screen: big clock, the date, then one glowing card per text, newest first.
+    let clock = attributed(spec.time, font(120, .semibold), .white, glow: cyan.withAlphaComponent(0.8), align: .center)
+    let csz = size(clock, width: screen.width)
+    if let d = spec.date {
+        attributed(d, font(26, .medium), rgb(0xcfe9f5), align: .center).draw(in: NSRect(x: screen.minX, y: screen.minY + 100, width: screen.width, height: 34))
+    }
+    clock.draw(in: NSRect(x: screen.minX, y: screen.minY + 132, width: screen.width, height: csz.height))
+    var cy = screen.minY + 132 + csz.height + 40
+    for (i, n) in notes.enumerated() {
+        let edge = i % 2 == 0 ? cyan : magenta
+        let body = attributed(n.text, font(23), rgb(0xdcfbff))
+        let bsz = size(body, width: screen.width - 48 - 100)
+        let card = NSRect(x: screen.minX + 24, y: cy, width: screen.width - 48, height: bsz.height + 76)
+        let cp = NSBezierPath(roundedRect: card, xRadius: 26, yRadius: 26)
+        glow(edge.withAlphaComponent(0.5), 18) { rgb(0x0f1626, 0.92).setFill(); cp.fill() }
+        edge.withAlphaComponent(0.8).setStroke(); cp.lineWidth = 2; cp.stroke()
+        let av = NSRect(x: card.minX + 18, y: card.minY + 18, width: 50, height: 50)
+        NSGradient(colors: [magenta, rgb(0x6a2cff)])!.draw(in: NSBezierPath(ovalIn: av), angle: -60)
+        let ini = attributed(String(n.sender.prefix(1)).uppercased(), font(24, .bold), .white, align: .center)
+        ini.draw(in: NSRect(x: av.minX, y: av.midY - size(ini, width: 50).height / 2, width: 50, height: 30))
+        attributed(n.sender, font(23, .semibold), .white).draw(at: NSPoint(x: card.minX + 84, y: card.minY + 14))
+        if let w = n.when {
+            let ws = attributed(w, font(18), rgb(0x8fa3b8))
+            ws.draw(at: NSPoint(x: card.maxX - 18 - size(ws, width: 200).width, y: card.minY + 18))
+        }
+        body.draw(in: NSRect(x: card.minX + 84, y: card.minY + 48, width: bsz.width + 4, height: bsz.height))
+        cy = card.maxY + 16
+    }
+    // Flashlight and camera buttons at the bottom corners.
+    for x in [screen.minX + 60, screen.maxX - 120] {
+        let b = NSRect(x: x, y: screen.maxY - 130, width: 60, height: 60)
+        rgb(0x1a2233, 0.9).setFill(); NSBezierPath(ovalIn: b).fill()
+    }
+} else {
 // Header: back arrow, avatar with the sender's first letter, name, detail line.
+let sender = spec.sender ?? ""
 attributed("‹", font(56, .regular), cyan, glow: cyan).draw(at: NSPoint(x: screen.minX + 26, y: screen.minY + 92))
 let avatar = NSRect(x: phone.midX - 42, y: screen.minY + 92, width: 84, height: 84)
 glow(magenta, 22) { NSGradient(colors: [magenta, rgb(0x6a2cff)])!.draw(in: NSBezierPath(ovalIn: avatar), angle: -60) }
-let initial = attributed(String(spec.sender.prefix(1)).uppercased(), font(40, .bold), .white, align: .center)
+let initial = attributed(String(sender.prefix(1)).uppercased(), font(40, .bold), .white, align: .center)
 let isz = size(initial, width: 84)
 initial.draw(in: NSRect(x: avatar.minX, y: avatar.midY - isz.height / 2, width: 84, height: isz.height))
-let name = attributed(spec.sender + "  ›", font(26, .semibold), .white, glow: cyan.withAlphaComponent(0.7), align: .center)
+let name = attributed(sender + "  ›", font(26, .semibold), .white, glow: cyan.withAlphaComponent(0.7), align: .center)
 name.draw(in: NSRect(x: screen.minX, y: avatar.maxY + 12, width: screen.width, height: 36))
 if let d = spec.detail {
     attributed(d, font(19), rgb(0x8fa3b8), align: .center).draw(in: NSRect(x: screen.minX, y: avatar.maxY + 48, width: screen.width, height: 26))
@@ -209,6 +252,7 @@ rgb(0x0e1422).setFill(); barPath.fill()
 cyan.withAlphaComponent(0.4).setStroke(); barPath.lineWidth = 1.5; barPath.stroke()
 attributed("Text Message", font(21), rgb(0x5e6e82)).draw(at: NSPoint(x: bar.minX + 22, y: bar.minY + 13))
 attributed("+", font(40, .light), cyan, glow: cyan).draw(at: NSPoint(x: screen.minX + 28, y: bar.minY - 1))
+}
 NSColor.white.withAlphaComponent(0.85).setFill()
 NSBezierPath(roundedRect: NSRect(x: phone.midX - 80, y: screen.maxY - 24, width: 160, height: 7), xRadius: 3.5, yRadius: 3.5).fill()
 NSGraphicsContext.restoreGraphicsState()   // the screen clip
