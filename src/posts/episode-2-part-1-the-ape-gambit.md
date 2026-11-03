@@ -98,6 +98,8 @@ Backwards bloom. Forward doom.
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-2-part-1.jpg" class="kg-image" alt="The Backwards bloom poster glued across the chalkboard menu outside a West Village tea house" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-2-part-1.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-2-part-1.jpg 1000w, /content/images/2026/11/sign-off-episode-2-part-1.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>West Village, morning.</em></figcaption></figure>
 
+*Next on The Genesis Address:*
+
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-2-part-2-the-ape-gambit/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 2 part 2: “The Ape Gambit™”</div><div class="kg-bookmark-description">Cold algorithms seduce with warm promises. In amber light and digital shadows, Sterling identifies the pattern: ice for science, honey for greed.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-2.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/the_ape_gambit.png" alt=""></div></a></figure>
 
 Have you met Kathy and Jack? They had a great time at a spring concert!

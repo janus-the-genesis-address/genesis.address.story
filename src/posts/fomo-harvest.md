@@ -7,11 +7,11 @@ feature_image: "/content/images/2025/11/tachyon_Cropped.png"
 topics: ["Episodes"]
 ---
 
-*previously on The Genesis Address...*
+> "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
+
+*Previously on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-4-part-2-the-concordance/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 4 part 2: “The Concordance”</div><div class="kg-bookmark-description">The Presidential Seal vanished, replaced by three interlocking circles. CONCORDANCE. “Protection through protocol,” Octavius intoned. In a West Village tea house, Sterling watched his stolen warnings become implementation</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-15.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/IMG_6844-1.JPG" alt=""></div></a></figure>
-
-> "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
 
 The Ape Gambit studio had been transformed. Gone was the casual setup from their first Janus interview. Tonight, the podcast occupied prime streaming space with production values that suggested serious money had found its way into Jake and his co-host Marcus's operation.
 
@@ -236,6 +236,8 @@ His phone buzzed again. More texts about crypto gains. But Jack turned it face d
 "Yeah," he said. "Perfect."
 
 <figure class="kg-card kg-image-card"><img src="/content/images/2025/11/BDFD.png" class="kg-image" alt="" loading="lazy" width="1660" height="958" srcset="/content/images/size/w600/2025/11/BDFD.png 600w, /content/images/size/w1000/2025/11/BDFD.png 1000w, /content/images/size/w1600/2025/11/BDFD.png 1600w, /content/images/2025/11/BDFD.png 1660w" sizes="(min-width: 720px) 720px"></figure>
+
+*Next on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-5-part-ii-the-distillation-begins/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 5 part II: “The Distillation Begins”</div><div class="kg-bookmark-description">In “FOMO Harvest,” $TACHYON surges to impossible highs as “It’s the TEC” grips society. Sterling uncovers dark secrets in the code, while Jack battles regret amid universal gains. Janus’s harvest looms—will resisters break? Dystopian crypto thriller escalates!</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-17.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/alley.png" alt=""></div></a></figure>
 

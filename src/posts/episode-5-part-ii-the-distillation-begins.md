@@ -9,7 +9,7 @@ topics: ["Episodes"]
 
 > "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
 
-Previously on The Genesis Address
+*Previously on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/fomo-harvest/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 5 part I: “The FOMO Harvest”</div><div class="kg-bookmark-description">In “The FOMO Harvest,” the Alembic Protocol launches live on Ape Gambit podcast, sending Tachyon Token ($TACHYON) skyrocketing 600% in an hour. Amid hype and “It’s the TEC” frenzy, Jack resists FOMO, choosing real-life adventure over crypto gains. A thrilling crypto revolution begins! (214 chars)</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-16.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/tachyon_Cropped.png" alt=""></div></a></figure>
 

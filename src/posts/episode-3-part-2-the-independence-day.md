@@ -11,7 +11,7 @@ featured: true
 
 > "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
 
-*previously on The Genesis Address*
+*Previously on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/the-independence-day/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 3 Part 1: “The Independence Day”</div><div class="kg-bookmark-description">“They were making it up as they went along,” the guide explained. “No instruction manual for creating a democracy. They just had to figure it out together.” Jack found himself thinking about his own life—the past two years of uncertainty, of somehow finding his way to this moment with Kathy.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-14.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/a201103a-db5c-4f97-8eb2-6fd4cb91e52d-1.jpg" alt=""></div></a></figure>
 
@@ -206,5 +206,7 @@ Inside his apartment, unpacking beach towels and sandy clothes, he found the foa
 Backwards bloom. Forward doom.  
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-3-part-2.jpg" class="kg-image" alt="The Backwards bloom poster glued to a Skee-ball machine on a boardwalk while fireworks burst over the ocean" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-3-part-2.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-3-part-2.jpg 1000w, /content/images/2026/11/sign-off-episode-3-part-2.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Ocean City, fireworks night.</em></figcaption></figure>
+
+*Next on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-4-part-1-the-rise/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 4 part 1: “The Rise”</div><div class="kg-bookmark-description">For the people,” Brannon declared. “Every policy protects ordinary Americans from market chaos.” The rally erupted: “Concord! Concord! Concord!” Columbus—the ultimate swing state—had spoken. They wanted order.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-13.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/The-Concordance-Seal-2.jpeg" alt=""></div></a></figure>

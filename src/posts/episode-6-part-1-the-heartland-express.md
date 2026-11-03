@@ -11,7 +11,7 @@ topics: ["Episodes"]
 
 > "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
 
-Previously on The Genesis Address
+*Previously on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-5-part-ii-the-distillation-begins/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 5 part II: “The Distillation Begins”</div><div class="kg-bookmark-description">In “FOMO Harvest,” $TACHYON surges to impossible highs as “It’s the TEC” grips society. Sterling uncovers dark secrets in the code, while Jack battles regret amid universal gains. Janus’s harvest looms—will resisters break? Dystopian crypto thriller escalates!</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-17.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/alley.png" alt=""></div></a></figure>
 

@@ -12,7 +12,7 @@ topics: ["Episodes"]
 
 ---
 
-previously on ¨The Genesis Address¨….
+*Previously on The Genesis Address:*
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-2-part-1-the-ape-gambit/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 2 part 1: “The Ape Gambit™”</div><div class="kg-bookmark-description">Frantic FOMO disrupts the tranquility of a quiet tea service. Another investor becomes mash for the alembic.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/favicon.ico" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/the_colonial_leaves_specials.png" alt=""></div></a></figure>
 
