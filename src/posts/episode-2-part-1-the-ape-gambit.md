@@ -14,7 +14,7 @@ topics: ["Episodes"]
 
 *Previously on The Genesis Address:*
 
-<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-1-the-concert/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 1: The Concert</div><div class="kg-bookmark-description">perfect concert during a spring evening</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-3.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/episode-1-park-entrance.jpg" alt=""></div></a></figure>
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-1-the-concert/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 1: The Concert</div><div class="kg-bookmark-description">perfect concert during a spring evening</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-3.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/episode-1-walk-to-the-stadium.jpg" alt=""></div></a></figure>
 
 ---
 
@@ -104,6 +104,6 @@ Backwards bloom. Forward doom.
 
 Have you met Kathy and Jack? They had a great time at a spring concert!
 
-<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-1-the-concert/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 1: The Concert</div><div class="kg-bookmark-description">perfect concert during a spring evening</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-3.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/episode-1-park-entrance.jpg" alt=""></div></a></figure>
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-1-the-concert/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 1: The Concert</div><div class="kg-bookmark-description">perfect concert during a spring evening</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-3.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/episode-1-walk-to-the-stadium.jpg" alt=""></div></a></figure>
 
 The Genesis Address is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.

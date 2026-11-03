@@ -3,9 +3,9 @@ title: "Episode 1: The Concert"
 date: "2025-07-31T08:32:46.000Z"
 updated: "2025-09-19T19:04:00.000Z"
 excerpt: "perfect concert during a spring evening "
-feature_image: "/content/images/2026/11/episode-1-park-entrance.jpg"
-feature_image_caption: "<em>Jack captures the carnival entrance after the concert at Hershey Stadium,</em>"
-feature_image_alt: "The neon ENTRANCE gate of an amusement park at night, roller coasters and a Ferris wheel behind the bars, with the Backwards bloom poster on the left brick pillar"
+feature_image: "/content/images/2026/11/episode-1-walk-to-the-stadium.jpg"
+feature_image_caption: "<em>Hershey, the walk to the show.</em>"
+feature_image_alt: "Jack tugging at his collar and Kathy in a blue sundress walking under chocolate-drop streetlamps toward the glowing stadium lights at sunset"
 topics: ["Episodes"]
 featured: true
 ---
@@ -76,6 +76,8 @@ Then came the final song—the one everyone had been waiting for.
 
 The instantly recognizable synthesizer intro filled the stadium, and forty thousand voices rose as one. Kathy turned to him with pure joy lighting up her face, and something shifted in the space between them. The crowd's energy seemed to lift them both, the music wrapping around them like a promise.
 
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/episode-1-last-song.jpg" class="kg-image" alt="Kathy in a blue sundress reaching for Jack&#39;s hand in a singing stadium crowd at dusk, the stage blazing cyan and magenta behind them" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/episode-1-last-song.jpg 600w, /content/images/size/w1000/2026/11/episode-1-last-song.jpg 1000w, /content/images/2026/11/episode-1-last-song.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Hershey Stadium, the last song.</em></figcaption></figure>
+
 "Take my hand," she said, reaching out to him with a smile that made his chest tight. He wasn't sure if she meant for the song or something more, but he took it anyway, their fingers intertwining.
 
 The stadium became a sea of swaying bodies and raised hands, everyone united in this moment of pure rock and roll magic. Jack felt the music in his bones, felt the crowd's energy coursing through him, felt the weight of two years of doubt and struggle beginning to lift from his shoulders.
@@ -99,6 +101,8 @@ As the final notes rang out and the stadium erupted in applause, Jack pulled her
 As they reached the car, Jack looked back at the stadium's fading lights and felt something shift inside him. *Perhaps tonight wasn't an ending,* he thought, *but a beginning.* Tomorrow the sun would rise on a future brighter than any he'd dared imagine—a future that suddenly felt possible with Kathy’s hand warm in his.
 
 Backwards bloom. Forward doom.
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-1.jpg" class="kg-image" alt="The Backwards bloom poster on the brick pillar of a neon amusement park gate at night, roller coasters and a Ferris wheel behind the bars" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-1.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-1.jpg 1000w, /content/images/2026/11/sign-off-episode-1.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Hershey, after the concert.</em></figcaption></figure>
 
 *Next on The Genesis Address:*
 
