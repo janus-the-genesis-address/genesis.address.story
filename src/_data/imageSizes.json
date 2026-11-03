@@ -210,5 +210,14 @@
       1200
     ],
     "width": 1712
+  },
+  "/content/images/2026/11/pikes-peak-summit.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
   }
 }

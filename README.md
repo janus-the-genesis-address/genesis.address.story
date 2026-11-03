@@ -15,7 +15,7 @@ The Genesis Address is a work of fiction. Its tokens, protocols, companies, peop
 ## Posts
 
 <!-- posts:start -->
-Latest post: [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/), 2026-11-02.
+Latest post: [Episode 6 part 2: "The Summit"](https://www.thegenesisaddress.ai/episode-6-part-2-the-summit/), 2026-11-03.
 
 ### Episodes
 
@@ -29,6 +29,7 @@ Latest post: [A Citizen's Guide to the Concordance](https://www.thegenesisaddres
 - [Episode 5 part I: "The FOMO Harvest"](https://www.thegenesisaddress.ai/fomo-harvest/) (2025-11-12)
 - [Episode 5 part II: "The Distillation Begins"](https://www.thegenesisaddress.ai/episode-5-part-ii-the-distillation-begins/) (2025-11-21)
 - [Episode 6 part 1: "The Heartland Express"](https://www.thegenesisaddress.ai/episode-6-part-1-the-heartland-express/) (2026-11-01)
+- [Episode 6 part 2: "The Summit"](https://www.thegenesisaddress.ai/episode-6-part-2-the-summit/) (2026-11-03)
 
 ### Characters
 

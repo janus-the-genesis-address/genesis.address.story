@@ -17,6 +17,8 @@
 // "sender" and "messages" and give "date" (optional) and "notifications":
 //   { "time": "6:42", "date": "Tuesday, August 15",
 //     "notifications": [ { "sender": "Sister", "text": "Jack, please tell me...", "when": "6:20 AM" } ] }
+// Add "camera": true and "background": "photo.jpg" to show the notification as a banner over the
+// camera, with the photo filling the screen and a shutter button instead of the clock.
 import AppKit
 import Foundation
 
@@ -37,6 +39,8 @@ struct Spec: Decodable {
     let date: String?
     let messages: [Message]?
     let notifications: [Note]?
+    let background: String?
+    let camera: Bool?
 }
 
 let spec = try JSONDecoder().decode(Spec.self, from: Data(contentsOf: URL(fileURLWithPath: args[1])))
@@ -158,14 +162,23 @@ green.setFill(); NSBezierPath(roundedRect: battery.insetBy(dx: 4, dy: 4), xRadiu
 NSColor.white.setFill(); NSBezierPath(roundedRect: NSRect(x: battery.maxX + 3, y: battery.midY - 4, width: 3, height: 8), xRadius: 1, yRadius: 1).fill()
 
 if let notes = spec.notifications {
+    let camera = spec.camera ?? false
+    if let bg = spec.background, let photo = NSImage(contentsOfFile: bg) {
+        // Fill the screen with the photo, cropped to fit, and darken it a little so the banner reads.
+        let ps = photo.size, scale = max(screen.width / ps.width, screen.height / ps.height)
+        let dw = ps.width * scale, dh = ps.height * scale
+        photo.draw(in: NSRect(x: screen.midX - dw / 2, y: screen.midY - dh / 2, width: dw, height: dh),
+                   from: .zero, operation: .sourceOver, fraction: 1, respectFlipped: true, hints: nil)
+        NSGradient(colors: [rgb(0x000000, 0.55), rgb(0x000000, 0), rgb(0x000000, 0), rgb(0x000000, 0.6)])!.draw(in: screen, angle: -90)
+    }
     // Lock screen: big clock, the date, then one glowing card per text, newest first.
     let clock = attributed(spec.time, font(120, .semibold), .white, glow: cyan.withAlphaComponent(0.8), align: .center)
     let csz = size(clock, width: screen.width)
-    if let d = spec.date {
+    if let d = spec.date, !camera {
         attributed(d, font(26, .medium), rgb(0xcfe9f5), align: .center).draw(in: NSRect(x: screen.minX, y: screen.minY + 100, width: screen.width, height: 34))
     }
-    clock.draw(in: NSRect(x: screen.minX, y: screen.minY + 132, width: screen.width, height: csz.height))
-    var cy = screen.minY + 132 + csz.height + 40
+    if !camera { clock.draw(in: NSRect(x: screen.minX, y: screen.minY + 132, width: screen.width, height: csz.height)) }
+    var cy = camera ? screen.minY + 84 : screen.minY + 132 + csz.height + 40
     for (i, n) in notes.enumerated() {
         let edge = i % 2 == 0 ? cyan : magenta
         let body = attributed(n.text, font(23), rgb(0xdcfbff))
@@ -186,8 +199,14 @@ if let notes = spec.notifications {
         body.draw(in: NSRect(x: card.minX + 84, y: card.minY + 48, width: bsz.width + 4, height: bsz.height))
         cy = card.maxY + 16
     }
+    if camera {
+        // The shutter button.
+        let ring = NSRect(x: phone.midX - 46, y: screen.maxY - 150, width: 92, height: 92)
+        NSColor.white.setStroke(); let rp = NSBezierPath(ovalIn: ring); rp.lineWidth = 5; rp.stroke()
+        NSColor.white.withAlphaComponent(0.92).setFill(); NSBezierPath(ovalIn: ring.insetBy(dx: 9, dy: 9)).fill()
+    }
     // Flashlight and camera buttons at the bottom corners.
-    for x in [screen.minX + 60, screen.maxX - 120] {
+    for x in (camera ? [] : [screen.minX + 60, screen.maxX - 120]) {
         let b = NSRect(x: x, y: screen.maxY - 130, width: 60, height: 60)
         rgb(0x1a2233, 0.9).setFill(); NSBezierPath(ovalIn: b).fill()
     }
