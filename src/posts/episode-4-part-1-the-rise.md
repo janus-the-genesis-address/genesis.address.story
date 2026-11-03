@@ -156,11 +156,13 @@ Sterling arranged his tulips with careful attention.
 
 … to be continued.
 
-<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-4-part-2-the-concordance/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 4 part 2: “The Concordance”</div><div class="kg-bookmark-description">The Presidential Seal vanished, replaced by three interlocking circles. CONCORDANCE. “Protection through protocol,” Octavius intoned. In a West Village tea house, Sterling watched his stolen warnings become implementation</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-12.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/IMG_6844.JPG" alt=""></div></a></figure>
-
 Backwards bloom. Forward doom.
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-4-part-1.jpg" class="kg-image" alt="The Backwards bloom poster pasted over a wall of From Chaos, Concord campaign posters at night" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-4-part-1.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-4-part-1.jpg 1000w, /content/images/2026/11/sign-off-episode-4-part-1.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Columbus, after the rally.</em></figcaption></figure>
+
+*Next on The Genesis Address:*
+
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-4-part-2-the-concordance/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 4 part 2: “The Concordance”</div><div class="kg-bookmark-description">The Presidential Seal vanished, replaced by three interlocking circles. CONCORDANCE. “Protection through protocol,” Octavius intoned. In a West Village tea house, Sterling watched his stolen warnings become implementation</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-12.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/IMG_6844.JPG" alt=""></div></a></figure>
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/brannon/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Brannon</div><div class="kg-bookmark-description">He provides pseudo-intellectual framework</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-6.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/9566d898-d447-462c-bf8a-e79164e63e5e.jpg" alt=""></div></a></figure>
 
