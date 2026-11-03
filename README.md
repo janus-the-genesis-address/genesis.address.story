@@ -40,7 +40,7 @@ Latest post: [Episode 6 part 2: "The Summit"](https://www.thegenesisaddress.ai/e
 - [President Octavius](https://www.thegenesisaddress.ai/president-octavius/) (2025-09-19)
 - [Brannon](https://www.thegenesisaddress.ai/brannon/) (2025-09-19)
 
-### World
+### TGA Universe
 
 - [Alembic Protocol White Paper](https://www.thegenesisaddress.ai/alembic-protocol/) (2025-07-30)
 - [Glossary](https://www.thegenesisaddress.ai/glossary/) (2026-11-02)

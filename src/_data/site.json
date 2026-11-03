@@ -26,7 +26,7 @@
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },
     { "label": "Characters", "url": "/characters/" },
-    { "label": "World", "url": "/world/" },
+    { "label": "TGA Universe", "url": "/world/" },
     { "label": "Media", "url": "/media/" },
     { "label": "Extras", "url": "/extras/" },
     { "label": "Support", "url": "/support/" },
@@ -35,14 +35,14 @@
   "llmsSections": [
     { "name": "Episodes", "note": "Read in this order.", "topics": ["episodes"] },
     { "name": "Characters", "note": "Spoiler-free profiles.", "topics": ["characters"] },
-    { "name": "World", "note": "The story's world: a glossary of its terms, and documents from inside it.", "topics": ["world"] },
+    { "name": "TGA Universe", "note": "The story's world: a glossary of its terms, and documents from inside it.", "topics": ["world"] },
     { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional.", "topics": ["extras"] },
     { "name": "Legal and FAQ", "note": "", "topics": ["legal", "faq"] }
   ],
   "sections": [
     { "name": "Episodes", "slug": "episodes", "readingOrder": true },
     { "name": "Characters", "slug": "characters" },
-    { "name": "World", "slug": "world" },
+    { "name": "TGA Universe", "slug": "world" },
     { "name": "Extras", "slug": "extras" }
   ]
 }

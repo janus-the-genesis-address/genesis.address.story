@@ -12,7 +12,8 @@ if (!existsSync(new URL(`./src/_includes/themes/${theme}/base.njk`, import.meta.
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: site.timezone });
 const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
-const topicName = (name) => name[0].toUpperCase() + name.slice(1);
+// A topic shows under its section's name when it has one, so "World" posts read "TGA Universe" while their address stays /world/.
+const topicName = (name) => site.sections.find((section) => section.slug === slugify(name))?.name || name[0].toUpperCase() + name.slice(1);
 
 function signupCard() {
   return `<div class="kg-card genesis-signup">
@@ -87,7 +88,7 @@ const mediaSections = [
   { slug: "episodes", name: "Episodes", perPost: true },
   { slug: "bloom", name: "Backwards bloom", note: "Every part ends with the same poster, glued somewhere in that part's world. Here is the poster, then every place it has turned up so far." },
   { slug: "characters", name: "Characters" },
-  { slug: "world", name: "World", perPost: true },
+  { slug: "world", name: "TGA Universe", perPost: true },
   { slug: "extras", name: "Extras", perPost: true },
 ];
 
