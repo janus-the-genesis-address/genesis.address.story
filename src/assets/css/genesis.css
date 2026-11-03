@@ -431,28 +431,6 @@
 }
 
 /* The Media page: a grid of thumbnails that opens the theme's full-screen viewer. */
-.genesis-media-intro {
-    max-width: 720px;
-    margin: 0 auto;
-    text-align: center;
-    font-family: var(--genesis-font-body);
-    font-size: var(--genesis-body-size);
-    line-height: var(--genesis-body-line-height);
-    color: var(--genesis-blue);
-}
-.genesis-media-intro p { margin: 0 0 16px; }
-.genesis-media-intro a:not(.gh-btn) { text-decoration: underline; }
-.genesis-media-jump {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 8px 24px;
-    margin: 24px 0 8px;
-    font-family: var(--genesis-font-heading);
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.02em;
-}
 .genesis-media-section { margin-top: 48px; scroll-margin-top: 24px; }
 .genesis-media-heading {
     margin: 0 0 8px;

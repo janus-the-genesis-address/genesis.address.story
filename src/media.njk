@@ -7,16 +7,6 @@ excerpt: "Every picture from The Genesis Address in one place, with the episode 
 eleventyExcludeFromCollections: true
 ---
 {%- set library = collections.posts | mediaLibrary %}
-        <div class="genesis-media-intro">
-            <p><a class="gh-btn genesis-signup-button" href="{{ site.subscribeUrl }}">Get new episodes by email</a></p>
-        </div>
-
-        <nav class="genesis-media-jump">
-            {%- for section in library %}
-            <a href="#{{ section.slug }}">{{ section.name }}</a>
-            {%- endfor %}
-        </nav>
-
         {%- for section in library %}
         <section class="genesis-media-section" id="{{ section.slug }}">
             <h2 class="genesis-media-heading">{{ section.name }}</h2>
