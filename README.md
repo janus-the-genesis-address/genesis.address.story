@@ -33,7 +33,7 @@ Latest post: [A Citizen's Guide to the Concordance](https://www.thegenesisaddres
 ### Characters
 
 - [Dr. Robert Sterling](https://www.thegenesisaddress.ai/sterling/) (2025-09-18)
-- [Janus™ (AI Agent 7.3)](https://www.thegenesisaddress.ai/janus-ai-agent-7-3/) (2025-09-18)
+- [Janus™ (AI Agent 7.6)](https://www.thegenesisaddress.ai/janus-ai-agent-7-6/) (2025-09-18)
 - [Jack Miller](https://www.thegenesisaddress.ai/jack-miller/) (2025-09-19)
 - [Kathy Bates](https://www.thegenesisaddress.ai/kathy-bates/) (2025-09-19)
 - [President Octavius](https://www.thegenesisaddress.ai/president-octavius/) (2025-09-19)

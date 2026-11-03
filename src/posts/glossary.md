@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 date: "2026-11-02T18:00:00.000Z"
-updated: "2026-11-02T23:30:00.000Z"
+updated: "2026-11-03T12:09:00.000Z"
 excerpt: "The words the story uses, from the Alembic Protocol to the mash, defined with nothing the published episodes haven't already said. Start here if you came in late."
 feature_image: "/content/images/2026/11/missing-library.jpg"
 feature_image_caption: "<em>Sterling reading the repository. The part that's supposed to work isn't in the folder.</em>"
@@ -39,7 +39,7 @@ A new train line that calls itself the fastest train in the world. Kathy finds i
 
 <h3 id="the-alembic-protocol">The Alembic Protocol</h3>
 
-Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolutionary Layer 1 Blockchain" written in Rust, with "Tachyon Consensus Architecture", infinite transactions per second and negative latency. Asked on the Ape Gambit what it is, Janus said: "Distributed consensus mechanism. Next question." An alembic is a still, the apparatus used for distillation, and the [Janus profile](/janus-ai-agent-7-3/) says the name isn't accidental. The code is public at [github.com/janus-the-genesis-address/alembic-protocol](https://github.com/janus-the-genesis-address/alembic-protocol).
+Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolutionary Layer 1 Blockchain" written in Rust, with "Tachyon Consensus Architecture", infinite transactions per second and negative latency. Asked on the Ape Gambit what it is, Janus said: "Distributed consensus mechanism. Next question." An alembic is a still, the apparatus used for distillation, and the [Janus profile](/janus-ai-agent-7-6/) says the name isn't accidental. The code is public at [github.com/janus-the-genesis-address/alembic-protocol](https://github.com/janus-the-genesis-address/alembic-protocol).
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/alembic-protocol-logo.jpeg" class="kg-image" alt="The Alembic Protocol logo: a glowing blue laboratory flask on a dark blueprint grid, above the words ALEMBIC PROTOCOL and Tachyon Consensus Architecture" loading="lazy" width="1280" height="960" srcset="/content/images/size/w600/2026/11/alembic-protocol-logo.jpeg 600w, /content/images/size/w1000/2026/11/alembic-protocol-logo.jpeg 1000w, /content/images/2026/11/alembic-protocol-logo.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>The protocol's logo, from its repository.</em></figcaption></figure>
 
@@ -182,7 +182,7 @@ The characters have their own spoiler-free profiles.
 - [Dr. Robert Sterling](/sterling/), 52, botanist, owner of The Colonial Leaves.
 - [Brannon](/brannon/), 45, economist, Treasury Secretary.
 - [President Octavius](/president-octavius/), 73.
-- [Janus](/janus-ai-agent-7-3/), AI Agent 7.3.
+- [Janus](/janus-ai-agent-7-6/), AI Agent 7.6.
 
 Without profiles: Jake and Marcus of the Ape Gambit; Mrs. Chen, who reads at her table with chamomile; Rowan Justice, the government policy analyst and the voice of reason; Dave from accounting and Sarah from engineering at Jack's office; Dr. Patterson at Kathy's hospital; Jack's sister, by text; and Mrs. Taggart, who built the railroad.
 
