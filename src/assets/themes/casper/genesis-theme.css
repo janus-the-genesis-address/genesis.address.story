@@ -86,10 +86,23 @@ html.dark-mode .post-card-image-link {
     object-position: center 10%;
 }
 
-/* One width for the title, text, feature picture, inline pictures and link cards. Casper's default is 720px;
-   everything in the story column follows this value. */
+/* One width for the whole site: the header, the home page's grid, the footer, the legal notice, and the story's
+   title, text, pictures and link cards. Casper's defaults are 1200px for the frame and 720px for the story. */
+:root {
+    --genesis-column: 1080px;
+}
 .gh-canvas {
-    --content-width: 1080px;
+    --content-width: var(--genesis-column);
+}
+.inner {
+    max-width: var(--genesis-column);
+}
+.legal-disclaimer .company-info {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: var(--genesis-column);
+    margin-left: auto;
+    margin-right: auto;
 }
 /* Casper caps the subtitle at 720px; let it fill the column like everything else. */
 .article-excerpt {
@@ -106,4 +119,23 @@ html.dark-mode .post-card-image-link {
     height: auto;
     max-height: 760px;
     object-fit: contain;
+}
+
+/* The header now shares the 1080px frame with the logo and the Subscribe button. Casper leaves 80px of extra margin
+   beside the menu, which pushed the last menu items behind its "..." button, so that margin, the spaces between
+   the items and the logo size are trimmed a little on desktop widths. */
+@media (min-width: 992px) {
+    .gh-head-inner {
+        column-gap: 32px;
+    }
+    .gh-head-logo {
+        font-size: 24px;
+    }
+    .is-head-left-logo .gh-head-menu {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .gh-head-menu .nav {
+        gap: 18px;
+    }
 }
