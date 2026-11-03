@@ -163,7 +163,11 @@ Kathy said nothing, and didn't look at him.
 
 Mrs. Taggart sent them forward for the mountains. "You want the front of a train for those," she said.
 
-The land began to lift, and for the first time since Pennsylvania the train slowed. Jack's phone buzzed. His sister: a screenshot of a number with a lot of digits in it, and under it, *It's the TEC.* Then a news alert, $TACHYON through $450. Then the chart.
+The land began to lift, and for the first time since Pennsylvania the train slowed. Jack's phone buzzed. His sister.
+
+<figure class="kg-card kg-image-card genesis-narrow"><img src="/content/images/2026/11/phone-sister-train.jpg" class="kg-image" alt="A text on Jack's phone from his sister: a screenshot of a green line running off the top of the chart, PORTFOLIO VALUE $1,204,881.53. Then: It's the TEC." loading="lazy" width="900" height="1200" srcset="/content/images/size/w600/2026/11/phone-sister-train.jpg 600w, /content/images/2026/11/phone-sister-train.jpg 900w" sizes="(min-width: 720px) 480px"></figure>
+
+Then a news alert, $TACHYON through $450. Then the chart.
 
 "Jack."
 

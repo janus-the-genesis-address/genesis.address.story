@@ -9,6 +9,7 @@
     "readme": "node scripts/update-readme.mjs",
     "poster": "swift scripts/paste-poster.swift",
     "poster-line": "swift scripts/fix-poster-line.swift",
+    "phone": "swift scripts/phone-message.swift",
     "themes": "node scripts/build-themes.mjs"
   },
   "devDependencies": {
