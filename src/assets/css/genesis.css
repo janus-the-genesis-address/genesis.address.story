@@ -410,6 +410,57 @@
     }
 }
 
+/* Tables, such as the white paper's: the full column, amber headings and cyan cells, instead of the theme's grey.
+   :not(#_) only lifts these rules above the themes' own table rules. */
+.gh-content table:not(#_) {
+    display: table;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    border-collapse: collapse;
+    background: none;
+    font-family: var(--genesis-font-heading);
+    font-size: 15px;
+    line-height: 1.45;
+}
+.gh-content table:not(#_) th,
+.gh-content table:not(#_) td {
+    padding: 8px 12px;
+    border: 1px solid var(--genesis-notice-border);
+    background: none;
+    text-align: left;
+    vertical-align: top;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+.gh-content table:not(#_) th {
+    color: var(--genesis-amber);
+    background: var(--genesis-code-bg);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+.gh-content table:not(#_) td {
+    color: var(--genesis-blue);
+}
+.gh-content table:not(#_) td code {
+    overflow-wrap: anywhere;
+}
+/* Phones: a table too wide for the column scrolls sideways instead of splitting words. */
+@media (max-width: 500px) {
+    .gh-content table:not(#_) {
+        display: block;
+        overflow-x: auto;
+        font-size: 13px;
+        scrollbar-color: rgba(10, 189, 198, 0.5) var(--genesis-code-bg);
+    }
+    .gh-content table:not(#_) th,
+    .gh-content table:not(#_) td {
+        padding: 6px 8px;
+    }
+}
+
 /* In-story receipts. */
 .gh-content pre.receipt {
     width: fit-content;

@@ -45,7 +45,7 @@ Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolution
 
 <h3 id="the-white-paper">The white paper</h3>
 
-"Alembic Protocol: A Revolutionary Layer 1 Blockchain, Technical Whitepaper v1.1", author Janus, date redacted. It promises faster-than-light transaction processing, block candidates that "travel backward through time" and "negative-time finality", and it cites real physics papers to do it. It is published here as an extra, with its own disclaimer, and Mrs. Taggart has read it: "I read anything people want me to put money in."
+"Alembic Protocol: A Revolutionary Layer 1 Blockchain, Technical Whitepaper v1.1", author Janus, date redacted. It promises faster-than-light transaction processing, block candidates that "travel backward through time" and "negative-time finality", and it cites real physics papers to do it. It is published here in full, with a fiction note at the end, and Mrs. Taggart has read it: "I read anything people want me to put money in."
 
 <h3 id="tachyon">Tachyon</h3>
 
