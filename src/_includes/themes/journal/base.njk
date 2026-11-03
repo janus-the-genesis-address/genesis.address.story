@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head-meta.njk" %}
+    <link rel="stylesheet" href="/assets/themes/journal/built/screen.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/cards.min.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/genesis.css">
+    <link rel="stylesheet" href="/assets/themes/journal/genesis-theme.css">
+{% include "head-schema.njk" %}
+</head>
+<body class="{{ bodyClass or 'paged' }} is-head-stacked has-serif-body">
+<div class="gh-site">
+
+    <header id="gh-head" class="gh-head gh-outer">
+        <div class="gh-head-inner gh-inner">
+            <div class="gh-head-brand">
+                <div class="gh-head-brand-wrapper">
+                    <a class="gh-head-logo" href="/">{{ site.title }}</a>
+                </div>
+                <button class="gh-burger" aria-label="Toggle menu"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+                    {%- for item in site.nav %}
+                    <li class="nav-{{ item.label | lower }}{% if page.url == item.url %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+
+            <div class="gh-head-actions">
+                <div class="gh-head-members">
+                    <a class="gh-head-btn gh-btn gh-primary-btn" href="{{ site.subscribeUrl }}">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <div class="gh-subscribe">
+        <div class="gh-outer">
+            <section class="gh-subscribe-inner">
+                <h3 class="gh-subscribe-title">Subscribe to {{ site.title }}</h3>
+                <div class="gh-subscribe-description">Get new episodes by email. Free, like everything here.</div>
+                <a class="gh-btn genesis-signup-button" href="{{ site.subscribeUrl }}">Subscribe on Substack</a>
+            </section>
+        </div>
+    </div>
+
+    <footer class="gh-foot gh-outer">
+        <div class="gh-foot-inner gh-inner">
+            <div class="gh-copyright">{{ site.title }} © {{ buildYear }}</div>
+            <div class="gh-foot-center">
+                <nav class="gh-foot-menu">
+                    <ul class="nav">
+                        <li class="nav-sign-up"><a href="{{ site.subscribeUrl }}">Sign up</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+{% include "pswp.njk" %}
+
+<script src="/assets/themes/journal/built/main.min.js"></script>
+{% include "site-end.njk" %}
+</body>
+</html>

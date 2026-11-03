@@ -1,0 +1,16 @@
+<article class="gh-card post">
+    <a class="gh-card-link" href="{{ post.url }}">
+        <figure class="gh-card-image">
+            {% if post.data.feature_image %}
+            <img srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
+            {% endif %}
+        </figure>
+        <div class="gh-card-wrapper">
+            <h2 class="gh-card-title">{{ post.data.title }}</h2>
+            <footer class="gh-card-meta">
+                <time class="gh-card-date" datetime="{{ post.date | isoDay }}">{{ post.date | displayDate }}</time>
+                <span class="gh-card-length">{{ post.content | readingTime }} min read</span>
+            </footer>
+        </div>
+    </a>
+</article>

@@ -1,0 +1,51 @@
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <section class="gh-topic gh-topic-grid">
+            <h2 class="gh-topic-name"><a href="/all/">Latest</a></h2>
+            <div class="gh-topic-content">
+                {%- for post in collections.posts | batch(7) | first %}
+                {% set large = loop.first %}{% set showExcerpt = loop.first %}
+                {% include "themes/headline/card.njk" %}
+                {%- endfor %}
+            </div>
+            <footer class="gh-topic-footer">
+                <a class="gh-topic-link" href="/all/">Show more {% include "themes/headline/icon-arrow.njk" %}</a>
+            </footer>
+        </section>
+
+        {%- for topic in collections.topics | batch(4) | first %}
+        <section class="gh-topic gh-topic-grid">
+            <h2 class="gh-topic-name"><a href="/tag/{{ topic.slug }}/">{{ topic.name }}</a></h2>
+            <div class="gh-topic-content">
+                {%- for post in topic.posts | batch(7) | first %}
+                {% set large = loop.first %}{% set showExcerpt = loop.first %}
+                {% include "themes/headline/card.njk" %}
+                {%- endfor %}
+            </div>
+            <footer class="gh-topic-footer">
+                <a class="gh-topic-link" href="/tag/{{ topic.slug }}/">Show more {% include "themes/headline/icon-arrow.njk" %}</a>
+            </footer>
+        </section>
+        {%- endfor %}
+
+        <div class="gh-topic-list">
+            {%- for topic in collections.topics %}
+            {%- if loop.index > 4 %}
+            <section class="gh-topic gh-topic-minimal">
+                <header class="gh-topic-header">
+                    <h2 class="gh-topic-name"><a href="/tag/{{ topic.slug }}/">{{ topic.name }}</a></h2>
+                    <a class="gh-topic-link" href="/tag/{{ topic.slug }}/">More {% include "themes/headline/icon-arrow.njk" %}</a>
+                </header>
+                <div class="gh-topic-content">
+                    {%- for post in topic.posts | batch(5) | first %}
+                    <article class="gh-card post">
+                        <a class="gh-card-link" href="{{ post.url }}"><h3 class="gh-card-title">{{ post.data.title }}</h3></a>
+                    </article>
+                    {%- endfor %}
+                </div>
+            </section>
+            {%- endif %}
+            {%- endfor %}
+        </div>
+    </div>
+</main>

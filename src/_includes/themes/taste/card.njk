@@ -1,0 +1,19 @@
+<article class="gh-list-item post">
+    <a class="gh-list-item-inner" href="{{ post.url }}">
+        {% if post.data.feature_image %}
+        <figure class="gh-list-item-image">
+            <img srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
+        </figure>
+        {% endif %}
+        <div class="gh-list-item-content">
+            {% if post.data.topics and post.data.topics.length %}
+            <span class="gh-list-item-primary-tag">{{ post.data.topics[0] }}</span>
+            {% endif %}
+            <h3 class="gh-list-item-title">{{ post.data.title }}</h3>
+            {% if post.data.excerpt and showExcerpt %}
+            <p class="gh-list-item-excerpt">{{ post.data.excerpt | trimText }}</p>
+            {% endif %}
+            <span class="gh-list-item-published-at">{{ post.date | displayDate }}</span>
+        </div>
+    </a>
+</article>

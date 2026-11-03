@@ -1,0 +1,19 @@
+---
+layout: base.njk
+bodyClass: page-template
+---
+<main class="gh-main">
+    <article class="gh-article page">
+        <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title is-title">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="gh-article-excerpt is-body">{{ excerpt | trimText }}</p>
+            {% endif %}
+            {% include "themes/source/feature-image.njk" %}
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            {{ content | safe }}
+        </section>
+    </article>
+</main>

@@ -8,7 +8,8 @@
     "images": "python3 scripts/make-image-sizes.py",
     "readme": "node scripts/update-readme.mjs",
     "poster": "swift scripts/paste-poster.swift",
-    "poster-line": "swift scripts/fix-poster-line.swift"
+    "poster-line": "swift scripts/fix-poster-line.swift",
+    "themes": "node scripts/build-themes.mjs"
   },
   "devDependencies": {
     "@11ty/eleventy": "3.1.7",

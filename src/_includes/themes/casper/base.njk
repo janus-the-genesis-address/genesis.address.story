@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+{% include "head-meta.njk" %}
+    <link rel="stylesheet" href="/assets/themes/casper/built/screen.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/cards.min.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/genesis.css">
+    <link rel="stylesheet" href="/assets/themes/casper/genesis-theme.css">
+{% include "head-schema.njk" %}
+</head>
+<body class="{{ bodyClass or 'page-template' }}{% if authorHead %} author-template{% endif %} is-head-left-logo has-cover">
+<div class="viewport">
+
+    <header id="gh-head" class="gh-head outer">
+        <div class="gh-head-inner inner">
+            <div class="gh-head-brand">
+                <a class="gh-head-logo no-image" href="/">{{ site.title }}</a>
+                <button class="gh-burger" aria-label="Main Menu"></button>
+            </div>
+
+            <nav class="gh-head-menu">
+                <ul class="nav">
+                    {%- for item in site.nav %}
+                    <li class="nav-{{ item.label | lower }}{% if page.url == item.url %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+
+            <div class="gh-head-actions">
+                <div class="gh-head-members">
+                    <a class="gh-head-button genesis-signup-button" href="{{ site.subscribeUrl }}">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-content">
+        {{ content | safe }}
+    </div>
+
+    <footer class="site-footer outer">
+        <div class="inner">
+            <section class="copyright"><a href="/">{{ site.title }}</a> &copy; {{ buildYear }}</section>
+            <nav class="site-footer-nav">
+                <ul class="nav">
+                    <li class="nav-sign-up"><a href="{{ site.subscribeUrl }}">Sign up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+</div>
+
+{% include "pswp.njk" %}
+
+<script src="/assets/themes/casper/built/casper.js" defer></script>
+{% include "site-end.njk" %}
+</body>
+</html>

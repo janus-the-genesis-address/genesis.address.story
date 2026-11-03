@@ -16,3 +16,4 @@ ghost-export/
 .DS_Store
 node_modules/
 _site/
+_site-themes/

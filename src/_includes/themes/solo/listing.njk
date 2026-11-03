@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+<main class="gh-main gh-outer">
+    <section class="gh-article gh-inner">
+        <header class="gh-article-header">
+            {%- if authorHead %}
+            <img class="genesis-author-image" src="{{ site.authorImage }}" alt="{{ site.author }}">
+            <h1 class="gh-article-title">{{ site.author }}</h1>
+            <p class="gh-article-excerpt"><a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener">@{{ site.twitter }}</a></p>
+            {%- else %}
+            <h1 class="gh-article-title">{{ title }}</h1>
+            {%- endif %}
+        </header>
+    </section>
+    <div class="gh-inner{% if listingClass %} {{ listingClass }}{% endif %}">
+        {{ content | safe }}
+    </div>
+</main>

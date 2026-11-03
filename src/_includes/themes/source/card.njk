@@ -1,0 +1,19 @@
+<article class="gh-card post">
+    <div class="gh-card-link">
+        {% if post.data.feature_image %}
+        <figure class="gh-card-image">
+            <img srcset="{{ post.data.feature_image | srcset }}" sizes="{{ imageSizes or '(max-width: 1199px) 100vw, 980px' }}" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
+        </figure>
+        {% endif %}
+        <div class="gh-card-wrapper">
+            {% if post.data.topics and post.data.topics.length %}
+            <p class="gh-card-tag">{{ post.data.topics[0] }}</p>
+            {% endif %}
+            <h3 class="gh-card-title is-title"><a class="gh-card-title-link" href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            {% if post.data.excerpt and showExcerpt !== false %}
+            <p class="gh-card-excerpt is-body">{{ post.data.excerpt | trimText }}</p>
+            {% endif %}
+            <footer class="gh-card-meta"><span class="gh-card-author">By {{ site.author }}</span><time class="gh-card-date" datetime="{{ post.date | isoDay }}">{{ post.date | displayDate }}</time></footer>
+        </div>
+    </div>
+</article>

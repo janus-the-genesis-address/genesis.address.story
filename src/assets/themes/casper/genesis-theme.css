@@ -1,0 +1,81 @@
+/* The Genesis Address colors and fonts on Ghost's Casper theme, in its dark mode. Loaded after genesis.css. */
+:root {
+    --ghost-accent-color: var(--genesis-blue);
+    --font-sans: var(--genesis-font-heading);
+    --font-serif: var(--genesis-font-body);
+}
+
+html.dark-mode body,
+html.dark-mode .site-content,
+html.dark-mode .post-card-image-link {
+    background-color: var(--genesis-gray) !important;
+}
+.gh-head,
+.site-footer {
+    background-color: var(--genesis-footer-bg) !important;
+    color: var(--genesis-blue) !important;
+}
+.gh-content,
+.article-excerpt,
+.post-card-excerpt {
+    font-family: var(--genesis-font-body);
+}
+.post-card-primary-tag,
+.post-card-primary-tag a {
+    color: var(--genesis-amber) !important;
+}
+.post-card-excerpt,
+.post-card-meta,
+.article-excerpt,
+.byline-meta-content {
+    color: var(--genesis-blue) !important;
+    opacity: 0.85;
+}
+.post-card {
+    border-bottom-color: var(--genesis-notice-border) !important;
+}
+.site-title,
+.site-description {
+    color: #fff !important;
+}
+.genesis-cover-action {
+    width: 100%;
+    margin: 8px 0 0;
+    text-align: center;
+}
+.genesis-cover-button {
+    display: inline-flex;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-family: var(--genesis-font-heading);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.genesis-author-cover .post-card-image {
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+/* genesis.css colours every header link blue, which hid the Subscribe button's text. */
+.gh-head .genesis-signup-button {
+    color: var(--genesis-gray) !important;
+}
+
+/* Captions in the site's cyan instead of Casper's grey. */
+.gh-content figcaption,
+.article-image figcaption {
+    color: var(--genesis-blue) !important;
+    opacity: 0.8;
+}
+
+/* The open phone menu: one dark panel with a normal Subscribe button, not a cyan block. */
+@media (max-width: 767px) {
+    .gh-head-open .gh-head-menu,
+    .gh-head-actions {
+        background-color: transparent !important;
+    }
+    .gh-head .gh-head-actions .genesis-signup-button {
+        justify-content: center;
+        background-color: var(--genesis-blue) !important;
+    }
+}

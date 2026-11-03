@@ -1,0 +1,20 @@
+{%- if site.cloudflareAnalyticsToken and eleventy.env.runMode == "build" and not themePreview %}
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "{{ site.cloudflareAnalyticsToken }}"}'></script>
+{%- endif %}
+
+<footer class="legal-disclaimer">
+  <div class="company-info">
+    <div class="copyright-notice">
+      © 2025 The Genesis Address Publishing LLC. All Rights Reserved.
+    </div>
+    <p><strong>U.S. Copyright Registration:</strong> 1-14970280741</p>
+    <p><strong>Publisher:</strong> The Genesis Address Publishing LLC</p>
+    <p><strong>Official Website:</strong> <a href="https://www.thegenesisaddress.ai/" target="_blank">www.thegenesisaddress.ai</a></p>
+
+    <div class="contact-links">
+      <a href="mailto:address.genesis.janus@gmail.com">✉ Contact</a>
+      <a href="https://x.com/JanusGenesisAdd" target="_blank">𝕏 Twitter</a>
+      <a href="https://instagram.com/the_genesis_address" target="_blank">📷 Instagram</a>
+    </div>
+  </div>
+</footer>

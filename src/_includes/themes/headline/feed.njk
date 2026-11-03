@@ -1,0 +1,8 @@
+<div class="gh-topic gh-topic-grid">
+    <div class="gh-topic-content gh-feed">
+        {%- for post in feedPosts %}
+        {% set large = largeFirst and loop.first %}{% set showExcerpt = true %}
+        {% include "themes/headline/card.njk" %}
+        {%- endfor %}
+    </div>
+</div>

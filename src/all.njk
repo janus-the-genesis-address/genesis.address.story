@@ -1,20 +1,7 @@
 ---
-layout: base.njk
+layout: listing.njk
 permalink: /all/
 title: Latest
 ---
-<main class="gh-main gh-outer">
-    <div class="gh-inner">
-        <section class="gh-pagehead">
-            <h1 class="gh-pagehead-title">Latest</h1>
-        </section>
-        <div class="gh-topic gh-topic-grid">
-            <div class="gh-topic-content gh-feed">
-                {%- for post in collections.posts %}
-                {% set large = false %}{% set showExcerpt = true %}
-                {% include "card.njk" %}
-                {%- endfor %}
-            </div>
-        </div>
-    </div>
-</main>
+{%- set feedPosts = collections.posts %}
+{% include "themes/" + theme + "/feed.njk" %}

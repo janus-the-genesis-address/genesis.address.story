@@ -5,6 +5,11 @@ import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 const site = JSON.parse(readFileSync(new URL("./src/_data/site.json", import.meta.url)));
 const imageSizes = JSON.parse(readFileSync(new URL("./src/_data/imageSizes.json", import.meta.url)));
 
+// The site's look: one folder per theme in src/_includes/themes/. `theme` in site.json picks the live one;
+// THEME=casper npm start previews another without changing it.
+const theme = process.env.THEME || site.theme || "headline";
+if (!existsSync(new URL(`./src/_includes/themes/${theme}/base.njk`, import.meta.url))) throw new Error(`No theme called "${theme}" in src/_includes/themes/`);
+
 const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: site.timezone });
 const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 
@@ -158,6 +163,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ "src/assets": "assets" });
   eleventyConfig.addPassthroughCopy({ "src/content": "content" });
 
+  eleventyConfig.addGlobalData("theme", theme);
+  // Theme previews are not real visits, so they leave out the analytics script.
+  eleventyConfig.addGlobalData("themePreview", Boolean(process.env.THEME));
+  for (const layout of ["base", "post", "page", "listing"]) {
+    eleventyConfig.addLayoutAlias(`${layout}.njk`, `themes/${theme}/${layout}.njk`);
+  }
+
   const byNewest = (a, b) => b.date - a.date;
   eleventyConfig.addCollection("posts", (api) => api.getFilteredByGlob("src/posts/*.md").sort(byNewest));
   eleventyConfig.addCollection("topics", (api) => {
@@ -191,6 +203,13 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("readNext", (posts, current) => {
     const mine = new Set((current.topics || []).map(slugify));
     return posts.filter((post) => post.url !== current.page.url && (post.data.topics || []).some((t) => mine.has(slugify(t)))).slice(0, 3);
+  });
+  // The posts just before and after this one in its own section, oldest first: the previous and next episode.
+  eleventyConfig.addFilter("neighbours", (posts, current) => {
+    const topic = slugify((current.topics || [])[0] || "");
+    const line = posts.filter((post) => slugify((post.data.topics || [])[0] || "") === topic).sort((a, b) => a.date - b.date);
+    const index = line.findIndex((post) => post.url === current.page.url);
+    return { previous: index > 0 ? line[index - 1] : null, next: index !== -1 ? line[index + 1] || null : null };
   });
   eleventyConfig.addFilter("srcset", srcsetOf);
   eleventyConfig.addFilter("mediaLibrary", mediaLibrary);

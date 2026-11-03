@@ -1,0 +1,81 @@
+/* The Genesis Address colors and fonts on the Liebling theme, in its dark mode. Loaded after genesis.css. */
+@font-face {
+    font-family: "icomoon";
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url("fonts/icomoon/icomoon.woff?101fc3") format("woff"), url("fonts/icomoon/icomoon.ttf?101fc3") format("truetype");
+}
+
+[data-theme=dark] {
+    --background-color: var(--genesis-gray);
+    --primary-foreground-color: var(--genesis-blue);
+    --secondary-foreground-color: var(--genesis-blue);
+    --primary-subtle-color: var(--genesis-blue);
+    --titles-color: var(--genesis-blue);
+    --link-color: var(--genesis-blue);
+    --footer-background-color: var(--genesis-footer-bg);
+    --primary-border-color: rgba(10, 189, 198, 0.2);
+}
+
+body {
+    font-family: var(--genesis-font-heading);
+}
+.l-post-content,
+.m-hero-description {
+    font-family: var(--genesis-font-body);
+}
+.m-heading__title,
+.m-hero-title,
+.m-article-card__title,
+.m-featured-article__title {
+    font-family: var(--genesis-font-heading);
+}
+
+/* Liebling draws these as background pictures; here they are <img> tags, so make them fill the same box. */
+.m-featured-article__picture div img,
+.m-article-card__author div img,
+.m-featured-article__author div img,
+.m-author-picture div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.m-hero.with-picture .m-hero-title,
+.m-hero.with-picture .m-hero-description,
+.m-featured-article__title,
+.m-featured-article__timestamp {
+    color: #fff !important;
+}
+.m-featured-article__ribbon {
+    color: var(--genesis-gray) !important;
+    background-color: var(--genesis-amber) !important;
+}
+.m-article-card__tag,
+.m-heading__meta__tag,
+.m-featured-article__tag {
+    color: var(--genesis-amber) !important;
+}
+.m-hero__content .genesis-signup-button {
+    margin-top: 24px;
+}
+.m-nav__right .genesis-signup-button {
+    padding: 8px 18px;
+}
+.m-header .genesis-signup-button,
+.m-hero .genesis-signup-button {
+    color: var(--genesis-gray) !important;
+}
+.genesis-author-picture {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 16px;
+}
+
+/* Keep the Media page's full-screen viewer above Liebling's fixed header. */
+.pswp {
+    z-index: 10000;
+}

@@ -1,0 +1,21 @@
+{#- Casper's home: the newest episode's picture as the cover, with the site's name on it, then every post in the "Classic" feed. #}
+{%- set cover = (collections.posts | withTopic("episodes") | first).data.feature_image %}
+<div class="site-header-content outer">
+    <img class="site-header-cover" srcset="{{ cover | srcset }}" sizes="100vw" src="{{ cover | sizedImage(1200) }}" alt="{{ site.title }}" fetchpriority="high">
+    <div class="site-header-inner inner">
+        <h1 class="site-title">{{ site.title }}</h1>
+        <p class="site-description">A science fiction serial about AI manipulation and cryptocurrency deception.</p>
+        <p class="genesis-cover-action"><a class="genesis-signup-button genesis-cover-button" href="/episode-1-the-concert/">Start at Episode 1</a></p>
+    </div>
+</div>
+
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
+            {%- for post in collections.posts %}
+            {%- set cardClass = "post-card-large" if loop.index == 1 else ("dynamic" if loop.index < 4 else "") %}
+            {% include "themes/casper/card.njk" %}
+            {%- endfor %}
+        </div>
+    </div>
+</main>

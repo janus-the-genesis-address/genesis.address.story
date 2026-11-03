@@ -1,0 +1,61 @@
+{#- Liebling's home: the newest episode's picture behind the site's name, a slider of the latest episodes, then a grid of every post. #}
+{%- set cover = (collections.posts | withTopic("episodes") | first).data.feature_image %}
+<main class="main-wrap">
+    <section class="m-hero with-picture" data-animate="fade">
+        <div class="m-hero__picture">
+            <img srcset="{{ cover | srcset }}" sizes="100vw" src="{{ cover | sizedImage(1200) }}" alt="">
+        </div>
+        <div class="m-hero__content" data-animate="fade-down">
+            <h1 class="m-hero-title bigger">{{ site.title }}</h1>
+            <p class="m-hero-description bigger">A science fiction serial about AI manipulation and cryptocurrency deception.</p>
+            <a href="/episode-1-the-concert/" class="m-button filled genesis-signup-button">Start at Episode 1</a>
+        </div>
+    </section>
+    <div class="l-content">
+        <div class="l-wrapper" data-animate="fade-up">
+            <div class="l-grid centered">
+                <div class="m-featured-slider swiper js-featured-slider">
+                    <div class="m-featured-slider__list swiper-wrapper">
+                        {%- for post in collections.posts | withTopic("episodes") | batch(5) | first %}
+                        <div class="m-featured-slider__list__item swiper-slide">
+                            <article class="m-featured-article">
+                                <div class="m-featured-article__picture">
+                                    <div><img srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 768px) 100vw, 1200px" src="{{ post.data.feature_image | sizedImage(1200) }}" alt=""></div>
+                                </div>
+                                <div class="m-featured-article__meta">
+                                    <a href="/author/{{ site.authorSlug }}/" class="m-featured-article__author" aria-label="{{ site.author }}">
+                                        <div><img src="{{ site.authorImage }}" alt=""></div>
+                                    </a>
+                                    <a href="/tag/episodes/" class="m-featured-article__tag">Episodes</a>
+                                </div>
+                                <div class="m-featured-article__ribbon">
+                                    <span class="icon-star"></span>
+                                    <span>{{ "Newest episode" if loop.first else "Episode" }}</span>
+                                </div>
+                                <a href="{{ post.url }}" class="m-featured-article__content">
+                                    <h2 class="m-featured-article__title js-featured-article-title" title="{{ post.data.title }}">{{ post.data.title }}</h2>
+                                    <div class="m-featured-article__timestamp">
+                                        <span>{{ post.date | displayDate }}</span>
+                                        <span>&bull;</span>
+                                        <span>{{ post.content | readingTime }} min read</span>
+                                    </div>
+                                </a>
+                            </article>
+                        </div>
+                        {%- endfor %}
+                    </div>
+                    <button class="m-icon-button in-featured-articles swiper-button-prev js-featured-slider-button" aria-label="Previous">
+                        <span class="icon-arrow-left" aria-hidden="true"></span>
+                    </button>
+                    <button class="m-icon-button in-featured-articles swiper-button-next js-featured-slider-button" aria-label="Next">
+                        <span class="icon-arrow-right" aria-hidden="true"></span>
+                    </button>
+                </div>
+                {%- set inSlider = false %}
+                {%- for post in collections.posts %}
+                {% include "themes/liebling/card.njk" %}
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+</main>

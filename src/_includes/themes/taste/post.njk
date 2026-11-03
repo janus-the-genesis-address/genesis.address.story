@@ -1,0 +1,48 @@
+---
+layout: base.njk
+isPost: true
+bodyClass: post-template
+---
+<main class="gh-main">
+    <article class="gh-article post">
+        <header class="gh-article-header gh-canvas">
+            <span class="gh-article-meta">
+                {%- if topics and topics.length %}<a class="gh-article-meta-tag" href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] }}</a>{% endif -%}
+                <time class="gh-article-meta-date" datetime="{{ page.date | isoDay }}">{{ page.date | displayDate }}</time>
+                <span class="gh-article-meta-length">{{ content | readingTime }} min read</span>
+            </span>
+            <h1 class="gh-article-title">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="gh-article-excerpt">{{ excerpt | trimText }}</p>
+            {% endif %}
+            {% if feature_image %}
+            <figure class="gh-article-image kg-width-wide">
+                <img class="gh-feature-image" srcset="{{ feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+                {% if feature_image_caption %}<figcaption>{{ feature_image_caption | safe }}</figcaption>{% endif %}
+            </figure>
+            {% endif %}
+        </header>
+
+        <section class="gh-content gh-canvas">
+            {{ content | safe }}
+        </section>
+    </article>
+
+    {% set nextPosts = collections.posts | readNext({ topics: topics, page: page }) %}
+    {% if nextPosts.length %}
+    <div class="gh-list grid gh-outer" data-column="3">
+        <div class="gh-list-inner gh-inner">
+            <header class="gh-list-header">
+                <h2 class="gh-list-title">Read next</h2>
+            </header>
+            <div class="gh-list-feed">
+                {%- for post in nextPosts %}
+                {% include "themes/taste/card.njk" %}
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    {% include "themes/taste/cta.njk" %}
+</main>

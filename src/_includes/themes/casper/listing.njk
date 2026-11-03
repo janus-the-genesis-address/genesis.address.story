@@ -1,0 +1,28 @@
+---
+layout: base.njk
+bodyClass: tag-template
+---
+<main id="site-main" class="site-main outer">
+    <div class="inner posts">
+        <div class="post-feed">
+            <section class="post-card post-card-large">
+                {%- if authorHead %}
+                <div class="post-card-image-link genesis-author-cover"><img class="post-card-image" src="{{ site.authorImage }}" alt="{{ site.author }}"></div>
+                {%- endif %}
+                <div class="post-card-content">
+                    <div class="post-card-content-link">
+                        <header class="post-card-header">
+                            <h1 class="post-card-title">{{ site.author if authorHead else title }}</h1>
+                        </header>
+                        {%- if authorHead %}
+                        <div class="post-card-excerpt"><a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener">@{{ site.twitter }}</a></div>
+                        {%- endif %}
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="{{ listingClass or 'genesis-listing' }}">
+            {{ content | safe }}
+        </div>
+    </div>
+</main>

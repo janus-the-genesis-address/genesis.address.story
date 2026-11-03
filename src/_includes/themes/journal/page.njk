@@ -1,0 +1,24 @@
+---
+layout: base.njk
+bodyClass: page-template
+---
+<main id="gh-main" class="gh-main">
+    <article class="gh-article page">
+        <header class="gh-article-header gh-canvas">
+            <h1 class="gh-article-title">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="gh-article-excerpt">{{ excerpt | trimText }}</p>
+            {% endif %}
+            {% if feature_image %}
+            <figure class="gh-article-image">
+                <img class="gh-feature-image" srcset="{{ feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+                {% if feature_image_caption %}<figcaption>{{ feature_image_caption | safe }}</figcaption>{% endif %}
+            </figure>
+            {% endif %}
+        </header>
+
+        <div class="gh-content gh-canvas">
+            {{ content | safe }}
+        </div>
+    </article>
+</main>

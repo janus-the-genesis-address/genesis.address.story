@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="has-light-text">
+<head>
+{% include "head-meta.njk" %}
+    <link rel="stylesheet" href="/assets/themes/source/built/screen.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/cards.min.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/genesis.css">
+    <link rel="stylesheet" href="/assets/themes/source/genesis-theme.css">
+{% include "head-schema.njk" %}
+</head>
+<body class="{{ bodyClass or 'paged' }} has-sans-title has-serif-body">
+<div class="gh-viewport">
+
+    <header id="gh-navigation" class="gh-navigation is-left-logo gh-outer">
+        <div class="gh-navigation-inner gh-inner">
+            <div class="gh-navigation-brand">
+                <a class="gh-navigation-logo is-title" href="/">{{ site.title }}</a>
+                <button class="gh-burger gh-icon-button" aria-label="Menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 256 256"><path d="M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z"></path></svg>
+                </button>
+            </div>
+
+            <nav class="gh-navigation-menu">
+                <ul class="nav">
+                    {%- for item in site.nav %}
+                    <li class="nav-{{ item.label | lower }}{% if page.url == item.url %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                    {%- endfor %}
+                </ul>
+            </nav>
+
+            <div class="gh-navigation-actions">
+                <div class="gh-navigation-members">
+                    <a class="gh-button genesis-signup-button" href="{{ site.subscribeUrl }}">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="gh-footer gh-outer">
+        <div class="gh-footer-inner gh-inner">
+            <section class="gh-footer-signup">
+                <h2 class="gh-footer-signup-header is-title">Subscribe to {{ site.title }}</h2>
+                <p class="gh-footer-signup-subhead is-body">Get new episodes by email.</p>
+                <a class="gh-button genesis-signup-button" href="{{ site.subscribeUrl }}">Subscribe now</a>
+            </section>
+            <div class="gh-footer-bar">
+                <span class="gh-footer-logo is-title">{{ site.title }}</span>
+                <nav class="gh-footer-menu">
+                    <ul class="nav">
+                        <li class="nav-sign-up"><a href="{{ site.subscribeUrl }}">Sign up</a></li>
+                    </ul>
+                </nav>
+                <div class="gh-footer-copyright">{{ site.title }} © {{ buildYear }}</div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+{% include "pswp.njk" %}
+
+<script src="/assets/themes/source/built/source.js"></script>
+{% include "site-end.njk" %}
+</body>
+</html>

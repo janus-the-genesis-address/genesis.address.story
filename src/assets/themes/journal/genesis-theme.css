@@ -1,0 +1,49 @@
+/* The Genesis Address colors and fonts on Ghost's Journal theme. Loaded after genesis.css. */
+:root {
+    --background-color: var(--genesis-gray);
+    --ghost-accent-color: var(--genesis-blue);
+    --font-sans: var(--genesis-font-heading);
+    --font-serif: var(--genesis-font-body);
+}
+
+.gh-head,
+.gh-foot {
+    background-color: var(--genesis-footer-bg) !important;
+}
+.gh-subscribe-inner {
+    background-color: var(--genesis-notice-bg) !important;
+    border: 1px solid var(--genesis-notice-border);
+}
+.gh-subscribe-title,
+.gh-subscribe-description {
+    color: var(--genesis-blue) !important;
+}
+.gh-article-tag,
+.gh-tag-label,
+.gh-card-date {
+    color: var(--genesis-amber) !important;
+}
+.gh-card-excerpt,
+.gh-card-meta,
+.gh-article-meta,
+.gh-article-excerpt,
+.gh-about-description,
+.gh-topic-count {
+    color: var(--genesis-blue) !important;
+}
+.gh-section-title,
+.gh-topic-item,
+.gh-card,
+.gh-article-footer {
+    border-color: var(--genesis-notice-border) !important;
+}
+.gh-signup {
+    margin-top: 20px;
+}
+.genesis-author-image {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}

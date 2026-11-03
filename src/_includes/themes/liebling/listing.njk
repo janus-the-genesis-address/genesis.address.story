@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<main class="main-wrap">
+    <section class="m-hero no-picture" data-animate="fade">
+        <div class="m-hero__content" data-animate="fade-down">
+            {%- if authorHead %}
+            <div class="m-author-picture genesis-author-picture"><div><img src="{{ site.authorImage }}" alt=""></div></div>
+            <h1 class="m-hero-title bigger">{{ site.author }}</h1>
+            <p class="m-hero-description"><a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener">@{{ site.twitter }}</a></p>
+            {%- else %}
+            <h1 class="m-hero-title bigger">{{ title }}</h1>
+            {%- endif %}
+        </div>
+    </section>
+    <div class="l-content">
+        <div class="l-wrapper" data-animate="fade-up">
+            <div class="{{ listingClass or 'genesis-listing' }}">
+                {{ content | safe }}
+            </div>
+        </div>
+    </div>
+</main>

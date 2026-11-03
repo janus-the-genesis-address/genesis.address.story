@@ -1,0 +1,20 @@
+---
+layout: base.njk
+---
+<main id="gh-main" class="gh-main gh-canvas">
+    <section class="gh-pagehead">
+        <header class="gh-pagehead-content">
+            {%- if authorHead %}
+            <img class="genesis-author-image" src="{{ site.authorImage }}" alt="{{ site.author }}">
+            <h1 class="gh-pagehead-title">{{ site.author }}</h1>
+            <div class="gh-pagehead-description"><a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener">@{{ site.twitter }}</a></div>
+            {%- else %}
+            <div class="gh-tag-label">Section</div>
+            <h1 class="gh-tag-name gh-pagehead-title">{{ title }}</h1>
+            {%- endif %}
+        </header>
+    </section>
+    <div class="{{ listingClass or 'genesis-listing' }}">
+        {{ content | safe }}
+    </div>
+</main>

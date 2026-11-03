@@ -1,0 +1,45 @@
+{#- Taste's home: a cover with the site's name, the five newest posts as a magazine block, then a grid per section. #}
+{%- set cover = (collections.posts | withTopic("episodes") | first).data.feature_image %}
+<main class="gh-main">
+    <section class="gh-header gh-outer has-background-image">
+        <div class="gh-header-inner gh-inner">
+            <img class="gh-header-image" srcset="{{ cover | srcset }}" sizes="100vw" src="{{ cover | sizedImage(1200) }}" alt="">
+            <div class="gh-header-content">
+                <h1 class="gh-header-primary">{{ site.title }}</h1>
+                <p class="gh-header-secondary">A science fiction serial about AI manipulation and cryptocurrency deception.</p>
+                <a class="gh-header-action gh-header-button gh-btn genesis-signup-button" href="/episode-1-the-concert/">Start at Episode 1</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="gh-list grid magazine gh-outer">
+        <div class="gh-list-inner gh-inner">
+            <div class="gh-list-feed">
+                {%- set showExcerpt = true %}
+                {%- for post in collections.posts | batch(5) | first %}
+                {% include "themes/taste/card.njk" %}
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+
+    {%- for topic in collections.topics | batch(4) | first %}
+    {%- set columns = 3 if loop.index0 % 2 == 0 else 4 %}
+    <div class="gh-list grid gh-outer" data-column="{{ columns }}">
+        <div class="gh-list-inner gh-inner">
+            <header class="gh-list-header">
+                <a href="/tag/{{ topic.slug }}/"><h2 class="gh-list-title">{{ topic.name }}</h2></a>
+                <a class="gh-list-action" href="/tag/{{ topic.slug }}/">View all →</a>
+            </header>
+            <div class="gh-list-feed">
+                {%- set showExcerpt = false %}
+                {%- for post in topic.posts | batch(columns) | first %}
+                {% include "themes/taste/card.njk" %}
+                {%- endfor %}
+            </div>
+        </div>
+    </div>
+    {%- endfor %}
+
+    {% include "themes/taste/cta.njk" %}
+</main>

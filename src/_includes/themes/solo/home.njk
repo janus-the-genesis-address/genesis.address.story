@@ -1,0 +1,35 @@
+{#- Solo's "Large background" home: the newest episode's picture behind the site's name, then every post in one feed. #}
+{%- set cover = (collections.posts | withTopic("episodes") | first).data.feature_image %}
+<section class="gh-about gh-outer">
+    <div class="gh-about-inner gh-inner">
+        <img class="gh-about-image" srcset="{{ cover | srcset }}" sizes="100vw" src="{{ cover | sizedImage(1200) }}" alt="">
+        <script>
+            (function () {
+                if (!document.body.classList.contains('has-background-about')) return;
+                const about = document.querySelector('.gh-about');
+                if (!about) return;
+                const image = about.querySelector('.gh-about-image');
+                const measure = function () {
+                    about.style.setProperty('--about-height', image.clientWidth * image.naturalHeight / image.naturalWidth + 'px');
+                    about.classList.add('initialized');
+                };
+                if (image.complete) measure(); else image.addEventListener('load', measure);
+            })();
+        </script>
+        <div class="gh-about-content">
+            <div class="gh-about-content-inner">
+                <h1 class="gh-about-primary">{{ site.title }}</h1>
+                <p class="gh-about-secondary">A science fiction serial about AI manipulation and cryptocurrency deception.</p>
+                <a class="gh-btn genesis-signup-button" href="/episode-1-the-concert/">Start at Episode 1</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<main class="gh-main gh-outer">
+    <div class="gh-feed gh-inner">
+        {%- for post in collections.posts %}
+        {% include "themes/solo/card.njk" %}
+        {%- endfor %}
+    </div>
+</main>

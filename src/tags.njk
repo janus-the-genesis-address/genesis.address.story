@@ -1,5 +1,5 @@
 ---
-layout: base.njk
+layout: listing.njk
 pagination:
   data: collections.topics
   size: 1
@@ -8,18 +8,6 @@ permalink: "/tag/{{ topic.slug }}/"
 eleventyComputed:
   title: "{{ topic.name }}"
 ---
-<main class="gh-main gh-outer">
-    <div class="gh-inner">
-        <section class="gh-pagehead">
-            <h1 class="gh-pagehead-title">{{ topic.name }}</h1>
-        </section>
-        <div class="gh-topic gh-topic-grid">
-            <div class="gh-topic-content gh-feed">
-                {%- for post in topic.posts %}
-                {% set large = loop.first %}{% set showExcerpt = true %}
-                {% include "card.njk" %}
-                {%- endfor %}
-            </div>
-        </div>
-    </div>
-</main>
+{%- set feedPosts = topic.posts %}
+{%- set largeFirst = true %}
+{% include "themes/" + theme + "/feed.njk" %}

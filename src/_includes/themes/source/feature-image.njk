@@ -1,0 +1,6 @@
+{% if feature_image %}
+<figure class="gh-article-image">
+    <img class="gh-feature-image" fetchpriority="high" srcset="{{ feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1120px" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+    {% if feature_image_caption %}<figcaption>{{ feature_image_caption | safe }}</figcaption>{% endif %}
+</figure>
+{% endif %}

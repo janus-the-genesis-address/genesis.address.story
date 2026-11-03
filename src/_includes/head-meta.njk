@@ -1,0 +1,24 @@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {%- set pageTitle = (title + " | " + site.title) if title and page.url != "/" else site.title %}
+    {%- set pageDescription = (excerpt | trimText) or site.description %}
+    {%- set pageImage = feature_image or "/content/images/2025/09/janus-4.jpg" %}
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ pageDescription }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="/content/images/2025/09/janus-2.jpg" type="image/jpeg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/content/images/2025/09/janus-5.jpg">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/rss.xml">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:type" content="{{ 'article' if isPost else 'website' }}">
+    <meta property="og:title" content="{{ title or site.title }}">
+    <meta property="og:description" content="{{ pageDescription }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}{{ pageImage }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ title or site.title }}">
+    <meta name="twitter:description" content="{{ pageDescription }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ pageImage }}">
+    <meta name="twitter:site" content="@{{ site.twitter }}">
+    <meta name="author" content="The Genesis Address Publishing LLC">
+    <meta name="copyright" content="© 2025 The Genesis Address Publishing LLC. All Rights Reserved. U.S. Copyright Registration: 1-14970280741">

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+{% include "head-meta.njk" %}
+    <link rel="stylesheet" href="/assets/themes/liebling/css/app.css">
+    <link rel="stylesheet" href="/assets/themes/liebling/css/home.css">
+    <link rel="stylesheet" href="/assets/themes/liebling/css/listing.css">
+    <link rel="stylesheet" href="/assets/themes/liebling/css/post.css">
+    <link rel="stylesheet" href="/assets/css/pswp.css">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/cards.min.css">
+    <link rel="stylesheet" href="/assets/css/colors.css">
+    <link rel="stylesheet" href="/assets/css/genesis.css">
+    <link rel="stylesheet" href="/assets/themes/liebling/genesis-theme.css">
+{% include "head-schema.njk" %}
+</head>
+<body class="{{ bodyClass or 'paged' }}">
+    {%- set heroImage = (collections.posts | withTopic("episodes") | first).data.feature_image if page.url == "/" else feature_image %}
+    <header class="m-header{% if heroImage %} with-picture{% endif %} js-header" data-animate="fade-down">
+        <div class="m-mobile-topbar">
+            <button class="m-icon-button in-mobile-topbar js-open-menu" aria-label="Open menu">
+                <span class="icon-menu" aria-hidden="true"></span>
+            </button>
+            <a href="/" class="m-site-name in-mobile-topbar">{{ site.title }}</a>
+            <a href="{{ site.subscribeUrl }}" class="m-icon-button in-mobile-topbar" aria-label="Subscribe">
+                <span class="icon-star" aria-hidden="true"></span>
+            </a>
+        </div>
+
+        <div class="m-menu js-menu">
+            <button class="m-icon-button outlined as-close-menu js-close-menu" aria-label="Close menu">
+                <span class="icon-close"></span>
+            </button>
+            <div class="m-menu__main">
+                <div class="l-wrapper">
+                    <div class="m-nav js-main-nav">
+                        <nav class="m-nav__left js-main-nav-left" role="navigation" aria-label="Main menu">
+                            <ul>
+                                <li class="only-desktop">
+                                    <a href="/" class="m-site-name in-desktop-menu">{{ site.title }}</a>
+                                </li>
+                                {%- for item in site.nav %}
+                                <li class="nav-{{ item.label | lower }}{% if page.url == item.url %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                                {%- endfor %}
+                            </ul>
+                        </nav>
+                        <div class="m-nav__right">
+                            <a href="{{ site.subscribeUrl }}" class="m-button filled genesis-signup-button">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    {{ content | safe }}
+
+    <footer class="m-footer">
+        <div class="m-footer__content">
+            <nav class="m-footer-social">
+                <a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="X">
+                    <span class="icon-twitter" aria-hidden="true"></span>
+                </a>
+                <a href="/rss.xml" aria-label="RSS">
+                    <span class="icon-rss" aria-hidden="true"></span>
+                </a>
+            </nav>
+            <p class="m-footer-copyright">
+                <span>{{ site.title }} &copy; {{ buildYear }}</span>
+                <span>&nbsp; &bull; &nbsp;</span>
+                <span><a href="{{ site.subscribeUrl }}">Sign up</a></span>
+            </p>
+        </div>
+    </footer>
+
+{% include "pswp.njk" %}
+
+<script defer src="/assets/themes/liebling/js/manifest.js"></script>
+<script defer src="/assets/themes/liebling/js/vendor.js"></script>
+<script defer src="/assets/themes/liebling/js/app.js"></script>
+{%- if page.url == "/" %}
+<script defer src="/assets/themes/liebling/js/home.js"></script>
+{%- elif isPost %}
+<script defer src="/assets/themes/liebling/js/post.js"></script>
+{%- elif page.url == "/media/" %}
+<script src="/assets/js/photoswipe.min.js"></script>
+{%- else %}
+<script defer src="/assets/themes/liebling/js/page.js"></script>
+{%- endif %}
+{% include "site-end.njk" %}
+</body>
+</html>

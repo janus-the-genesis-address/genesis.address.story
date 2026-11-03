@@ -1,0 +1,33 @@
+/* The Genesis Address colors and fonts on Ghost's Source theme. Loaded after genesis.css. */
+:root {
+    --background-color: var(--genesis-gray);
+    --ghost-accent-color: var(--genesis-blue);
+    --font-sans: var(--genesis-font-heading);
+    --font-serif: var(--genesis-font-body);
+    --font-serif-alt: var(--genesis-font-body);
+}
+
+.gh-navigation,
+.gh-footer {
+    background-color: var(--genesis-footer-bg);
+}
+.gh-card-tag,
+.gh-article-tag {
+    color: var(--genesis-amber) !important;
+}
+.gh-card-excerpt,
+.gh-card-meta,
+.gh-article-excerpt {
+    color: var(--genesis-blue) !important;
+    opacity: 0.8;
+}
+.gh-container-title {
+    border-bottom-color: var(--genesis-amber) !important;
+}
+.genesis-author-image {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+    object-fit: cover;
+}

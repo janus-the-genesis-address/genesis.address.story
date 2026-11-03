@@ -1,0 +1,6 @@
+<div class="post-feed">
+    {%- for post in feedPosts %}
+    {%- set cardClass = "" %}
+    {% include "themes/casper/card.njk" %}
+    {%- endfor %}
+</div>

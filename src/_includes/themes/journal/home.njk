@@ -1,0 +1,70 @@
+{#- Journal's home: the newest post as a headline, the rest as a list, and a sidebar with About, the sections and the latest episodes. #}
+{%- set latest = collections.posts | first %}
+<main id="gh-main" class="gh-main gh-outer">
+    <div class="gh-inner">
+        <article class="gh-latest gh-card post">
+            <a class="gh-card-link" href="{{ latest.url }}">
+                <header class="gh-card-header">
+                    <div class="gh-article-meta">
+                        <span class="gh-card-date">Latest — <time datetime="{{ latest.date | isoDay }}">{{ latest.date | displayDate }}</time></span>
+                    </div>
+                    <h2 class="gh-article-title gh-card-title">{{ latest.data.title }}</h2>
+                </header>
+                <p class="gh-article-excerpt">{{ latest.data.excerpt | trimText }}</p>
+                <footer class="gh-card-meta">
+                    <span class="gh-card-duration">{{ latest.content | readingTime }} min read</span>
+                </footer>
+            </a>
+        </article>
+
+        <div class="gh-wrapper">
+            <section class="gh-section">
+                <h2 class="gh-section-title">More from the serial</h2>
+                <div class="gh-feed">
+                    {%- for post in collections.posts %}
+                    {%- if not loop.first %}
+                    {% include "themes/journal/card.njk" %}
+                    {%- endif %}
+                    {%- endfor %}
+                </div>
+            </section>
+
+            <aside class="gh-sidebar">
+                <section class="gh-section">
+                    <h2 class="gh-section-title">About</h2>
+                    <div class="gh-about">
+                        <img class="gh-about-icon" src="{{ site.authorImage }}" alt="{{ site.title }}">
+                        <section class="gh-about-wrapper">
+                            <h3 class="gh-about-title">{{ site.title }}</h3>
+                            <p class="gh-about-description">{{ site.description }}</p>
+                        </section>
+                    </div>
+                    <div class="gh-signup">
+                        <a class="gh-btn genesis-signup-button" href="/episode-1-the-concert/">Start at Episode 1</a>
+                    </div>
+                </section>
+
+                <section class="gh-section">
+                    <h3 class="gh-section-title">Latest episodes</h3>
+                    <div class="gh-featured gh-feed">
+                        {%- for post in collections.posts | withTopic("episodes") | batch(5) | first %}
+                        {% include "themes/journal/card.njk" %}
+                        {%- endfor %}
+                    </div>
+                </section>
+
+                <section class="gh-section">
+                    <h3 class="gh-section-title">Sections</h3>
+                    <div class="gh-topic">
+                        {%- for topic in collections.topics | batch(4) | first %}
+                        <a class="gh-topic-item" href="/tag/{{ topic.slug }}/">
+                            <h3 class="gh-topic-name">{{ topic.name }}</h3>
+                            <span class="gh-topic-count">{{ topic.posts.length }} {{ "post" if topic.posts.length == 1 else "posts" }}</span>
+                        </a>
+                        {%- endfor %}
+                    </div>
+                </section>
+            </aside>
+        </div>
+    </div>
+</main>

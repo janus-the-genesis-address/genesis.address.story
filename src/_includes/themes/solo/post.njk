@@ -1,0 +1,54 @@
+---
+layout: base.njk
+isPost: true
+bodyClass: post-template
+---
+{%- set around = collections.posts | neighbours({ topics: topics, page: page }) %}
+<main class="gh-main gh-outer">
+    <div class="gh-inner">
+        <article class="gh-article post">
+            <header class="gh-article-header gh-canvas">
+                <h1 class="gh-article-title">{{ title }}</h1>
+                {% if excerpt %}
+                <p class="gh-article-excerpt">{{ excerpt | trimText }}</p>
+                {% endif %}
+                {% if feature_image %}
+                <figure class="gh-article-image">
+                    <img class="gh-feature-image" srcset="{{ feature_image | srcset }}" sizes="(max-width: 1200px) 100vw, 1200px" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+                    {% if feature_image_caption %}<figcaption>{{ feature_image_caption | safe }}</figcaption>{% endif %}
+                </figure>
+                {% endif %}
+            </header>
+
+            <section class="gh-content gh-canvas">
+                {{ content | safe }}
+                <aside class="gh-article-meta">
+                    <div class="gh-article-meta-inner">
+                        <div class="gh-author-image-list instapaper_ignore">
+                            <a class="gh-author-image" href="/author/{{ site.authorSlug }}/"><img src="{{ site.authorImage }}" alt="{{ site.author }}"></a>
+                        </div>
+                        <div class="gh-article-meta-wrapper">
+                            <div class="gh-author-name-list"><a href="/author/{{ site.authorSlug }}/">{{ site.author }}</a></div>
+                            <time class="gh-article-date" datetime="{{ page.date | isoDay }}">{{ page.date | displayDate }}</time>
+                        </div>
+                        {% if topics and topics.length %}
+                        <a class="gh-article-tag" href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] }}</a>
+                        {% endif %}
+                    </div>
+                </aside>
+            </section>
+
+            <footer class="gh-article-footer gh-canvas">
+                <nav class="gh-navigation">
+                    <div class="gh-navigation-previous">
+                        {% if around.previous %}<a class="gh-navigation-link" href="{{ around.previous.url }}">← <span class="gh-navigation-text">Previous</span></a>{% endif %}
+                    </div>
+                    <div class="gh-navigation-middle"></div>
+                    <div class="gh-navigation-next">
+                        {% if around.next %}<a class="gh-navigation-link" href="{{ around.next.url }}"><span class="gh-navigation-text">Next</span> →</a>{% endif %}
+                    </div>
+                </nav>
+            </footer>
+        </article>
+    </div>
+</main>

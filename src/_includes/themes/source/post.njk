@@ -1,0 +1,51 @@
+---
+layout: base.njk
+isPost: true
+bodyClass: post-template
+---
+<main class="gh-main">
+    <article class="gh-article post">
+        <header class="gh-article-header gh-canvas">
+            {% if topics and topics.length %}
+            <a class="gh-article-tag" href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] }}</a>
+            {% endif %}
+            <h1 class="gh-article-title is-title">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="gh-article-excerpt is-body">{{ excerpt | trimText }}</p>
+            {% endif %}
+            <div class="gh-meta-share">
+                <div class="gh-article-meta">
+                    <div class="gh-article-author-image instapaper_ignore">
+                        <a href="/author/{{ site.authorSlug }}/"><img class="author-profile-image" src="{{ site.authorImage }}" alt="{{ site.author }}"></a>
+                    </div>
+                    <div class="gh-article-meta-wrapper">
+                        <h4 class="gh-article-author-name"><a href="/author/{{ site.authorSlug }}/">{{ site.author }}</a></h4>
+                        <div class="gh-article-meta-content">
+                            <time class="gh-article-meta-date" datetime="{{ page.date | isoDay }}">{{ page.date | displayDate }}</time>
+                            <span class="gh-article-meta-length"><span class="bull">—</span> {{ content | readingTime }} min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% include "themes/source/feature-image.njk" %}
+        </header>
+
+        <section class="gh-content gh-canvas is-body">
+            {{ content | safe }}
+        </section>
+    </article>
+</main>
+
+{% set nextPosts = collections.posts | readNext({ topics: topics, page: page }) %}
+{% if nextPosts.length %}
+<section class="gh-container is-grid gh-outer">
+    <div class="gh-container-inner gh-inner">
+        <h2 class="gh-container-title">Read more</h2>
+        <div class="gh-feed">
+            {%- for post in nextPosts %}
+            {% include "themes/source/card.njk" %}
+            {%- endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

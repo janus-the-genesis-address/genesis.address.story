@@ -1,0 +1,32 @@
+---
+layout: base.njk
+bodyClass: page-template
+---
+<main class="main-wrap">
+    {% if feature_image %}
+    <section class="m-hero with-picture" data-animate="fade">
+        <div class="m-hero__picture">
+            <img srcset="{{ feature_image | srcset }}" sizes="100vw" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+        </div>
+    {% else %}
+    <section class="m-hero no-picture" data-animate="fade">
+    {% endif %}
+        <div class="m-hero__content" data-animate="fade-down">
+            <h1 class="m-hero-title bigger">{{ title }}</h1>
+            {% if excerpt %}
+            <p class="m-hero-description">{{ excerpt | trimText }}</p>
+            {% endif %}
+        </div>
+    </section>
+    <article>
+        <div class="l-content">
+            <div class="l-wrapper in-post" data-animate="fade-up">
+                <div class="l-post-content">
+                    <div class="pos-relative js-post-content gh-content">
+                        {{ content | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</main>

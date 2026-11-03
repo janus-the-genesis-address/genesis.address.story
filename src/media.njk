@@ -1,17 +1,12 @@
 ---
-layout: base.njk
+layout: listing.njk
+listingClass: genesis-media
 permalink: /media/
 title: Media
 excerpt: "Every picture from The Genesis Address in one place, with the episode or page each one comes from. Free to view and to download at full size."
 eleventyExcludeFromCollections: true
 ---
 {%- set library = collections.posts | mediaLibrary %}
-<main class="gh-main gh-outer">
-    <div class="gh-inner genesis-media">
-        <section class="gh-pagehead">
-            <h1 class="gh-pagehead-title">Media</h1>
-        </section>
-
         <div class="genesis-media-intro">
             <p><a class="gh-btn genesis-signup-button" href="{{ site.subscribeUrl }}">Get new episodes by email</a></p>
         </div>
@@ -48,8 +43,6 @@ eleventyExcludeFromCollections: true
             {%- endfor %}
         </section>
         {%- endfor %}
-    </div>
-</main>
 
 <script>
 // Opens the theme's full-screen viewer on a thumbnail, with the picture's caption, its posts and a download link.

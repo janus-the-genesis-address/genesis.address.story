@@ -1,0 +1,32 @@
+{#- Source's "Magazine" header: the newest post large, six more beside it. Then one grid per section. #}
+{%- set arrow %}<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 256 256"><path d="M224.49,136.49l-72,72a12,12,0,0,1-17-17L187,140H40a12,12,0,0,1,0-24H187L135.51,64.48a12,12,0,0,1,17-17l72,72A12,12,0,0,1,224.49,136.49Z"></path></svg>{% endset %}
+<section class="gh-header is-magazine gh-outer">
+    <div class="gh-header-inner gh-inner">
+        {%- for post in collections.posts | batch(7) | first %}
+        {%- if loop.index == 2 %}<div class="gh-header-left">{% endif %}
+        {%- if loop.index == 5 %}<div class="gh-header-right">{% endif %}
+        {%- set imageSizes = "640px" if loop.first else "320px" %}
+        {% include "themes/source/card.njk" %}
+        {%- if loop.index == 4 or loop.index == 7 %}</div>{% endif %}
+        {%- endfor %}
+    </div>
+</section>
+
+{%- for topic in collections.topics | batch(4) | first %}
+<section class="gh-container is-grid gh-outer">
+    <div class="gh-container-inner gh-inner">
+        <h2 class="gh-container-title">{{ topic.name }}</h2>
+        <main class="gh-main">
+            <div class="gh-feed">
+                {%- for post in topic.posts | batch(6) | first %}
+                {%- set imageSizes = false %}
+                {% include "themes/source/card.njk" %}
+                {%- endfor %}
+            </div>
+            <div class="gh-more is-title">
+                <a href="/tag/{{ topic.slug }}/">See all {{ arrow | safe }}</a>
+            </div>
+        </main>
+    </div>
+</section>
+{%- endfor %}

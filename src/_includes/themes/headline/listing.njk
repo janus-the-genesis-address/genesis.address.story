@@ -1,0 +1,19 @@
+---
+layout: base.njk
+---
+<main class="gh-main gh-outer">
+    <div class="gh-inner{% if listingClass %} {{ listingClass }}{% endif %}">
+        <section class="gh-pagehead">
+            {%- if authorHead %}
+            <figure class="gh-author-image"><img src="{{ site.authorImage }}" alt="{{ site.author }}"></figure>
+            <div class="gh-pagehead-content">
+                <h1 class="gh-pagehead-title">{{ site.author }}</h1>
+                <div class="gh-author-social"><a class="gh-author-social-link" href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener">@{{ site.twitter }}</a></div>
+            </div>
+            {%- else %}
+            <h1 class="gh-pagehead-title">{{ title }}</h1>
+            {%- endif %}
+        </section>
+        {{ content | safe }}
+    </div>
+</main>

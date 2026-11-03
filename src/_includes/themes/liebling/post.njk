@@ -1,0 +1,97 @@
+---
+layout: base.njk
+isPost: true
+bodyClass: post-template
+---
+<main class="main-wrap">
+    {% if feature_image %}
+    <section class="m-hero with-picture" data-animate="fade">
+        <div class="m-hero__picture in-post">
+            <img srcset="{{ feature_image | srcset }}" sizes="100vw" src="{{ feature_image | sizedImage(1200) }}" alt="{{ feature_image_alt or title }}">
+        </div>
+    </section>
+    {% if feature_image_caption %}
+    <div class="l-wrapper in-caption">
+        <p class="m-small-text align-center">{{ feature_image_caption | safe }}</p>
+    </div>
+    {% endif %}
+    {% else %}
+    <section class="m-hero no-picture in-post" data-animate="fade"></section>
+    {% endif %}
+
+    <article>
+        <div class="l-content in-post">
+            <div class="l-wrapper in-post{% if not feature_image %} no-image{% endif %} js-animation-wrapper" data-animate="fade-up">
+                <div class="l-post-content js-progress-content">
+                    <header class="m-heading">
+                        <h1 class="m-heading__title in-post">{{ title }}</h1>
+                        <div class="m-heading__meta">
+                            {% if topics and topics.length %}
+                            <a href="/tag/{{ topics[0] | topicSlug }}/" class="m-heading__meta__tag">{{ topics[0] }}</a>
+                            <span class="m-heading__meta__divider" aria-hidden="true">&bull;</span>
+                            {% endif %}
+                            <span class="m-heading__meta__time">{{ page.date | displayDate }}</span>
+                        </div>
+                    </header>
+                    <div class="pos-relative js-post-content">
+                        <div class="m-share">
+                            <div class="m-share__content js-sticky">
+                                <a href="https://x.com/intent/post?text={{ title | urlencode }}&url={{ (site.url + page.url) | urlencode }}" class="m-icon-button filled in-share" target="_blank" rel="noopener" aria-label="Share on X">
+                                    <span class="icon-twitter" aria-hidden="true"></span>
+                                </a>
+                                <button class="m-icon-button filled in-share progress js-scrolltop" aria-label="Scroll to top">
+                                    <span class="icon-arrow-top" aria-hidden="true"></span>
+                                    <svg aria-hidden="true"><circle class="progress-ring__circle js-progress" fill="transparent" r="0" /></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="gh-content">
+                            {{ content | safe }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="m-author">
+                <div class="m-author__content">
+                    <div class="m-author__picture">
+                        <a href="/author/{{ site.authorSlug }}/" class="m-author-picture" aria-label="{{ site.author }}">
+                            <div><img src="{{ site.authorImage }}" alt=""></div>
+                        </a>
+                    </div>
+                    <div class="m-author__info">
+                        <h4 class="m-author__name"><a href="/author/{{ site.authorSlug }}/">{{ site.author }}</a></h4>
+                        <ul class="m-author-links">
+                            <li><a href="https://x.com/{{ site.twitter }}" target="_blank" rel="noopener" aria-label="X"><span class="icon-twitter" aria-hidden="true"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            {% set nextPosts = collections.posts | readNext({ topics: topics, page: page }) %}
+            {% if nextPosts.length %}
+            <section class="m-recommended">
+                <div class="l-wrapper in-recommended">
+                    <h3 class="m-section-title in-recommended">Read next</h3>
+                    <div class="m-recommended-articles">
+                        <div class="m-recommended-slider swiper js-recommended-slider">
+                            <div class="swiper-wrapper">
+                                {%- set inSlider = true %}
+                                {%- for post in nextPosts %}
+                                {% include "themes/liebling/card.njk" %}
+                                {%- endfor %}
+                            </div>
+                            <button class="m-icon-button filled in-recommended-articles swiper-button-prev" aria-label="Previous">
+                                <span class="icon-arrow-left" aria-hidden="true"></span>
+                            </button>
+                            <button class="m-icon-button filled in-recommended-articles swiper-button-next" aria-label="Next">
+                                <span class="icon-arrow-right" aria-hidden="true"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            {% endif %}
+        </div>
+    </article>
+</main>

@@ -32,7 +32,7 @@ bodyClass: post-template
                 </div>
             </aside>
 
-            {% include "feature-image.njk" %}
+            {% include "themes/headline/feature-image.njk" %}
         </header>
 
         <section class="gh-content gh-canvas">
@@ -50,7 +50,7 @@ bodyClass: post-template
             <div class="gh-topic-content">
                 {%- for post in nextPosts %}
                 {% set large = false %}{% set showExcerpt = true %}
-                {% include "card.njk" %}
+                {% include "themes/headline/card.njk" %}
                 {%- endfor %}
             </div>
         </div>

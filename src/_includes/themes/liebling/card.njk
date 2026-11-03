@@ -1,0 +1,30 @@
+{%- if inSlider %}<div class="m-recommended-slider__item swiper-slide">{% endif %}
+<article class="m-article-card{% if not post.data.feature_image %} no-picture{% endif %} post">
+    <div class="m-article-card__picture">
+        <a href="{{ post.url }}" class="m-article-card__picture-link" aria-hidden="true" tabindex="-1"></a>
+        {% if post.data.feature_image %}
+        <img class="m-article-card__picture-background" srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 768px) 100vw, 400px" src="{{ post.data.feature_image | sizedImage(720) }}" loading="lazy" alt="">
+        {% endif %}
+        <a href="/author/{{ site.authorSlug }}/" class="m-article-card__author" aria-label="{{ site.author }}">
+            <div><img src="{{ site.authorImage }}" alt=""></div>
+        </a>
+    </div>
+    {% if post.data.topics and post.data.topics.length %}
+    <div class="m-article-card__info">
+        <a href="/tag/{{ post.data.topics[0] | topicSlug }}/" class="m-article-card__tag">{{ post.data.topics[0] }}</a>
+    {% else %}
+    <div class="m-article-card__info no-tag">
+    {% endif %}
+        <a href="{{ post.url }}" class="m-article-card__info-link" aria-label="{{ post.data.title }}">
+            <div>
+                <h2 class="m-article-card__title" title="{{ post.data.title }}">{{ post.data.title }}</h2>
+            </div>
+            <div class="m-article-card__timestamp">
+                <span>{{ post.date | displayDate }}</span>
+                <span>&bull;</span>
+                <span>{{ post.content | readingTime }} min read</span>
+            </div>
+        </a>
+    </div>
+</article>
+{%- if inSlider %}</div>{% endif %}
