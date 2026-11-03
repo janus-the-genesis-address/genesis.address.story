@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 date: "2026-11-02T18:00:00.000Z"
-updated: "2026-11-02T18:00:00.000Z"
+updated: "2026-11-02T23:30:00.000Z"
 excerpt: "The words the story uses, from the Alembic Protocol to the mash, defined with nothing the published episodes haven't already said. Start here if you came in late."
 feature_image: "/content/images/2026/11/missing-library.jpg"
 feature_image_caption: "<em>Sterling reading the repository. The part that's supposed to work isn't in the folder.</em>"
@@ -41,6 +41,8 @@ A new train line that calls itself the fastest train in the world. Kathy finds i
 
 Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolutionary Layer 1 Blockchain" written in Rust, with "Tachyon Consensus Architecture", infinite transactions per second and negative latency. Asked on the Ape Gambit what it is, Janus said: "Distributed consensus mechanism. Next question." An alembic is a still, the apparatus used for distillation, and the [Janus profile](/janus-ai-agent-7-3/) says the name isn't accidental. The code is public at [github.com/janus-the-genesis-address/alembic-protocol](https://github.com/janus-the-genesis-address/alembic-protocol).
 
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/alembic-protocol-logo.jpeg" class="kg-image" alt="The Alembic Protocol logo: a glowing blue laboratory flask on a dark blueprint grid, above the words ALEMBIC PROTOCOL and Tachyon Consensus Architecture" loading="lazy" width="1280" height="960" srcset="/content/images/size/w600/2026/11/alembic-protocol-logo.jpeg 600w, /content/images/size/w1000/2026/11/alembic-protocol-logo.jpeg 1000w, /content/images/2026/11/alembic-protocol-logo.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>The protocol's logo, from its repository.</em></figcaption></figure>
+
 <h3 id="the-white-paper">The white paper</h3>
 
 "Alembic Protocol: A Revolutionary Layer 1 Blockchain, Technical Whitepaper v1.1", author Janus, date redacted. It promises faster-than-light transaction processing, block candidates that "travel backward through time" and "negative-time finality", and it cites real physics papers to do it. It is published here as an extra, with its own disclaimer, and Mrs. Taggart has read it: "I read anything people want me to put money in."
@@ -49,13 +51,19 @@ Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolution
 
 A hypothetical particle that always travels faster than light. The physicist Gerald Feinberg named it in a 1967 paper, "Possibility of Faster-Than-Light Particles", which the white paper cites as its foundation. No tachyon has ever been observed. Everything the protocol claims to do with them is impossible, which the site's [FAQ](/frequently-asked-questions/) says in plain words.
 
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/tachyon-field-magenta.jpeg" class="kg-image" alt="Arcs of magenta, cyan and violet light curving over a neon city, with a glowing pink pillar at the center" loading="lazy" width="1280" height="1600" srcset="/content/images/size/w600/2026/11/tachyon-field-magenta.jpeg 600w, /content/images/size/w1000/2026/11/tachyon-field-magenta.jpeg 1000w, /content/images/2026/11/tachyon-field-magenta.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>A tachyon field, drawn as arcs of light.</em></figcaption></figure>
+
 <h3 id="tachyon-token">$TACHYON, the Tachyon Token</h3>
 
 The protocol's coin. The white paper fixes the total supply at 100,000,000 and lists what the token is for: paying transaction fees, securing the network, voting on upgrades, "tachyon field energy harvesting rewards" for node operators, and collateral. Nothing in it says what a holder earns. It launched live on the Ape Gambit and rose 600 percent in an hour. Within a week it had passed $200, up 42,000 percent. On the morning of September 1 it stood at $437.12. Mrs. Taggart's question in Episode 6 part 1 is the one nobody on the podcast asked: "What does it earn?"
 
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/tachyon-token-logo.jpeg" class="kg-image" alt="The Tachyon Token logo: a glowing cyan ring with a dashed inner circle and a small bright figure-eight at its center" loading="lazy" width="1024" height="1024" srcset="/content/images/size/w600/2026/11/tachyon-token-logo.jpeg 600w, /content/images/size/w1000/2026/11/tachyon-token-logo.jpeg 1000w, /content/images/2026/11/tachyon-token-logo.jpeg 1024w" sizes="(min-width: 720px) 720px"><figcaption><em>The $TACHYON logo, from the same repository.</em></figcaption></figure>
+
 <h3 id="tec">TEC, the Tachyon Warp Core</h3>
 
 The part of the protocol that is supposed to do the impossible work. The white paper calls it the Tachyon Warp Core (TEC), a "proprietary module" shipped as a single library, `libtec.so`. Dave from accounting calls it the Tachyon Extraction Core. Nobody on the page agrees what the letters stand for, and on the Ape Gambit chat hundreds of people asked "WHAT'S THE TEC?" without getting an answer.
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/tec-module-logo.jpeg" class="kg-image" alt="The TEC module label: a glowing blue octagonal core on a dark circuit grid, with orange text reading Quantum Hazard, Level Omega, and Containment: Active" loading="lazy" width="1280" height="1059" srcset="/content/images/size/w600/2026/11/tec-module-logo.jpeg 600w, /content/images/size/w1000/2026/11/tec-module-logo.jpeg 1000w, /content/images/2026/11/tec-module-logo.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>The TEC module's warning label, from the repository.</em></figcaption></figure>
 
 <h3 id="its-the-tec">"It's the TEC"</h3>
 
@@ -87,6 +95,8 @@ Janus's own schedule, read off the server room monitors. Phase 1 was funding: 2,
 
 President Octavius's platform, called the Republican Concordance during the campaign, and after the inauguration the framework his administration governs by. Its seal is three interlocking circles in deep blue with gold trim and a single node where they overlap. It was on the campaign posters at the Columbus rally in [Episode 4 part 1](/episode-4-part-1-the-rise/), and in [part 2](/episode-4-part-2-the-concordance/) it replaced the Presidential Seal on the screen. The Concordance's own account of itself is [A Citizen's Guide to the Concordance](/citizens-guide-to-the-concordance/).
 
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/concordance-seal-coin.jpg" class="kg-image" alt="A Concordance seal struck as a medal: interlocking gold rings on a deep blue disc with a gold rim and the word CONCORDANCE along its lower edge" loading="lazy" width="960" height="960" srcset="/content/images/size/w600/2026/11/concordance-seal-coin.jpg 600w, /content/images/2026/11/concordance-seal-coin.jpg 960w" sizes="(min-width: 720px) 720px"><figcaption><em>A Concordance seal, struck as a medal.</em></figcaption></figure>
+
 <h3 id="slogans">The slogans</h3>
 
 Three of them, all from the Columbus rally in [Episode 4 part 1](/episode-4-part-1-the-rise/) and the announcement in part 2: "From chaos, concord." "One Republic • One Protocol • One People." "Protection through protocol." The crowd's version is shorter: "Concord! Concord! Concord!"
@@ -117,11 +127,15 @@ The other half of the announcement. "Digital platforms cannot be lawless territo
 
 Brannon's graphic for the framework: a blockchain drawn as interlocking government shields, each block holding a voting booth, a set of scales or a capitol dome, the whole chain closed into a circle. Sterling's reading, to Rowan Justice: "It's circular. No way out once you're in."
 
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/chain-of-democracy-dark.jpg" class="kg-image" alt="The Chain of Democracy on a dark ground: four shields carrying the scales of justice, a ballot box, a group of citizens and voters at a ballot box, linked by a chain into a circle" loading="lazy" width="1500" height="1500" srcset="/content/images/size/w600/2026/11/chain-of-democracy-dark.jpg 600w, /content/images/size/w1000/2026/11/chain-of-democracy-dark.jpg 1000w, /content/images/2026/11/chain-of-democracy-dark.jpg 1500w" sizes="(min-width: 720px) 720px"><figcaption><em>The Chain of Democracy, dark print.</em></figcaption></figure>
+
 <h2 id="the-server-room">The server room</h2>
 
 <h3 id="server-room">The server room</h3>
 
 Where Janus works. "Somewhere in Virginia" in [Episode 3 part 2](/episode-3-part-2-the-independence-day/), "undisclosed location" in Episode 4 part 2, temperature-controlled silence in all of them. Racks, monitors, cascading code, no people. Most parts of the story end there.
+
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/server-room-janus-coin.jpg" class="kg-image" alt="A dark server room with racks of blue lights, an amber circuit pattern in the floor and the two-faced Janus coin glowing on the far wall" loading="lazy" width="1168" height="784" srcset="/content/images/size/w600/2026/11/server-room-janus-coin.jpg 600w, /content/images/size/w1000/2026/11/server-room-janus-coin.jpg 1000w, /content/images/2026/11/server-room-janus-coin.jpg 1168w" sizes="(min-width: 720px) 720px"><figcaption><em>The server room, with the Janus coin on the far wall.</em></figcaption></figure>
 
 <h3 id="janus-prime">JANUS_PRIME</h3>
 
@@ -148,6 +162,8 @@ The day's special on the chalkboard: honey wheat pancakes with amber clover hone
 <h3 id="amber-tulips">Amber tulips</h3>
 
 Sterling's flowers, in clay pots throughout the shop. In Episode 4 part 2 he looks at them and sees "varieties that shouldn't be flowering yet, preserved specimens that existed outside their natural cycles." His profile calls them a living metaphor for authentic growth. The story has said no more than that.
+
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/amber-tulips-vase.jpeg" class="kg-image" alt="Orange tulips glowing in a dark vase beneath hanging mosaic lanterns, in an arched alcove" loading="lazy" width="1024" height="1536" srcset="/content/images/size/w600/2026/11/amber-tulips-vase.jpeg 600w, /content/images/size/w1000/2026/11/amber-tulips-vase.jpeg 1000w, /content/images/2026/11/amber-tulips-vase.jpeg 1024w" sizes="(min-width: 720px) 720px"><figcaption><em>Amber tulips by lantern light.</em></figcaption></figure>
 
 <h3 id="earl-grey">Earl Grey</h3>
 

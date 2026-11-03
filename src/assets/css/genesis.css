@@ -373,3 +373,10 @@
     color: var(--genesis-amber);
     text-shadow: 0 0 6px rgba(255, 176, 0, 0.45);
 }
+
+/* Tall and square pictures stay a readable size instead of filling the column. */
+.gh-content figure.genesis-narrow {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}

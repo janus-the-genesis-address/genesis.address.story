@@ -1,7 +1,7 @@
 ---
 title: "A Citizen's Guide to the Concordance"
 date: "2026-11-02T19:00:00.000Z"
-updated: "2026-11-02T23:00:00.000Z"
+updated: "2026-11-02T23:30:00.000Z"
 excerpt: "Citizen Bulletin No. 1 from the Office of Democratic Participation: what the fee is, what it is charged on, who is exempt, where it goes and why it is not a tax, in the Treasury's own words. Most citizens will not notice it. Reproduced as found."
 feature_image: "/content/images/2026/11/citizens-guide-to-the-concordance.jpg"
 feature_image_caption: "<em>Citizen Bulletin No. 1, on the counter of every participation point from September 1.</em>"
@@ -90,6 +90,8 @@ Contributions enter the Democratic Distribution, which allocates them to three c
 
 A full accounting will be published annually. It will be consolidated, and will not constitute an accounting in real time.
 
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/protocol-for-prosperity.jpeg" class="kg-image" alt="A dark flowchart running from Concordance Economic Protocol through Citizen Assets, Government Systems and Process to Citizen Benefit, with a Check step beside it" loading="lazy" width="853" height="1280" srcset="/content/images/size/w600/2026/11/protocol-for-prosperity.jpeg 600w, /content/images/2026/11/protocol-for-prosperity.jpeg 853w" sizes="(min-width: 720px) 720px"><figcaption><em>The Democratic Distribution, as the Treasury draws it.</em></figcaption></figure>
+
 ---
 
 ## Digital platforms
@@ -134,6 +136,8 @@ Every link in the financial system is now secured. Each block in the chain carri
 **My employer pays me by direct deposit. Is that an interaction?**<br>Questions about wages, benefits and pensions are answered in Citizen Bulletin No. 2.
 
 **Can I show my participation?**<br>Citizens who wish to may request a Protocol Participant pin from their platform.
+
+<figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/concordance-citizen-badge.jpeg" class="kg-image" alt="A shield-shaped badge, navy above and red below, with three white stars over a white wave and the words CONCORDANCE CITIZEN" loading="lazy" width="1024" height="1024" srcset="/content/images/size/w600/2026/11/concordance-citizen-badge.jpeg 600w, /content/images/size/w1000/2026/11/concordance-citizen-badge.jpeg 1000w, /content/images/2026/11/concordance-citizen-badge.jpeg 1024w" sizes="(min-width: 720px) 720px"><figcaption><em>The participation pin, Concordance Citizen issue.</em></figcaption></figure>
 
 **What if a court finds the fee unauthorized?**<br>The fee remains in effect during any review. Should a court find it unauthorized, it continues from the same day under a different authority. Refunds, where validated, include interest and are paid to the platform.
 
