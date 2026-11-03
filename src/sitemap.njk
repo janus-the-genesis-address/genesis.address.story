@@ -8,6 +8,7 @@ eleventyExcludeFromCollections: true
     {%- for section in site.sections %}
     <url><loc>{{ site.url }}/{{ section.slug }}/</loc></url>
     {%- endfor %}
+    <url><loc>{{ site.url }}/media/</loc></url>
     <url><loc>{{ site.url }}/about/</loc></url>
     <url><loc>{{ site.url }}/support/</loc></url>
     {%- for post in collections.posts %}

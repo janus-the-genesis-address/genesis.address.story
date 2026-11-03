@@ -1,4 +1,5 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
+import { createHash } from "node:crypto";
 import { EleventyHtmlBasePlugin } from "@11ty/eleventy";
 
 const site = JSON.parse(readFileSync(new URL("./src/_data/site.json", import.meta.url)));
@@ -63,6 +64,93 @@ function markdownForLlms(markdown) {
     .trim();
 }
 
+const srcsetOf = (image) => {
+  const info = imageSizes[image];
+  if (!info) return "";
+  const entries = info.sizes.map((w) => `${image.replace("/content/images/", `/content/images/size/w${w}/`)} ${w}w`);
+  return [...entries, `${image} ${info.width}w`].join(", ");
+};
+
+// The Media page: every picture the published posts show, once each, with every post it appears in.
+const attrOf = (tag, name) => tag.match(new RegExp(`\\s${name}="([^"]*)"`))?.[1] || "";
+const fileHash = (image) => {
+  const file = new URL(`./src${decodeURIComponent(image)}`, import.meta.url);
+  return existsSync(file) ? createHash("md5").update(readFileSync(file)).digest("hex") : "";
+};
+const mediaSections = [
+  { slug: "episodes", name: "Episodes", perPost: true },
+  { slug: "bloom", name: "Backwards bloom", note: "Every part ends with the same poster, glued somewhere in that part's world. Here is the poster, then every place it has turned up so far." },
+  { slug: "characters", name: "Characters" },
+  { slug: "world", name: "World", perPost: true },
+  { slug: "extras", name: "Extras", perPost: true },
+];
+
+function mediaLibrary(posts) {
+  const media = site.media || {};
+  const excluded = new Set(media.exclude || []);
+  const posterHash = media.poster ? fileHash(media.poster) : "";
+  const pictures = new Map();
+  for (const post of [...posts].sort((a, b) => a.date - b.date)) {
+    const section = slugify((post.data.topics || [])[0] || "");
+    if (!mediaSections.some((s) => s.slug === section)) continue;
+    const source = { title: post.data.title.replace(/^#\s*/, ""), url: post.url };
+    const found = [];
+    const feature = post.data.feature_image;
+    if (feature) {
+      const info = imageSizes[feature] || {};
+      found.push({
+        src: feature,
+        alt: post.data.feature_image_alt || "",
+        caption: decodeEntities(stripTags(post.data.feature_image_caption || "")).trim(),
+        width: info.width,
+        height: info.height,
+        srcset: srcsetOf(feature),
+      });
+    }
+    const raw = readFileSync(post.inputPath, "utf8");
+    for (const figure of raw.matchAll(/<figure class="kg-card kg-(?:image|gallery)-card[\s\S]*?<\/figure>/g)) {
+      const caption = captionOf(figure[0]);
+      for (const img of figure[0].matchAll(/<img\b[^>]*>/g)) {
+        found.push({
+          src: attrOf(img[0], "src"),
+          alt: decodeEntities(attrOf(img[0], "alt")),
+          caption,
+          width: attrOf(img[0], "width"),
+          height: attrOf(img[0], "height"),
+          srcset: attrOf(img[0], "srcset"),
+        });
+      }
+    }
+    for (const item of found) {
+      if (!item.src.startsWith("/content/images/") || /\/(thumbnail|icon|size)\//.test(item.src) || excluded.has(item.src)) continue;
+      const hash = fileHash(item.src);
+      if (!hash) continue;
+      let picture = pictures.get(hash);
+      if (!picture) {
+        const bloom = item.src.includes("/sign-off-") || hash === posterHash;
+        picture = { ...item, poster: hash === posterHash, section: bloom ? "bloom" : section, home: source, sources: [] };
+        if (picture.poster && media.posterCaption) picture.caption = media.posterCaption;
+        pictures.set(hash, picture);
+      }
+      for (const key of ["caption", "alt", "width", "height", "srcset"]) if (!picture[key] && item[key]) picture[key] = item[key];
+      if (!picture.sources.some((s) => s.url === source.url)) picture.sources.push(source);
+    }
+  }
+  return mediaSections
+    .map((section) => {
+      const items = [...pictures.values()].filter((p) => p.section === section.slug).sort((a, b) => b.poster - a.poster);
+      const groups = [];
+      for (const item of items) {
+        const key = section.perPost ? item.home.url : "all";
+        let group = groups.find((g) => g.key === key);
+        if (!group) groups.push((group = { key, title: section.perPost ? item.home.title : "", url: section.perPost ? item.home.url : "", items: [] }));
+        group.items.push(item);
+      }
+      return { ...section, count: items.length, groups };
+    })
+    .filter((section) => section.count);
+}
+
 export default function (eleventyConfig) {
   eleventyConfig.setNunjucksEnvironmentOptions({ autoescape: true });
   eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
@@ -103,12 +191,8 @@ export default function (eleventyConfig) {
     const mine = new Set((current.topics || []).map(slugify));
     return posts.filter((post) => post.url !== current.page.url && (post.data.topics || []).some((t) => mine.has(slugify(t)))).slice(0, 3);
   });
-  eleventyConfig.addFilter("srcset", (image) => {
-    const info = imageSizes[image];
-    if (!info) return "";
-    const entries = info.sizes.map((w) => `${image.replace("/content/images/", `/content/images/size/w${w}/`)} ${w}w`);
-    return [...entries, `${image} ${info.width}w`].join(", ");
-  });
+  eleventyConfig.addFilter("srcset", srcsetOf);
+  eleventyConfig.addFilter("mediaLibrary", mediaLibrary);
   eleventyConfig.addFilter("sizedImage", (image, width) => {
     const info = imageSizes[image];
     return info && info.sizes.includes(width) ? image.replace("/content/images/", `/content/images/size/w${width}/`) : image;

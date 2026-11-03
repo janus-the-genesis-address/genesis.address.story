@@ -10,11 +10,23 @@
   "subscribeUrl": "https://addressgenesisjanus.substack.com/subscribe",
   "tipUrl": "https://donate.stripe.com/bJebJ098Xf0h8ffe4Z8g000",
   "cloudflareAnalyticsToken": "89ff125564864bffac8106a54e5baf17",
+  "media": {
+    "poster": "/content/images/2025/09/BDFD.png",
+    "posterCaption": "The Backwards bloom poster, as it first appeared.",
+    "exclude": [
+      "/content/images/2025/09/Screenshot-2025-09-23-at-18.21.44.png",
+      "/content/images/2025/09/Screenshot-2025-09-23-at-18.26.18.png",
+      "/content/images/2025/09/Screenshot-2025-09-23-at-18.28.22.png",
+      "/content/images/2025/10/Screenshot-2025-10-23-at-16.22.29.png",
+      "/content/images/2025/11/Screenshot-2025-10-23-at-16.22.29.png"
+    ]
+  },
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },
     { "label": "Characters", "url": "/characters/" },
     { "label": "World", "url": "/world/" },
+    { "label": "Media", "url": "/media/" },
     { "label": "Extras", "url": "/extras/" },
     { "label": "Support", "url": "/support/" },
     { "label": "About", "url": "/about/" }

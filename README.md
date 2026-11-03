@@ -8,6 +8,7 @@ The Genesis Address is a work of fiction. Its tokens, protocols, companies, peop
 
 - [Website](https://www.thegenesisaddress.ai/)
 - [Newsletter on Substack](https://addressgenesisjanus.substack.com/)
+- [Media](https://www.thegenesisaddress.ai/media/): every picture from the serial, with the post it comes from
 - [RSS feed](https://www.thegenesisaddress.ai/rss.xml)
 - For AI readers: [llms.txt](https://www.thegenesisaddress.ai/llms.txt) and [llms-full.txt](https://www.thegenesisaddress.ai/llms-full.txt)
 
