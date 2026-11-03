@@ -38,6 +38,46 @@ html.dark-mode .post-card-image-link {
 .site-description {
     color: #fff !important;
 }
+/* The home cover rotates through one picture from each episode. The next picture fades in on top of the one
+   leaving, which stays solid underneath, so the theme's cyan never shows through mid-fade. The longer
+   selectors beat Casper's dark mode rule, which holds every cover picture at full opacity. */
+.site-header-content .site-header-cover.genesis-cover-slide {
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 1.4s ease-in-out;
+}
+.site-header-content .site-header-cover.genesis-cover-slide.is-leaving {
+    opacity: 1;
+    z-index: 1;
+    transition: none;
+}
+.site-header-content .site-header-cover.genesis-cover-slide.is-active {
+    opacity: 1;
+    z-index: 2;
+}
+/* A soft shade behind the title, so it reads over any of the pictures. */
+.genesis-cover-shade {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.55) 0%, rgba(0, 0, 0, 0.3) 40%, rgba(0, 0, 0, 0) 75%);
+}
+.site-header-content .site-header-inner {
+    z-index: 4;
+}
+.site-header-content .site-title,
+.site-header-content .site-description {
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.7);
+}
+@media (prefers-reduced-motion: reduce) {
+    .site-header-content .site-header-cover.genesis-cover-slide {
+        transition: none;
+    }
+}
 .genesis-cover-action {
     width: 100%;
     margin: 8px 0 0;

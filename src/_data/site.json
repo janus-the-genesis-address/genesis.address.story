@@ -11,6 +11,38 @@
   "subscribeUrl": "https://addressgenesisjanus.substack.com/subscribe",
   "tipUrl": "https://donate.stripe.com/bJebJ098Xf0h8ffe4Z8g000",
   "cloudflareAnalyticsToken": "89ff125564864bffac8106a54e5baf17",
+  "homeCovers": [
+    {
+      "image": "/content/images/2026/11/episode-1-last-song.jpg",
+      "alt": "A woman and a man press their hands together in a stadium crowd, laser beams and a stage behind them",
+      "position": "50% 20%"
+    },
+    {
+      "image": "/content/images/2025/09/6a950784-cd38-4185-beaa-cea779a75d37_1500x1790-jpeg.jpg",
+      "alt": "Glowing filament bulbs hanging from a rope-wrapped beam in a dark blue tea house",
+      "position": "50% 15%"
+    },
+    {
+      "image": "/content/images/2025/09/cyberfireworks.jpg",
+      "alt": "Fireworks over a neon city skyline and a dark beach at night",
+      "position": "40% 50%"
+    },
+    {
+      "image": "/content/images/2025/10/Building_tomorrows_unified_republic.jpeg",
+      "alt": "Cranes and a hard hat in a glowing network of blue lines, from a Concordance poster",
+      "position": "70% 25%"
+    },
+    {
+      "image": "/content/images/2025/11/image-7-.jpg",
+      "alt": "A couple on a sofa look at a laptop showing a maglev train, beside a Heartland Express ticket and a neon city window",
+      "position": "50% 60%"
+    },
+    {
+      "image": "/content/images/2026/11/mrs-taggart.jpg",
+      "alt": "A silver-haired woman in a blazer sits in a train seat with her bare feet on the window ledge, the golden prairie outside",
+      "position": "78% 50%"
+    }
+  ],
   "media": {
     "poster": "/content/images/2025/09/BDFD.png",
     "posterCaption": "The Backwards bloom poster, as it first appeared.",

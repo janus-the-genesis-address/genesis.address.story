@@ -1,7 +1,9 @@
-{#- Casper's home: the newest episode's picture as the cover, with the site's name on it, then every post in the "Classic" feed. #}
-{%- set cover = (collections.posts | withTopic("episodes") | first).data.feature_image %}
+{#- Casper's home: a cover that rotates one picture from each episode (homeCovers in site.json), with the site's name on it, then every post in the "Classic" feed. #}
 <div class="site-header-content outer">
-    <img class="site-header-cover" srcset="{{ cover | srcset }}" sizes="100vw" src="{{ cover | sizedImage(1200) }}" alt="{{ site.title }}" fetchpriority="high">
+    {%- for cover in site.homeCovers %}
+    <img class="site-header-cover genesis-cover-slide{% if loop.first %} is-active{% endif %}" srcset="{{ cover.image | srcset }}" sizes="100vw" src="{{ cover.image | sizedImage(1200) }}" alt="{{ cover.alt }}" style="object-position: {{ cover.position or '50% 50%' }}"{% if loop.first %} fetchpriority="high"{% else %} loading="lazy" aria-hidden="true"{% endif %}>
+    {%- endfor %}
+    <div class="genesis-cover-shade"></div>
     <div class="site-header-inner inner">
         <h1 class="site-title">{{ site.title }}</h1>
         <p class="site-description">A science fiction serial about AI manipulation and cryptocurrency deception.</p>
@@ -19,3 +21,24 @@
         </div>
     </div>
 </main>
+
+<script>
+    // Rotate the cover pictures: the next one fades in over the current one. Still pictures for anyone who asks for less motion.
+    (function () {
+        var slides = document.querySelectorAll(".genesis-cover-slide");
+        if (slides.length < 2 || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+        var current = 0;
+        setInterval(function () {
+            if (document.hidden) return;
+            var leaving = slides[current];
+            current = (current + 1) % slides.length;
+            var entering = slides[current];
+            leaving.classList.remove("is-active");
+            leaving.classList.add("is-leaving");
+            entering.classList.add("is-active");
+            entering.removeAttribute("aria-hidden");
+            leaving.setAttribute("aria-hidden", "true");
+            setTimeout(function () { leaving.classList.remove("is-leaving"); }, 1600);
+        }, 7000);
+    })();
+</script>

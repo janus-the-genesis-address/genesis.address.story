@@ -29,6 +29,17 @@ def make(original, width, sized_path):
 
 
 sizes = {}
+
+
+def index(url, rest):
+    """Record a picture's size and make its smaller copies. rest is its path after /content/images."""
+    original = SRC / urllib.parse.unquote(url.lstrip("/"))
+    width, height = width_of(original)
+    sizes[url] = {"width": width, "height": height, "sizes": [w for w in FEATURE_WIDTHS if w < width]}
+    for w in sizes[url]["sizes"]:
+        make(original, w, f"/content/images/size/w{w}{rest}")
+
+
 files = list((SRC / "posts").glob("*.md")) + list((SRC / "pages").glob("*.md"))
 for md in files:
     text = md.read_text()
@@ -37,15 +48,15 @@ for md in files:
         if original.exists():
             make(original, int(width), f"/content/images/size/w{width}{rest}")
     match = re.search(r'^feature_image: "(/content/images(/[^"]+))"', text, re.M)
-    if not match:
-        continue
-    url, rest = match.groups()
-    original = SRC / urllib.parse.unquote(url.lstrip("/"))
-    width, height = width_of(original)
-    sizes[url] = {"width": width, "height": height, "sizes": [w for w in FEATURE_WIDTHS if w < width]}
-    for w in sizes[url]["sizes"]:
-        make(original, w, f"/content/images/size/w{w}{rest}")
+    if match:
+        index(*match.groups())
+
+# The pictures the home page cover rotates through get the same smaller copies.
+site = json.loads((SRC / "_data" / "site.json").read_text())
+for cover in site.get("homeCovers", []):
+    url = cover["image"]
+    index(url, url[len("/content/images"):])
 
 (SRC / "_data").mkdir(exist_ok=True)
 (SRC / "_data" / "imageSizes.json").write_text(json.dumps(sizes, indent=2, sort_keys=True) + "\n")
-print(f"feature images: {len(sizes)}")
+print(f"feature and cover images: {len(sizes)}")

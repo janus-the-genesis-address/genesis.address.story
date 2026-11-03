@@ -15,6 +15,15 @@
     ],
     "width": 1536
   },
+  "/content/images/2025/09/6a950784-cd38-4185-beaa-cea779a75d37_1500x1790-jpeg.jpg": {
+    "height": 1790,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1500
+  },
   "/content/images/2025/09/9566d898-d447-462c-bf8a-e79164e63e5e.jpg": {
     "height": 960,
     "sizes": [
@@ -49,6 +58,14 @@
     "width": 2188
   },
   "/content/images/2025/09/beach.jpg": {
+    "height": 504,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 896
+  },
+  "/content/images/2025/09/cyberfireworks.jpg": {
     "height": 504,
     "sizes": [
       300,
@@ -143,6 +160,15 @@
     ],
     "width": 1660
   },
+  "/content/images/2025/10/Building_tomorrows_unified_republic.jpeg": {
+    "height": 853,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1280
+  },
   "/content/images/2025/10/IMG_6844.JPG": {
     "height": 576,
     "sizes": [
@@ -168,6 +194,15 @@
     ],
     "width": 2188
   },
+  "/content/images/2025/11/image-7-.jpg": {
+    "height": 720,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1280
+  },
   "/content/images/2025/11/tachyon_Cropped.png": {
     "height": 918,
     "sizes": [
@@ -177,6 +212,15 @@
     "width": 994
   },
   "/content/images/2026/11/citizens-guide-to-the-concordance.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/2026/11/episode-1-last-song.jpg": {
     "height": 768,
     "sizes": [
       300,
@@ -210,6 +254,15 @@
       1200
     ],
     "width": 1712
+  },
+  "/content/images/2026/11/mrs-taggart.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
   },
   "/content/images/2026/11/pikes-peak-summit.jpg": {
     "height": 768,
