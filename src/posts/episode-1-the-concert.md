@@ -3,8 +3,9 @@ title: "Episode 1: The Concert"
 date: "2025-07-31T08:32:46.000Z"
 updated: "2025-09-19T19:04:00.000Z"
 excerpt: "perfect concert during a spring evening "
-feature_image: "/content/images/2025/09/park-entrance.jpg"
+feature_image: "/content/images/2026/11/episode-1-park-entrance.jpg"
 feature_image_caption: "<em>Jack captures the carnival entrance after the concert at Hershey Stadium,</em>"
+feature_image_alt: "The neon ENTRANCE gate of an amusement park at night, roller coasters and a Ferris wheel behind the bars, with the Backwards bloom poster on the left brick pillar"
 topics: ["Episodes"]
 featured: true
 ---
@@ -25,7 +26,7 @@ When the waiter brought their glasses, Jack was struck by how the beer seemed to
 
 "Look at that color, amber waves of grain" Kathy had said, holding up her glass against the light, a few apple blossoms caught in her hair from their walk through the garden entrance. The amber ale seemed to glow like liquid sunlight framed by the flowering pergola
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2025/09/bf1da811-b4a3-4fd7-9067-776e94964f2d_473x641.png" class="kg-image" alt="" loading="lazy" width="473" height="641"><figcaption><em>Jack and Kathy's first shared amber ale at the brewery's spring garden, its amber catching the afternoon light like "amber waves of grain"</em></figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/episode-1-amber-ale.jpg" class="kg-image" alt="Two glasses of amber ale on a garden table under a flowering pergola, Kathy&#39;s hand lifting one toward the setting sun" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/episode-1-amber-ale.jpg 600w, /content/images/size/w1000/2026/11/episode-1-amber-ale.jpg 1000w, /content/images/2026/11/episode-1-amber-ale.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Jack and Kathy's first shared amber ale at the brewery's spring garden, its amber catching the afternoon light like "amber waves of grain"</em></figcaption></figure>
 
 The aroma of the beer rose to meet him, blending seamlessly with the spring afternoon around them. Pine resin and flowery notes that echoed the fresh, green scents of new growth, while underneath lay something richer: toasted bread like the warm earth beneath the flowering trees, caramel sweetness that matched the honeysuckle's nectar, and a honey-like warmth that seemed to capture the very essence of this perfect spring day.
 
@@ -41,7 +42,7 @@ Jack tugged at his collar as they walked toward Hershey Stadium, his palms alrea
 
 "Yeah, just… excited for the show." The lie came easily, but his heart hammered against his ribs like it was trying to escape. He'd been planning this for weeks—ever since he'd managed to scrape together the money for tickets. Two years. Two years after the financial crisis had gutted his drafting job at the manufacturing plant, along with half the positions in their rust belt town. The unemployment checks had run out months ago, and he'd been picking up whatever freelance work he could find—a blueprint here, a technical drawing there. Nothing steady. Nothing that made him feel like the kind of man who deserved someone like Kathy.
 
-<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2025/09/28ce000f-51a2-4477-9a9c-670dcda30ca5_1024x654.png" class="kg-image" alt="" loading="lazy" width="1024" height="654" srcset="/content/images/size/w600/2025/09/28ce000f-51a2-4477-9a9c-670dcda30ca5_1024x654.png 600w, /content/images/size/w1000/2025/09/28ce000f-51a2-4477-9a9c-670dcda30ca5_1024x654.png 1000w, /content/images/2025/09/28ce000f-51a2-4477-9a9c-670dcda30ca5_1024x654.png 1024w" sizes="(min-width: 720px) 720px"><figcaption><em>The digital concert tickets Jack spent months scraping together money for after losing his drafting job in the 2008 financial crisis</em></figcaption></figure>
+<figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/episode-1-concert-tickets.jpg" class="kg-image" alt="A phone showing two digital concert tickets on Jack&#39;s drafting table at night, among blueprints, under a desk lamp" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/episode-1-concert-tickets.jpg 600w, /content/images/size/w1000/2026/11/episode-1-concert-tickets.jpg 1000w, /content/images/2026/11/episode-1-concert-tickets.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>The digital concert tickets Jack spent months scraping together money for after losing his drafting job in the 2008 financial crisis</em></figcaption></figure>
 
 The stadium buzzed with anticipation as they found their seats. Thousands of fans filled the venue, their voices creating a low hum of excitement that seemed to vibrate through Jack's chest. The stage stood bathed in spotlights, equipment gleaming under the early evening sky where wisps of clouds drifted lazily across the deepening blue.
 

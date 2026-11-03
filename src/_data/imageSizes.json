@@ -110,14 +110,6 @@
     ],
     "width": 720
   },
-  "/content/images/2025/09/park-entrance.jpg": {
-    "height": 608,
-    "sizes": [
-      300,
-      720
-    ],
-    "width": 1081
-  },
   "/content/images/2025/09/tachyon_token.jpeg": {
     "height": 1500,
     "sizes": [
@@ -185,6 +177,15 @@
     "width": 994
   },
   "/content/images/2026/11/citizens-guide-to-the-concordance.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/2026/11/episode-1-park-entrance.jpg": {
     "height": 768,
     "sizes": [
       300,
