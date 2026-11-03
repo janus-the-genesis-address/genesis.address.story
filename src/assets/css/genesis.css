@@ -361,6 +361,34 @@
     font-size: inherit;
 }
 
+/* Long code lines wrap instead of running off a phone screen. Receipts keep their columns. */
+.gh-content pre:not(.receipt),
+.gh-content pre:not(.receipt) code {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+}
+
+/* Anything that still scrolls gets a dark scrollbar, never the browser's white one. */
+.gh-content pre {
+    scrollbar-color: rgba(10, 189, 198, 0.5) var(--genesis-code-bg);
+}
+.gh-content pre::-webkit-scrollbar {
+    height: 8px;
+    background: var(--genesis-code-bg);
+}
+.gh-content pre::-webkit-scrollbar-thumb {
+    background: rgba(10, 189, 198, 0.5);
+    border-radius: 4px;
+}
+
+/* Phones: smaller code, so receipts fit the column without scrolling. */
+@media (max-width: 500px) {
+    .gh-content pre {
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+
 /* In-story receipts. */
 .gh-content pre.receipt {
     width: fit-content;
