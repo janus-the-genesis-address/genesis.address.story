@@ -1,4 +1,4 @@
-<article class="post-card post{% if cardClass %} {{ cardClass }}{% endif %}">
+<article class="post-card post{% if cardClass %} {{ cardClass }}{% endif %}{% if post.data.topics and post.data.topics.length %} topic-{{ post.data.topics[0] | topicSlug }}{% endif %}{% if post.data.feature_image | isPortrait %} is-portrait{% endif %}">
     {% if post.data.feature_image %}
     <a class="post-card-image-link" href="{{ post.url }}">
         <img class="post-card-image" srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 1000px) 400px, 800px" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
@@ -8,7 +8,7 @@
         <a class="post-card-content-link" href="{{ post.url }}">
             <header class="post-card-header">
                 <div class="post-card-tags">
-                    {% if post.data.topics and post.data.topics.length %}<span class="post-card-primary-tag">{{ post.data.topics[0] }}</span>{% endif %}
+                    {% if post.data.topics and post.data.topics.length %}<span class="post-card-primary-tag">{{ post.data.topics[0] | topicName }}</span>{% endif %}
                 </div>
                 <h2 class="post-card-title">{{ post.data.title }}</h2>
             </header>

@@ -79,3 +79,9 @@ html.dark-mode .post-card-image-link {
         background-color: var(--genesis-blue) !important;
     }
 }
+
+/* Cards crop pictures to a wide box around the middle. Character portraits keep their top part instead,
+   where the faces are. */
+.post-card.topic-characters.is-portrait .post-card-image {
+    object-position: center 10%;
+}

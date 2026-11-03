@@ -12,6 +12,7 @@ if (!existsSync(new URL(`./src/_includes/themes/${theme}/base.njk`, import.meta.
 
 const dateFormat = new Intl.DateTimeFormat("en-GB", { day: "2-digit", month: "short", year: "numeric", timeZone: site.timezone });
 const slugify = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const topicName = (name) => name[0].toUpperCase() + name.slice(1);
 
 function signupCard() {
   return `<div class="kg-card genesis-signup">
@@ -177,7 +178,7 @@ export default function (eleventyConfig) {
     for (const post of api.getFilteredByGlob("src/posts/*.md").sort(byNewest)) {
       for (const name of post.data.topics || []) {
         const slug = slugify(name);
-        if (!topics.has(slug)) topics.set(slug, { name: name[0].toUpperCase() + name.slice(1), slug, posts: [] });
+        if (!topics.has(slug)) topics.set(slug, { name: topicName(name), slug, posts: [] });
         topics.get(slug).posts.push(post);
       }
     }
@@ -198,6 +199,7 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("iso", (date) => new Date(date).toISOString());
   eleventyConfig.addFilter("rfc822", (date) => new Date(date).toUTCString());
   eleventyConfig.addFilter("topicSlug", slugify);
+  eleventyConfig.addFilter("topicName", topicName);
   eleventyConfig.addFilter("trimText", (text) => (text || "").trim());
   eleventyConfig.addFilter("withTopic", (posts, slug) => posts.filter((post) => (post.data.topics || []).some((t) => slugify(t) === slug)));
   // Sections marked readingOrder in site.json, such as Episodes, list their posts oldest first.
@@ -216,6 +218,8 @@ export default function (eleventyConfig) {
     return { previous: index > 0 ? line[index - 1] : null, next: index !== -1 ? line[index + 1] || null : null };
   });
   eleventyConfig.addFilter("srcset", srcsetOf);
+  // Taller-than-wide pictures, so cards can crop the character portraits from the top.
+  eleventyConfig.addFilter("isPortrait", (image) => Boolean(imageSizes[image] && imageSizes[image].height > imageSizes[image].width));
   eleventyConfig.addFilter("mediaLibrary", mediaLibrary);
   eleventyConfig.addFilter("sizedImage", (image, width) => {
     const info = imageSizes[image];
