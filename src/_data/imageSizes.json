@@ -56,6 +56,14 @@
     ],
     "width": 896
   },
+  "/content/images/2025/09/d322a39d-9c9f-4e76-983a-b55c85a467ab_960x540-jpeg.jpg": {
+    "height": 540,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 960
+  },
   "/content/images/2025/09/jack2.jpg": {
     "height": 1248,
     "sizes": [
@@ -109,15 +117,6 @@
       720
     ],
     "width": 1081
-  },
-  "/content/images/2025/09/piedpiper.jpg": {
-    "height": 1024,
-    "sizes": [
-      300,
-      720,
-      1200
-    ],
-    "width": 1536
   },
   "/content/images/2025/09/tachyon_token.jpeg": {
     "height": 1500,

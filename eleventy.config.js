@@ -93,7 +93,8 @@ function mediaLibrary(posts) {
   for (const post of [...posts].sort((a, b) => a.date - b.date)) {
     const section = slugify((post.data.topics || [])[0] || "");
     if (!mediaSections.some((s) => s.slug === section)) continue;
-    const source = { title: post.data.title.replace(/^#\s*/, ""), url: post.url };
+    const title = post.data.title.replace(/^#\s*/, "");
+    const source = { title, short: /^Episode /.test(title) ? title.split(":")[0] : title, url: post.url };
     const found = [];
     const feature = post.data.feature_image;
     if (feature) {

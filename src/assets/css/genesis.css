@@ -381,7 +381,7 @@
     margin-right: auto;
 }
 
-/* The Media page: every picture in the posts, in a grid that opens the theme's full-screen viewer. */
+/* The Media page: a grid of thumbnails that opens the theme's full-screen viewer. */
 .genesis-media-intro {
     max-width: 720px;
     margin: 0 auto;
@@ -404,7 +404,7 @@
     font-weight: 600;
     letter-spacing: 0.02em;
 }
-.genesis-media-section { margin-top: 64px; scroll-margin-top: 24px; }
+.genesis-media-section { margin-top: 48px; scroll-margin-top: 24px; }
 .genesis-media-heading {
     margin: 0 0 8px;
     font-family: var(--genesis-font-heading);
@@ -427,44 +427,62 @@
     color: var(--genesis-blue);
 }
 .genesis-media-post {
-    margin: 36px 0 14px;
+    margin: 26px 0 0;
     font-family: var(--genesis-font-heading);
-    font-size: 20px;
+    font-size: 17px;
 }
 .genesis-media-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 28px 24px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+    margin-top: 12px;
 }
-.genesis-media-item.kg-image-card {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
+@media (max-width: 560px) {
+    .genesis-media-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
 }
-.genesis-media-item .kg-image {
-    width: 100%;
-    height: 240px;
-    object-fit: contain;
+.genesis-media-item { margin: 0; min-width: 0; }
+.genesis-media-thumb {
+    display: block;
+    overflow: hidden;
     background: var(--genesis-code-bg);
     border: 1px solid rgba(10, 189, 198, 0.25);
     border-radius: 2px;
     cursor: zoom-in;
     transition: border-color 0.2s, box-shadow 0.2s;
 }
-.genesis-media-item .kg-image:hover {
+.genesis-media-thumb:hover,
+.genesis-media-thumb:focus-visible {
     border-color: var(--genesis-blue);
     box-shadow: 0 0 12px rgba(10, 189, 198, 0.45);
 }
-.genesis-media-item figcaption {
-    margin-top: 10px;
+.genesis-media-thumb img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+.genesis-media-thumb.is-poster img { object-fit: contain; }
+.genesis-media-label {
+    margin-top: 6px;
     padding: 0;
     text-align: left;
-    font-family: var(--genesis-font-body);
-    font-size: 14px;
-    line-height: 1.45;
+    font-family: var(--genesis-font-heading);
+    font-size: 12px;
+    line-height: 1.35;
     color: var(--genesis-blue);
 }
-.genesis-media-caption { display: block; margin-bottom: 4px; font-style: italic; }
-.genesis-media-meta { display: block; font-family: var(--genesis-font-heading); font-size: 13px; }
-.genesis-media-meta a { text-decoration: underline; text-underline-offset: 2px; }
+
+/* The viewer's caption: the theme draws it in a dark colour, which vanishes on the dark backdrop. */
+.pswp__caption__center {
+    max-width: 760px;
+    padding: 36px 20px 24px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.78));
+    color: var(--genesis-blue);
+    font-family: var(--genesis-font-body);
+    font-size: 15px;
+    line-height: 1.5;
+}
+.genesis-viewer-caption { margin-bottom: 6px; font-style: italic; }
+.genesis-viewer-meta { font-family: var(--genesis-font-heading); font-size: 13px; }
+.genesis-viewer-meta a { text-decoration: underline; text-underline-offset: 2px; }

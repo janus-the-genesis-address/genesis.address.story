@@ -13,7 +13,7 @@ eleventyExcludeFromCollections: true
         </section>
 
         <div class="genesis-media-intro">
-            <p>Every picture from the serial, gathered from the episodes and pages where it appears. Each one names its post, so you can go back to the scene. Click a picture to see it full screen, or download it at full size. Like everything here, they are free.</p>
+            <p>Every picture from the serial, gathered from the episodes and pages where it appears. Click one to see it full screen, with its caption, the posts it comes from and a full-size download. Like everything here, they are free.</p>
             <p>The pictures are made with AI tools, as the <a href="/frequently-asked-questions/">FAQ</a> explains. New ones arrive with every episode.</p>
             <p><a class="gh-btn genesis-signup-button" href="{{ site.subscribeUrl }}">Get new episodes by email</a></p>
         </div>
@@ -36,17 +36,14 @@ eleventyExcludeFromCollections: true
             {%- endif %}
             <div class="genesis-media-grid">
                 {%- for item in group.items %}
-                {%- set others = [] %}
-                {%- for source in item.sources %}{% if source.url != group.url %}{% set others = (others.push(source), others) %}{% endif %}{% endfor %}
-                <figure class="kg-card kg-image-card genesis-media-item">
-                    <img class="kg-image" src="{{ item.src }}"{% if item.srcset %} srcset="{{ item.srcset }}" sizes="(min-width: 1100px) 340px, (min-width: 700px) 45vw, 92vw"{% endif %}{% if item.width %} width="{{ item.width }}" height="{{ item.height }}"{% endif %} alt="{{ item.alt or item.caption }}" loading="lazy">
-                    <figcaption>
-                        {%- if item.caption %}<span class="genesis-media-caption">{{ item.caption }}</span>{% endif %}
-                        <span class="genesis-media-meta">
-                            {%- if others.length %}{% if group.title %}Also in {% else %}From {% endif %}{% for source in others %}<a href="{{ source.url }}">{{ source.title }}</a>{% if not loop.last %}, {% endif %}{% endfor %}<br>{% endif -%}
-                            <a href="{{ item.src }}" download>Download full size</a>
-                        </span>
-                    </figcaption>
+                {%- set label = item.caption or item.alt or ("Picture from " + item.home.short) %}
+                <figure class="genesis-media-item">
+                    <a class="genesis-media-thumb{% if item.poster %} is-poster{% endif %}" href="{{ item.src }}" title="{{ label }}" aria-label="{{ label }}" data-width="{{ item.width }}" data-height="{{ item.height }}" data-caption="{{ item.caption }}" data-sources="{{ item.sources | dump }}">
+                        <img src="{{ item.src }}"{% if item.srcset %} srcset="{{ item.srcset }}" sizes="(min-width: 1100px) 190px, (min-width: 700px) 22vw, 46vw"{% endif %}{% if item.width %} width="{{ item.width }}" height="{{ item.height }}"{% endif %} alt="" loading="lazy">
+                    </a>
+                    {%- if not section.perPost %}
+                    <figcaption class="genesis-media-label">{{ "The poster" if item.poster else item.home.short }}</figcaption>
+                    {%- endif %}
                 </figure>
                 {%- endfor %}
             </div>
@@ -55,3 +52,62 @@ eleventyExcludeFromCollections: true
         {%- endfor %}
     </div>
 </main>
+
+<script>
+// Opens the theme's full-screen viewer on a thumbnail, with the picture's caption, its posts and a download link.
+document.addEventListener("DOMContentLoaded", function () {
+  var gallery = document.querySelector(".pswp");
+  var links = [].slice.call(document.querySelectorAll(".genesis-media-thumb"));
+  if (!window.PhotoSwipe || !gallery || !links.length) return;
+  function el(tag, props, text) {
+    var node = document.createElement(tag);
+    for (var key in props) node.setAttribute(key, props[key]);
+    if (text) node.textContent = text;
+    return node;
+  }
+  var items = links.map(function (link) {
+    var thumb = link.querySelector("img");
+    var sources = [];
+    try { sources = JSON.parse(link.getAttribute("data-sources") || "[]"); } catch (e) {}
+    var box = el("div");
+    if (link.getAttribute("data-caption")) box.appendChild(el("div", { "class": "genesis-viewer-caption" }, link.getAttribute("data-caption")));
+    var meta = el("div", { "class": "genesis-viewer-meta" });
+    if (sources.length) {
+      meta.appendChild(document.createTextNode(sources.length > 1 ? "Appears in " : "From "));
+      sources.forEach(function (source, index) {
+        if (index) meta.appendChild(document.createTextNode(", "));
+        meta.appendChild(el("a", { href: source.url }, source.title));
+      });
+      meta.appendChild(document.createTextNode(" \u00b7 "));
+    }
+    meta.appendChild(el("a", { href: link.getAttribute("href"), download: "" }, "Download full size"));
+    box.appendChild(meta);
+    return {
+      src: link.getAttribute("href"),
+      msrc: thumb.currentSrc || thumb.src,
+      w: parseInt(link.getAttribute("data-width"), 10) || thumb.naturalWidth || 1600,
+      h: parseInt(link.getAttribute("data-height"), 10) || thumb.naturalHeight || 900,
+      el: thumb,
+      title: box.innerHTML
+    };
+  });
+  links.forEach(function (link, index) {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
+      new PhotoSwipe(gallery, PhotoSwipeUI_Default, items, {
+        index: index,
+        bgOpacity: 0.92,
+        history: false,
+        shareEl: false,
+        zoomEl: false,
+        fullscreenEl: false,
+        closeOnScroll: false,
+        getThumbBoundsFn: function (i) {
+          var rect = items[i].el.getBoundingClientRect();
+          return { x: rect.left, y: rect.top + (window.pageYOffset || document.documentElement.scrollTop), w: rect.width };
+        }
+      }).init();
+    });
+  });
+});
+</script>
