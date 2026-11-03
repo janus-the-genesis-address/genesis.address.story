@@ -12,6 +12,12 @@ topics: ["Episodes"]
 
 ---
 
+*Previously on The Genesis Address:*
+
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-1-the-concert/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 1: The Concert</div><div class="kg-bookmark-description">perfect concert during a spring evening</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-3.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/episode-1-park-entrance.jpg" alt=""></div></a></figure>
+
+---
+
 The morning light cast shadows on the quiet West Village street outside The Colonial Leaves. The small tea house sat between a used bookstore and an art gallery.
 
 Inside, Dr. Robert Sterling’s tea house hummed with gentle activity. Earl Grey mixed with chamomile, and dried herbs hung from the exposed beams. Amber light streamed through windows lined with several flower varieties in clay pots. Behind the counter, botanical displays showcased plant specimens—some for sale, others for Sterling’s research into natural growth patterns and economic cycles.

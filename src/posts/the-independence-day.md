@@ -17,6 +17,12 @@ Jack and Kathy celebrate freedom with real food while sightseeing America's foun
 
 ---
 
+*Previously on The Genesis Address:*
+
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-2-part-2-the-ape-gambit/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 2 part 2: “The Ape Gambit™”</div><div class="kg-bookmark-description">Cold algorithms seduce with warm promises. In amber light and digital shadows, Sterling identifies the pattern: ice for science, honey for greed.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-2.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/the_ape_gambit.png" alt=""></div></a></figure>
+
+---
+
 The Honda Civic's engine hummed steadily as Jack navigated the morning traffic heading east on I-76. July 4th weekend stretched ahead of them—three full days away from everything familiar, just him and Kathy and the open road.
 
 "I still can't believe you've never seen the Liberty Bell," Kathy said, adjusting her red sundress as she settled into the passenger seat. The morning sun caught the auburn highlights in her hair as Pennsylvania farmland rolled past their windows.
