@@ -4,7 +4,7 @@ isPost: true
 bodyClass: post-template
 ---
 <main id="site-main" class="site-main">
-    <article class="article post">
+    <article class="article post image-small">
         <header class="article-header gh-canvas">
             <div class="article-tag post-card-tags">
                 {% if topics and topics.length %}<span class="post-card-primary-tag"><a href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] | topicName }}</a></span>{% endif %}
