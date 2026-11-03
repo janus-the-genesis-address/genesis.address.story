@@ -10,7 +10,7 @@ topics: ["Episodes"]
 featured: true
 ---
 
-*In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise.*
+> "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
 
 ---
 

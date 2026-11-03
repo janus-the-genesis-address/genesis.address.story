@@ -335,6 +335,27 @@
     box-shadow: 0 0 6px rgba(255, 176, 0, 0.6), 0 0 18px rgba(255, 176, 0, 0.25);
 }
 
+/* The story's three opening sentences, in a glowing cyan frame. It is the only quote block in the serial. */
+.gh-content blockquote,
+.gh-content > blockquote:not([class]) {
+    margin: 1.6em 0;
+    padding: 20px 28px;
+    font-style: italic;
+    border: 2px solid var(--genesis-blue);
+    border-radius: 6px;
+    background: rgba(10, 189, 198, 0.06);
+    box-shadow: 0 0 6px rgba(10, 189, 198, 0.6), 0 0 18px rgba(10, 189, 198, 0.25);
+}
+
+.gh-content blockquote p {
+    margin: 0;
+}
+
+/* The theme's accent bar beside quotes, now replaced by the frame. */
+.gh-content > blockquote:not([class])::before {
+    display: none;
+}
+
 /* The line after the "Read next" heading, same amber as the scene dividers. */
 .gh-read-next .gh-pagehead-title:after {
     height: 2px;
