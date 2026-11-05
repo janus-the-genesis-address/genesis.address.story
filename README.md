@@ -44,6 +44,9 @@ Latest post: [Episode 6 part 2: "The Summit"](https://www.thegenesisaddress.ai/e
 
 - [Alembic Protocol White Paper](https://www.thegenesisaddress.ai/alembic-protocol/) (2025-07-30)
 - [Glossary](https://www.thegenesisaddress.ai/glossary/) (2026-11-02)
+
+### Concordance
+
 - [A Citizen's Guide to the Concordance](https://www.thegenesisaddress.ai/citizens-guide-to-the-concordance/) (2026-11-02)
 
 ### Extras

@@ -10,4 +10,8 @@ eleventyComputed:
 ---
 {%- set feedPosts = topic.posts | sectionOrder(topic.slug) %}
 {%- set largeFirst = true %}
+{%- if topic.slug | isChannel %}
+{% include "concordance-channel.njk" %}
+{%- else %}
 {% include "themes/" + theme + "/feed.njk" %}
+{%- endif %}

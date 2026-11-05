@@ -40,6 +40,9 @@ bodyClass: post-template
         <section class="gh-content gh-canvas">
             {{ content | safe }}
         </section>
+        {%- if topics and topics.length and (topics[0] | topicSlug | isChannel) %}
+        {% include "concordance-reply.njk" %}
+        {%- endif %}
     </article>
 </main>
 

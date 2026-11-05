@@ -1,0 +1,8 @@
+{#- Under each Concordance document: the channel it was posted in, and its locked reply box. -#}
+{%- import "concordance-icons.njk" as ccIcon %}
+<section class="cc-reply gh-canvas">
+    <div class="cc-reply-box">
+        <a class="cc-reply-head" href="/concordance/">{{ ccIcon.hash(18) }}<strong>{{ site.concordance.channel }}</strong><span>{{ site.concordance.server }}</span></a>
+        {% include "concordance-composer.njk" %}
+    </div>
+</section>

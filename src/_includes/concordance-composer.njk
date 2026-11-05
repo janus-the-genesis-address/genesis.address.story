@@ -1,0 +1,7 @@
+{#- The reply box nobody can use. Shown under the channel and under every Concordance document. -#}
+{%- import "concordance-icons.njk" as ccIcon %}
+<div class="cc-composer" title="{{ site.concordance.locked }}">
+    <span class="cc-composer-plus" aria-hidden="true">+</span>
+    <div class="cc-composer-input" role="textbox" aria-disabled="true" aria-readonly="true" aria-label="Message #{{ site.concordance.channel }}">{{ site.concordance.locked }}</div>
+    <span class="cc-composer-lock">{{ ccIcon.lock(16) }}</span>
+</div>

@@ -9,4 +9,8 @@ eleventyComputed:
   title: "{{ section.name }}"
 ---
 {%- set feedPosts = collections.posts | withTopic(section.slug) | sectionOrder(section.slug) %}
+{%- if section.slug | isChannel %}
+{% include "concordance-channel.njk" %}
+{%- else %}
 {% include "themes/" + theme + "/feed.njk" %}
+{%- endif %}

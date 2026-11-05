@@ -89,6 +89,7 @@ const mediaSections = [
   { slug: "bloom", name: "Backwards bloom", note: "Every part ends with the same poster, glued somewhere in that part's world. Here is the poster, then every place it has turned up so far." },
   { slug: "characters", name: "Characters" },
   { slug: "world", name: "TGA Universe", perPost: true },
+  { slug: "concordance", name: "Concordance", perPost: true },
   { slug: "extras", name: "Extras", perPost: true },
 ];
 
@@ -207,6 +208,8 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("sectionOrder", (posts, slug) =>
     site.sections.some((section) => section.slug === slug && section.readingOrder) ? [...posts].sort((a, b) => a.date - b.date) : posts,
   );
+  // Sections with "style": "channel" in site.json, such as the Concordance, are drawn as a locked chat channel.
+  eleventyConfig.addFilter("isChannel", (slug) => site.sections.some((section) => section.slug === slug && section.style === "channel"));
   eleventyConfig.addFilter("readNext", (posts, current) => {
     const mine = new Set((current.topics || []).map(slugify));
     return posts.filter((post) => post.url !== current.page.url && (post.data.topics || []).some((t) => mine.has(slugify(t)))).slice(0, 3);

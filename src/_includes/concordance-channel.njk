@@ -1,0 +1,84 @@
+{#- The Concordance section, drawn as a locked chat channel: servers, channels, the messages oldest first with the
+    newest beside the reply box nobody can use, and the members. Each document is a message from its issuer
+    (front matter "issuer", default below) with "announce" as its text and the document as its embed.
+    Settings are under "concordance" in site.json. -#}
+{%- import "concordance-icons.njk" as ccIcon %}
+{%- set cc = site.concordance %}
+<div class="cc-window">
+    <nav class="cc-rail" aria-label="Servers">
+        <span class="cc-server is-active" title="{{ cc.server }}"><img src="{{ cc.avatar | sizedImage(300) }}" alt="{{ cc.server }}"></span>
+        <span class="cc-rail-sep" aria-hidden="true"></span>
+        <span class="cc-server cc-server-add" title="Joining is coordinated" aria-hidden="true">+</span>
+    </nav>
+
+    <aside class="cc-side" aria-label="Channels">
+        <header class="cc-side-head">{{ cc.server }}</header>
+        <div class="cc-side-list">
+            {%- for group in cc.channels %}
+            <h3 class="cc-cat">{{ group.category }}</h3>
+            <ul>
+                {%- for item in group.items %}
+                <li class="cc-chan{% if item.active %} is-active{% endif %}{% if item.locked %} is-locked{% endif %}"{% if item.note %} title="{{ item.note }}"{% endif %}>
+                    {% if item.voice %}{{ ccIcon.speaker(18) }}{% else %}{{ ccIcon.hash(18) }}{% endif %}<span>{{ item.name }}</span>{% if item.locked %}{{ ccIcon.lock(13) }}{% endif %}
+                </li>
+                {%- endfor %}
+            </ul>
+            {%- endfor %}
+        </div>
+        <footer class="cc-user">
+            <span class="cc-user-avatar" aria-hidden="true">?</span>
+            <span class="cc-user-name">Citizen<small>Muted</small></span>
+            {{ ccIcon.micOff(18) }}
+        </footer>
+    </aside>
+
+    <section class="cc-main" aria-label="#{{ cc.channel }}">
+        <header class="cc-main-head">{{ ccIcon.hash(22) }}<strong>{{ cc.channel }}</strong><span class="cc-topic">{{ cc.topic }}</span></header>
+        <div class="cc-log">
+            <div class="cc-start">
+                <span class="cc-start-icon">{{ ccIcon.hash(36) }}</span>
+                <h2>Welcome to #{{ cc.channel }}</h2>
+                <p>This is the start of the #{{ cc.channel }} channel. {{ cc.topic }}</p>
+            </div>
+            {%- for post in feedPosts %}
+            <article class="cc-msg" id="{{ post.fileSlug }}">
+                <img class="cc-avatar" src="{{ (post.data.avatar or cc.avatar) | sizedImage(300) }}" alt="">
+                <div class="cc-msg-body">
+                    <header class="cc-msg-head">
+                        <span class="cc-name">{{ post.data.issuer or cc.issuer }}</span><span class="cc-tag">OFFICIAL</span><time datetime="{{ post.date | isoDay }}">{{ post.date | displayDate }}</time>
+                    </header>
+                    <p class="cc-text"><span class="cc-mention">@everyone</span> {{ post.data.announce or post.data.title }}</p>
+                    <a class="cc-embed" href="{{ post.url }}">
+                        <span class="cc-embed-provider">{{ cc.server }}</span>
+                        <span class="cc-embed-title">{{ post.data.title }}</span>
+                        {%- if post.data.excerpt %}
+                        <span class="cc-embed-text">{{ post.data.excerpt | trimText }}</span>
+                        {%- endif %}
+                        {%- if post.data.feature_image %}
+                        <img class="cc-embed-image" srcset="{{ post.data.feature_image | srcset }}" sizes="(max-width: 720px) 90vw, 520px" src="{{ post.data.feature_image | sizedImage(720) }}" alt="{{ post.data.feature_image_alt or post.data.title }}" loading="lazy">
+                        {%- endif %}
+                    </a>
+                </div>
+            </article>
+            {%- endfor %}
+        </div>
+        {% include "concordance-composer.njk" %}
+    </section>
+
+    <aside class="cc-members" aria-label="Members">
+        {%- for group in cc.members %}
+        <h3 class="cc-cat">{{ group.group }} &middot; {{ group.people.length }}</h3>
+        <ul>
+            {%- for person in group.people %}
+            <li>
+                {%- if person.url %}<a class="cc-member" href="{{ person.url }}">{% else %}<span class="cc-member{% if person.muted %} is-muted{% endif %}">{% endif %}
+                {%- if person.avatar %}<img src="{{ person.avatar | sizedImage(300) }}" alt="">{% else %}<span class="cc-member-blank" aria-hidden="true"></span>{% endif %}
+                <span class="cc-member-name">{{ person.name }}{% if person.tag %} <span class="cc-tag">{{ person.tag }}</span>{% endif %}</span>
+                {%- if person.muted %}{{ ccIcon.micOff(15) }}{% endif %}
+                {%- if person.url %}</a>{% else %}</span>{% endif %}
+            </li>
+            {%- endfor %}
+        </ul>
+        {%- endfor %}
+    </aside>
+</div>

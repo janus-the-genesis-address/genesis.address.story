@@ -59,6 +59,7 @@
     { "label": "Episodes", "url": "/episodes/" },
     { "label": "Characters", "url": "/characters/" },
     { "label": "TGA Universe", "url": "/world/" },
+    { "label": "Concordance", "url": "/concordance/" },
     { "label": "Media", "url": "/media/" },
     { "label": "Extras", "url": "/extras/" },
     { "label": "Support", "url": "/support/" },
@@ -68,6 +69,7 @@
     { "name": "Episodes", "note": "Read in this order.", "topics": ["episodes"] },
     { "name": "Characters", "note": "Spoiler-free profiles.", "topics": ["characters"] },
     { "name": "TGA Universe", "note": "The story's world: a glossary of its terms, and documents from inside it.", "topics": ["world"] },
+    { "name": "Concordance", "note": "The Concordance's own bulletins, orders and directives, reproduced as found. All fictional.", "topics": ["concordance"] },
     { "name": "Extras", "note": "In-world documents and promotional pieces, all fictional.", "topics": ["extras"] },
     { "name": "Legal and FAQ", "note": "", "topics": ["legal", "faq"] }
   ],
@@ -75,6 +77,34 @@
     { "name": "Episodes", "slug": "episodes", "readingOrder": true },
     { "name": "Characters", "slug": "characters" },
     { "name": "TGA Universe", "slug": "world" },
+    { "name": "Concordance", "slug": "concordance", "readingOrder": true, "style": "channel" },
     { "name": "Extras", "slug": "extras" }
-  ]
+  ],
+  "concordance": {
+    "server": "CONCORDANCE",
+    "channel": "bulletins",
+    "topic": "Bulletins, orders and directives of the Concordance, reproduced as found.",
+    "issuer": "Office of Democratic Participation",
+    "avatar": "/content/images/2025/10/The-Concordance-Seal.jpeg",
+    "locked": "You do not have permission to send messages in this channel.",
+    "channels": [
+      { "category": "Official", "items": [
+        { "name": "bulletins", "active": true },
+        { "name": "citizen-comments", "locked": true, "note": "Comments are consolidated and do not constitute dissent." }
+      ] },
+      { "category": "Voice", "items": [
+        { "name": "evening-session", "voice": true, "locked": true, "note": "Authorization Level 7" }
+      ] }
+    ],
+    "members": [
+      { "group": "Officials", "people": [
+        { "name": "Office of Democratic Participation", "avatar": "/content/images/2025/10/The-Concordance-Seal.jpeg", "tag": "OFFICIAL" },
+        { "name": "President Octavius", "avatar": "/content/images/2025/09/octavius.jpg", "url": "/president-octavius/" },
+        { "name": "Dr. Brannon", "avatar": "/content/images/2025/09/9566d898-d447-462c-bf8a-e79164e63e5e.jpg", "url": "/brannon/" }
+      ] },
+      { "group": "Citizens", "people": [
+        { "name": "You", "muted": true }
+      ] }
+    ]
+  }
 }
