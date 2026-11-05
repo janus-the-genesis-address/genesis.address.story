@@ -21,7 +21,7 @@ eleventyExcludeFromCollections: true
                 {%- for item in group.items %}
                 {%- set label = item.caption or item.alt or ("Picture from " + item.home.short) %}
                 <figure class="genesis-media-item">
-                    <a class="genesis-media-thumb{% if item.poster %} is-poster{% endif %}" href="{{ item.src }}" title="{{ label }}" aria-label="{{ label }}" data-width="{{ item.width }}" data-height="{{ item.height }}" data-caption="{{ item.caption }}" data-sources="{{ item.sources | dump }}">
+                    <a class="genesis-media-thumb{% if item.poster %} is-poster{% endif %}" href="{{ item.src }}" title="{{ label }}" aria-label="{{ label }}" data-width="{{ item.width }}" data-height="{{ item.height }}" data-caption="{{ item.caption }}" data-sources="{{ item.sources | dump }}"{% if item.sourcesLabel %} data-sources-label="{{ item.sourcesLabel }}"{% endif %}>
                         <img src="{{ item.src }}"{% if item.srcset %} srcset="{{ item.srcset }}" sizes="(min-width: 1100px) 190px, (min-width: 700px) 22vw, 46vw"{% endif %}{% if item.width %} width="{{ item.width }}" height="{{ item.height }}"{% endif %} alt="" loading="lazy">
                     </a>
                     {%- if not section.perPost %}
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (link.getAttribute("data-caption")) box.appendChild(el("div", { "class": "genesis-viewer-caption" }, link.getAttribute("data-caption")));
     var meta = el("div", { "class": "genesis-viewer-meta" });
     if (sources.length) {
-      meta.appendChild(document.createTextNode(sources.length > 1 ? "Appears in " : "From "));
+      meta.appendChild(document.createTextNode(link.getAttribute("data-sources-label") || (sources.length > 1 ? "Appears in " : "From ")));
       sources.forEach(function (source, index) {
         if (index) meta.appendChild(document.createTextNode(", "));
         meta.appendChild(el("a", { href: source.url }, source.title));

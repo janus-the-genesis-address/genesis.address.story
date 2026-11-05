@@ -57,6 +57,11 @@ for cover in site.get("homeCovers", []):
     url = cover["image"]
     index(url, url[len("/content/images"):])
 
+# So do the pictures made for Substack notes and X posts, which the Media page shows.
+for note in site.get("media", {}).get("notes", []):
+    url = note["image"]
+    index(url, url[len("/content/images"):])
+
 (SRC / "_data").mkdir(exist_ok=True)
 (SRC / "_data" / "imageSizes.json").write_text(json.dumps(sizes, indent=2, sort_keys=True) + "\n")
 print(f"feature and cover images: {len(sizes)}")

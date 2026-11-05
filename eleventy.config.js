@@ -91,6 +91,7 @@ const mediaSections = [
   { slug: "world", name: "TGA Universe", perPost: true },
   { slug: "concordance", name: "Concordance", perPost: true },
   { slug: "extras", name: "Extras", perPost: true },
+  { slug: "notes", name: "Notes", note: "Made for our notes on Substack and our posts on X." },
 ];
 
 function mediaLibrary(posts) {
@@ -144,6 +145,26 @@ function mediaLibrary(posts) {
       for (const key of ["caption", "alt", "width", "height", "srcset"]) if (!picture[key] && item[key]) picture[key] = item[key];
       if (!picture.sources.some((s) => s.url === source.url)) picture.sources.push(source);
     }
+  }
+  // Pictures made for the Substack notes and X posts, listed in site.json under media.notes. They appear in no post, so each names the post it points to.
+  for (const note of media.notes || []) {
+    const hash = fileHash(note.image);
+    if (!hash || pictures.has(hash)) continue;
+    const about = note.about && posts.find((post) => post.url === note.about);
+    const info = imageSizes[note.image] || {};
+    pictures.set(hash, {
+      src: note.image,
+      alt: note.alt || "",
+      caption: "",
+      width: info.width,
+      height: info.height,
+      srcset: srcsetOf(note.image),
+      poster: false,
+      section: "notes",
+      home: { title: note.title, short: note.title, url: about ? about.url : "" },
+      sources: about ? [{ title: about.data.title.replace(/^#\s*/, ""), url: about.url }] : [],
+      sourcesLabel: "About ",
+    });
   }
   return mediaSections
     .map((section) => {

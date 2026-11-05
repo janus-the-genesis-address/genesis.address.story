@@ -272,5 +272,50 @@
       1200
     ],
     "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-09-tachyon-paper.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-10-serial-swap.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-11-ring-estimate.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-12-coffee-receipt.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-13-bulletin-rack.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
   }
 }
