@@ -18,21 +18,19 @@ The afternoon's warmth lingered in the air—somewhere in the low seventies—wh
 
 Jack and Kathy stopped at a small brewery nestled among spring gardens on their way to the Park Stadium. The place had outdoor seating that caught the afternoon light, surrounded by late-blooming lilacs that perfumed the air with their intoxicating sweetness, while honeysuckle climbed the pergola above their table, its delicate white flowers releasing waves of nectar-scented warmth with each gentle breeze.
 
-Thanks for reading The Genesis Address! Subscribe for free to receive new posts and support my work.
-
 Jack had ordered them each the house amber ale, breathing in the evening air that carried the rich blend of spring's awakening—fresh-cut grass, the earthy promise of new growth, and the heady perfume of flowering trees that lined the brewery's garden. Apple blossoms from nearby orchards mixed with the green scent of budding leaves, creating nature's own symphony of fragrance.
 
 When the waiter brought their glasses, Jack was struck by how the beer seemed to capture the amber afternoon light filtering through the flowering branches above them. The liquid glowed with brilliant, fiery copper—burnished metal catching light, honey and orange hues that danced like warm amber through the lilac blossoms.
 
-"Look at that color, amber waves of grain" Kathy had said, holding up her glass against the light, a few apple blossoms caught in her hair from their walk through the garden entrance. The amber ale seemed to glow like liquid sunlight framed by the flowering pergola
+"Look at that color, amber waves of grain," Kathy said, holding up her glass against the light, a few apple blossoms caught in her hair from their walk through the garden entrance. The amber ale seemed to glow like liquid sunlight framed by the flowering pergola.
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/episode-1-amber-ale.jpg" class="kg-image" alt="Two glasses of amber ale on a garden table under a flowering pergola, Kathy&#39;s hand lifting one toward the setting sun" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/episode-1-amber-ale.jpg 600w, /content/images/size/w1000/2026/11/episode-1-amber-ale.jpg 1000w, /content/images/2026/11/episode-1-amber-ale.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Jack and Kathy's first shared amber ale at the brewery's spring garden, its amber catching the afternoon light like "amber waves of grain"</em></figcaption></figure>
 
 The aroma of the beer rose to meet him, blending seamlessly with the spring afternoon around them. Pine resin and flowery notes that echoed the fresh, green scents of new growth, while underneath lay something richer: toasted bread like the warm earth beneath the flowering trees, caramel sweetness that matched the honeysuckle's nectar, and a honey-like warmth that seemed to capture the very essence of this perfect spring day.
 
-"Good?" Kathy had asked, watching his expression change as apple blossoms continued to fall like confetti around their table.
+"Good?" Kathy asked, watching his expression change as apple blossoms continued to fall like confetti around their table.
 
-"Really good," he'd said.
+"Really good," he said.
 
 The late May evening twilight over Hershey with the kind of perfect weather that made everything feel possible.
 
