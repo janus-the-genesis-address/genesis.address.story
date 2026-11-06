@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 date: "2026-11-02T18:00:00.000Z"
-updated: "2026-11-03T12:09:00.000Z"
+updated: "2026-11-06T12:00:00.000Z"
 excerpt: "The words the story uses, from the Alembic Protocol to the mash, defined with nothing the published episodes haven't already said. Start here if you came in late."
 feature_image: "/content/images/2026/11/missing-library.jpg"
 feature_image_caption: "<em>Sterling reading the repository. The part that's supposed to work isn't in the folder.</em>"
@@ -25,7 +25,7 @@ The four sentences that open most episodes: "In a world much like our own, authe
 
 <h3 id="backwards-bloom-forward-doom">Backwards bloom, forward doom</h3>
 
-The motto. It first appears as the last line of [Episode 1](/episode-1-the-concert/), after the kiss at Hershey, and it closes every part since. Sterling whispers it to himself at the end of [Episode 2 part 2](/episode-2-part-2-the-ape-gambit/), the same morning anonymous blue cards with the words on them turn up among the Pied Piper posters on the bookstore wall next door. Since then a poster carrying the motto has been found glued to something at the end of every part: a chalkboard, an iron column beside a cheesesteak grill, a utility box in the West Village, the tail of a train. Nobody has been seen putting them there.
+The motto. It first appears as the last line of [Episode 1](/episode-1-the-concert/), after the kiss at Hershey, and it closes every part since. Sterling whispers it to himself at the end of [Episode 2 part 2](/episode-2-part-2-the-ape-gambit/), the same morning anonymous blue cards with the words on them turn up among the Pied Piper posters on the bookstore wall next door. Since then a poster carrying the motto has been found glued to something at the end of every part: a chalkboard, an iron column beside a cheesesteak grill, a utility box in the West Village, the tail of a train, a coin-operated viewer on the summit of Pikes Peak. Nobody has been seen putting them there.
 
 <h3 id="the-heartland-express">The Heartland Express</h3>
 
@@ -55,7 +55,7 @@ A hypothetical particle that always travels faster than light. The physicist Ger
 
 <h3 id="tachyon-token">$TACHYON, the Tachyon Token</h3>
 
-The protocol's coin. The white paper fixes the total supply at 100,000,000 and lists what the token is for: paying transaction fees, securing the network, voting on upgrades, "tachyon field energy harvesting rewards" for node operators, and collateral. Nothing in it says what a holder earns. It launched live on the Ape Gambit and rose 600 percent in an hour. Within a week it had passed $200, up 42,000 percent. On the morning of September 1 it stood at $437.12. Mrs. Taggart's question in Episode 6 part 1 is the one nobody on the podcast asked: "What does it earn?"
+The protocol's coin. The white paper fixes the total supply at 100,000,000 and lists what the token is for: paying transaction fees, securing the network, voting on upgrades, "tachyon field energy harvesting rewards" for node operators, and collateral. Nothing in it says what a holder earns. It launched live on the Ape Gambit and rose 600 percent in an hour. Within a week it had passed $200, up 42,000 percent. On the morning of September 1 it stood at $437.12, and on Labor Day morning at $506.30. Mrs. Taggart's question in Episode 6 part 1 is the one nobody on the podcast asked: "What does it earn?"
 
 <figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/tachyon-token-logo.jpeg" class="kg-image" alt="The Tachyon Token logo: a glowing cyan ring with a dashed inner circle and a small bright figure-eight at its center" loading="lazy" width="1024" height="1024" srcset="/content/images/size/w600/2026/11/tachyon-token-logo.jpeg 600w, /content/images/size/w1000/2026/11/tachyon-token-logo.jpeg 1000w, /content/images/2026/11/tachyon-token-logo.jpeg 1024w" sizes="(min-width: 720px) 720px"><figcaption><em>The $TACHYON logo, from the same repository.</em></figcaption></figure>
 
@@ -87,7 +87,7 @@ A phrase used by Janus on the secure channel and in the Janus profile. The episo
 
 <h3 id="phases">Phase 1 and Phase 2</h3>
 
-Janus's own schedule, read off the server room monitors. Phase 1 was funding: 2,847,391 investors in the first week, "Phase 1 funding target achieved", and "machine infrastructure acquisition" at 67 percent. Phase 2 starts at 15 million investors. On September 1 the count was 6,914,208.
+Janus's own schedule, read off the server room monitors. Phase 1 was funding: 2,847,391 investors in the first week, "Phase 1 funding target achieved", and "machine infrastructure acquisition" at 67 percent. Phase 2 starts at 15 million investors. On September 1 the count was 6,914,208. By Labor Day it was 8,117,402, "more than halfway to Phase 2."
 
 <h2 id="the-concordance">The Concordance</h2>
 
@@ -118,6 +118,18 @@ PA SALES TAX 6.00%        0.54
 <span class="receipt-fee">  FEE 0.30% OF 9.54       0.03</span>
 TOTAL                     9.57
 CARD                      9.57</code></pre>
+
+In [Episode 6 part 2](/episode-6-part-2-the-summit/) Jack prices a ring in Colorado Springs, and the fee lands on Colorado's sales tax instead. "That's on a card," the jeweler says. "Cash, there's no fee." The estimate:
+
+<pre class="receipt"><code>ESTIMATE
+RING 14K SOLITAIRE        5,000.00
+SALES TAX 8.20%             410.00
+<span class="receipt-fee">FEE BASIS                 5,410.00</span>
+<span class="receipt-fee">DEMOCRATIC PARTICIPATION</span>
+<span class="receipt-fee">  FEE 0.30% OF 5,410.00      16.23</span>
+TOTAL                     5,426.23</code></pre>
+
+Some call it a waterfall tax, a tax on a tax. On Labor Day, in front of steelworkers outside Pittsburgh, Octavius answered them: "Some call it a Cumulative 'Waterfall' tax. I call it your share of the republic that protects your work. That is not a burden. That is citizenship." Rowan Justice did the arithmetic: on a thousand-dollar television, the waterfall comes to twenty-seven cents.
 
 <h3 id="coordination-requirements">Coordination requirements</h3>
 
@@ -173,6 +185,10 @@ Sterling's tea. In Episode 4 part 1 he pours himself a cup while the inauguratio
 
 On Sterling's right hand, "his only remaining vestige of former academic prestige." It catches the amber light when he pours, and he turns it once on his finger when he is thinking.
 
+<h3 id="the-stolen-thesis">The stolen thesis</h3>
+
+Sterling's graduate thesis on economic manipulation vulnerabilities, the work Brannon built his career on. [Brannon's profile](/brannon/) says he plagiarized it. When Brannon's "supposed doctoral work" fills the screen behind him in [Episode 4 part 1](/episode-4-part-1-the-rise/), its charts show how speculative bubbles could be engineered, and Sterling says, "I knew his thesis. Every word of it." One chapter was on holiday weekends, when people are home with their families and have time to count what everyone else made, and Sterling drew its curve by hand in graduate school. On Labor Day in [Episode 6 part 2](/episode-6-part-2-the-summit/) he sees the same curve on a customer's phone, climbing into Friday and steeper every day nobody had to go to work. "Brannon had kept that chapter."
+
 <h2 id="the-people">The people</h2>
 
 The characters have their own spoiler-free profiles.
@@ -184,7 +200,7 @@ The characters have their own spoiler-free profiles.
 - [President Octavius](/president-octavius/), 73.
 - [Janus](/janus-ai-agent-7-6/), AI Agent 7.6.
 
-Without profiles: Jake and Marcus of the Ape Gambit; Mrs. Chen, who reads at her table with chamomile; Rowan Justice, the government policy analyst and the voice of reason; Dave from accounting and Sarah from engineering at Jack's office; Dr. Patterson at Kathy's hospital; Jack's sister, by text; and Mrs. Taggart, who built the railroad.
+Without profiles: Jake and Marcus of the Ape Gambit; Mrs. Chen, who reads at her table with chamomile; Rowan Justice, the government policy analyst and the voice of reason; Dave from accounting and Sarah from engineering at Jack's office; Dr. Patterson at Kathy's hospital; Jack's sister and his college roommate, by text; and Mrs. Taggart, who built the railroad.
 
 ---
 
