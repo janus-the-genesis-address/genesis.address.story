@@ -64,13 +64,16 @@
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },
-    { "label": "Characters", "url": "/characters/" },
-    { "label": "TGA Universe", "url": "/world/" },
+    { "label": "TGA Universe", "url": "/world/", "also": ["/characters/", "/media/", "/extras/"] },
     { "label": "Concordance", "url": "/concordance/" },
-    { "label": "Media", "url": "/media/" },
-    { "label": "Extras", "url": "/extras/" },
     { "label": "Support", "url": "/support/" },
     { "label": "About", "url": "/about/" }
+  ],
+  "universe": [
+    { "label": "TGA Universe", "url": "/world/" },
+    { "label": "Characters", "url": "/characters/" },
+    { "label": "Media", "url": "/media/" },
+    { "label": "Extras", "url": "/extras/" }
   ],
   "llmsSections": [
     { "name": "Episodes", "note": "Read in this order.", "topics": ["episodes"] },
@@ -82,10 +85,10 @@
   ],
   "sections": [
     { "name": "Episodes", "slug": "episodes", "readingOrder": true },
-    { "name": "Characters", "slug": "characters" },
-    { "name": "TGA Universe", "slug": "world" },
+    { "name": "Characters", "slug": "characters", "universe": true },
+    { "name": "TGA Universe", "slug": "world", "universe": true },
     { "name": "Concordance", "slug": "concordance", "readingOrder": true, "style": "channel" },
-    { "name": "Extras", "slug": "extras" }
+    { "name": "Extras", "slug": "extras", "universe": true }
   ],
   "concordance": {
     "server": "CONCORDANCE",

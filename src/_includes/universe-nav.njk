@@ -1,0 +1,5 @@
+<nav class="genesis-universe-nav" aria-label="TGA Universe">
+    {%- for item in site.universe %}
+    <a href="{{ item.url }}"{% if page.url == item.url %} class="is-current" aria-current="page"{% endif %}>{{ item.label }}</a>
+    {%- endfor %}
+</nav>

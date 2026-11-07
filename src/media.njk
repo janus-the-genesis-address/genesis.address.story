@@ -6,6 +6,7 @@ title: Media
 excerpt: "Every picture from The Genesis Address in one place, with the episode or page each one comes from. Free to view and to download at full size."
 eleventyExcludeFromCollections: true
 ---
+{% include "universe-nav.njk" %}
 {%- set library = collections.posts | mediaLibrary %}
         {%- for section in library %}
         <section class="genesis-media-section" id="{{ section.slug }}">

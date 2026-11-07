@@ -40,7 +40,7 @@
                                     <a href="/" class="m-site-name in-desktop-menu">{{ site.title }}</a>
                                 </li>
                                 {%- for item in site.nav %}
-                                <li class="nav-{{ item.label | lower }}{% if page.url == item.url %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
+                                <li class="nav-{{ item.label | lower }}{% if page.url == item.url or (item.also and page.url in item.also) %} nav-current{% endif %}"><a href="{{ item.url }}">{{ item.label }}</a></li>
                                 {%- endfor %}
                             </ul>
                         </nav>

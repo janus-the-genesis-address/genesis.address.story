@@ -867,3 +867,26 @@ a.cc-member:hover { background: rgba(10, 189, 198, 0.09); color: #fff; }
 .cc-reply-head span { margin-left: 4px; padding-left: 12px; border-left: 1px solid var(--cc-line); letter-spacing: 0.14em; font-weight: 700; font-size: 12px; }
 .cc-reply-head:hover strong { color: var(--genesis-blue); }
 .cc-reply-box .cc-composer { margin: 14px 16px 16px; }
+
+/* Tabs linking TGA Universe, Characters, Media and Extras, shown at the top of those four pages. */
+.genesis-universe-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+    margin: 0 0 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 176, 0, 0.35);
+    font-family: var(--genesis-font-heading);
+}
+.genesis-universe-nav a {
+    color: var(--genesisblue, #00e5ff);
+    font-size: 17px;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 2px solid transparent;
+}
+.genesis-universe-nav a:hover { border-bottom-color: rgba(255, 176, 0, 0.5); }
+.genesis-universe-nav a.is-current {
+    color: var(--genesis-amber);
+    border-bottom-color: var(--genesis-amber);
+}
