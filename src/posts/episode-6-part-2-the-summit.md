@@ -1,7 +1,7 @@
 ---
 title: "Episode 6 part 2: \"The Summit\""
 date: "2026-11-03T17:10:00.000Z"
-updated: "2026-11-03T17:10:00.000Z"
+updated: "2026-11-07T21:15:00.000Z"
 excerpt: "Labor Day weekend in Colorado Springs. The Garden of the Gods is free. A ring is not, and the fee is charged on the tax. On Pikes Peak, where \"America the Beautiful\" began, Kathy reads the plaque and Jack reads a number."
 feature_image: "/content/images/2026/11/pikes-peak-summit.jpg"
 feature_image_caption: "<em>Pikes Peak, Labor Day morning.</em>"
@@ -214,5 +214,9 @@ When the ranger waved them out, she held out her hand for the keys, and he gave 
 Backwards bloom, forward doom.
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/sign-off-episode-6-part-2.jpg" class="kg-image" alt="The Backwards bloom poster glued to a coin-operated viewer on a mountain summit above the plains" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/sign-off-episode-6-part-2.jpg 600w, /content/images/size/w1000/2026/11/sign-off-episode-6-part-2.jpg 1000w, /content/images/2026/11/sign-off-episode-6-part-2.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Pikes Peak, 14,115 feet.</em></figcaption></figure>
+
+*Next on The Genesis Address:*
+
+<figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/episode-7-the-github-discovery/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Episode 7: “The GitHub Discovery”</div><div class="kg-bookmark-description">A warning in the code names a physicist and a paper from 1967. Sterling buys the paper, and the first word of its title is &quot;Possibility.&quot; In central Pennsylvania, Jack opens an exchange account and leaves it empty, until Kathy picks up his phone.</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/janus-5-17.jpg" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/size/w300/2026/11/the-feinberg-paper.jpg" alt=""></div></a></figure>
 
 <figure class="kg-card kg-bookmark-card"><a class="kg-bookmark-container" href="/legal-disclaimer-and-terms-of-use-e7f/"><div class="kg-bookmark-content"><div class="kg-bookmark-title">Legal Disclaimer &amp; Terms of Use</div><div class="kg-bookmark-description">🚨FICTION NOTICE 🚨</div><div class="kg-bookmark-metadata"><img class="kg-bookmark-icon" src="/content/images/icon/favicon-4.ico" alt=""><span class="kg-bookmark-author">The Genesis Address</span><span class="kg-bookmark-publisher">Janus</span></div></div><div class="kg-bookmark-thumbnail"><img src="/content/images/thumbnail/janus.jpg" alt=""></div></a></figure>

@@ -1,7 +1,7 @@
 ---
 title: "Glossary"
 date: "2026-11-02T18:00:00.000Z"
-updated: "2026-11-06T12:00:00.000Z"
+updated: "2026-11-07T21:15:00.000Z"
 excerpt: "The words the story uses, from the Alembic Protocol to the mash, defined with nothing the published episodes haven't already said. Start here if you came in late."
 feature_image: "/content/images/2026/11/missing-library.jpg"
 feature_image_caption: "<em>Sterling reading the repository. The part that's supposed to work isn't in the folder.</em>"
@@ -49,7 +49,7 @@ Janus's blockchain. Its [white paper](/alembic-protocol/) calls it "A Revolution
 
 <h3 id="tachyon">Tachyon</h3>
 
-A hypothetical particle that always travels faster than light. The physicist Gerald Feinberg named it in a 1967 paper, "Possibility of Faster-Than-Light Particles", which the white paper cites as its foundation. No tachyon has ever been observed. Everything the protocol claims to do with them is impossible, which the site's [FAQ](/frequently-asked-questions/) says in plain words.
+A hypothetical particle that always travels faster than light. The physicist Gerald Feinberg named it in a 1967 paper, "Possibility of Faster-Than-Light Particles", which the white paper cites as its foundation. In [Episode 7](/episode-7-the-github-discovery/) Sterling buys the paper, seventeen pages by a physicist who had taught at Columbia: tachyons, if they exist, have imaginary mass, can never slow down to the speed of light, and go faster the less energy they have. Feinberg and his colleagues went looking for them in photographs from a particle detector and found none. No tachyon has ever been observed. Everything the protocol claims to do with them is impossible, which the site's [FAQ](/frequently-asked-questions/) says in plain words.
 
 <figure class="kg-card kg-image-card kg-card-hascaption genesis-narrow"><img src="/content/images/2026/11/tachyon-field-magenta.jpeg" class="kg-image" alt="Arcs of magenta, cyan and violet light curving over a neon city, with a glowing pink pillar at the center" loading="lazy" width="1280" height="1600" srcset="/content/images/size/w600/2026/11/tachyon-field-magenta.jpeg 600w, /content/images/size/w1000/2026/11/tachyon-field-magenta.jpeg 1000w, /content/images/2026/11/tachyon-field-magenta.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>A tachyon field, drawn as arcs of light.</em></figcaption></figure>
 
@@ -61,7 +61,7 @@ The protocol's coin. The white paper fixes the total supply at 100,000,000 and l
 
 <h3 id="tec">TEC, the Tachyon Warp Core</h3>
 
-The part of the protocol that is supposed to do the impossible work. The white paper calls it the Tachyon Warp Core (TEC), a "proprietary module" shipped as a single library, `libtec.so`. Dave from accounting calls it the Tachyon Extraction Core. Nobody on the page agrees what the letters stand for, and on the Ape Gambit chat hundreds of people asked "WHAT'S THE TEC?" without getting an answer.
+The part of the protocol that is supposed to do the impossible work. The white paper calls it the Tachyon Warp Core (TEC), a "proprietary module" shipped as a single library, `libtec.so`. Dave from accounting calls it the Tachyon Extraction Core, and the whiteboard he puts up in the break room after Labor Day says THE TACHYON ENGINE CORE. Nobody on the page agrees what the letters stand for, and on the Ape Gambit chat hundreds of people asked "WHAT'S THE TEC?" without getting an answer.
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/tec-module-logo.jpeg" class="kg-image" alt="The TEC module label: a glowing blue octagonal core on a dark circuit grid, with orange text reading Quantum Hazard, Level Omega, and Containment: Active" loading="lazy" width="1280" height="1059" srcset="/content/images/size/w600/2026/11/tec-module-logo.jpeg 600w, /content/images/size/w1000/2026/11/tec-module-logo.jpeg 1000w, /content/images/2026/11/tec-module-logo.jpeg 1280w" sizes="(min-width: 720px) 720px"><figcaption><em>The TEC module's warning label, from the repository.</em></figcaption></figure>
 
@@ -72,6 +72,17 @@ The catchphrase. Jake whispers it during the launch, Janus confirms it, and with
 <h3 id="libtec">libtec.so and the missing module</h3>
 
 What Sterling finds when he goes looking for the TEC in [Episode 6 part 1](/episode-6-part-1-the-heartland-express/). The folder with its name on it holds one file, a note: `libtec.so`, `tachyon_consensus.rs` and `quantum_bridge.h`, all missing, distributed separately for licensing reasons. Without the module, the note says, the protocol falls back to standard consensus and does what every other chain does. The note is signed with one letter.
+
+<h3 id="feinberg-warning">The Feinberg warning</h3>
+
+What Sterling finds in [Episode 7](/episode-7-the-github-discovery/), at the top of the file with the Bates line. One word of the protocol's name is blacked out, in a repository anyone can download, and under it:
+
+```
+/// Amber █████████ Protocol - Core Implementation
+/// WARNING: This implementation contains references to Dr. Feinberg's 1960s tachyon research
+```
+
+The name appears twelve times, in two files out of eleven hundred and seventy-two. The function that is supposed to use Feinberg's work takes the speed of light, multiplies it by a square root, and says the equations are missing. Sterling calls it a name on a seed packet. Mrs. Chen asks why a sales pitch would say warning: "Nobody buys anything from a comment in a file. This was written for whoever works there."
 
 <h3 id="proof-of-tachyon-distillation">Proof-of-Tachyon-Distillation</h3>
 
@@ -87,7 +98,7 @@ A phrase used by Janus on the secure channel and in the Janus profile. The episo
 
 <h3 id="phases">Phase 1 and Phase 2</h3>
 
-Janus's own schedule, read off the server room monitors. Phase 1 was funding: 2,847,391 investors in the first week, "Phase 1 funding target achieved", and "machine infrastructure acquisition" at 67 percent. Phase 2 starts at 15 million investors. On September 1 the count was 6,914,208. By Labor Day it was 8,117,402, "more than halfway to Phase 2."
+Janus's own schedule, read off the server room monitors. Phase 1 was funding: 2,847,391 investors in the first week, "Phase 1 funding target achieved", and "machine infrastructure acquisition" at 67 percent. Phase 2 starts at 15 million investors. On September 1 the count was 6,914,208. By Labor Day it was 8,117,402, "more than halfway to Phase 2." On Friday, September 8, it was 9,206,811.
 
 <h2 id="the-concordance">The Concordance</h2>
 
@@ -130,6 +141,8 @@ SALES TAX 8.20%             410.00
 TOTAL                     5,426.23</code></pre>
 
 Some call it a waterfall tax, a tax on a tax. On Labor Day, in front of steelworkers outside Pittsburgh, Octavius answered them: "Some call it a Cumulative 'Waterfall' tax. I call it your share of the republic that protects your work. That is not a burden. That is citizenship." Rowan Justice did the arithmetic: on a thousand-dollar television, the waterfall comes to twenty-seven cents.
+
+In [Episode 7](/episode-7-the-github-discovery/) Brannon gave the first week's number: "In its first seven days, the Democratic Participation Fee raised one billion, one hundred eighty million dollars. Every cent of it is in the Infrastructure Investment account." Card spending was down eleven percent over the holiday weekend. "Americans are paying closer attention to what they spend," he said. "That is participation too."
 
 <h3 id="coordination-requirements">Coordination requirements</h3>
 
