@@ -1,7 +1,7 @@
 ---
 title: "Legal Disclaimer & Terms of Use"
 date: "2025-07-30T14:28:07.000Z"
-updated: "2026-11-01T12:00:00.000Z"
+updated: "2026-11-08T12:00:00.000Z"
 excerpt: "🚨FICTION NOTICE 🚨"
 feature_image: "/content/images/2025/09/janus.jpg"
 topics: ["Legal","FAQ"]
@@ -49,7 +49,7 @@ This disclaimer and all terms contained herein, along with any dispute or claim 
 
 ### 7\. Intellectual Property Rights
 
-All intellectual property rights in and to "The Genesis Address", including but not limited to copyright, trademarks, trade names, characters, and narrative elements, are the sole and exclusive property of The Genesis Address Publishing LLC. U.S. Copyright Registration: 1-14970280741. No rights are granted to the User except as expressly stated herein. By submitting, posting, or displaying any content, text, images, or other materials (collectively, "User-Generated Content") on any platform associated with the Project, the User grants the creators a worldwide, non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User-Generated Content in any media.
+All intellectual property rights in and to "The Genesis Address", including but not limited to copyright, trademarks, trade names, characters, and narrative elements, are the sole and exclusive property of The Genesis Address Publishing LLC. No rights are granted to the User except as expressly stated herein. By submitting, posting, or displaying any content, text, images, or other materials (collectively, "User-Generated Content") on any platform associated with the Project, the User grants the creators a worldwide, non-exclusive, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such User-Generated Content in any media.
 
 ### 8\. Indemnification
 
@@ -93,7 +93,6 @@ The website www.thegenesisaddress.ai uses Cloudflare Web Analytics to count visi
 
 ## Copyright & Publishing Information
 
-**U.S. Copyright Registration:** 1-14970280741  
 **Publisher:** The Genesis Address Publishing LLC  
 **Incorporated:** Wyoming, United States  
 **Official Website:** [www.thegenesisaddress.ai](/)

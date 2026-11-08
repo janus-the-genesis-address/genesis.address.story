@@ -75,6 +75,6 @@ The look comes from one of the themes in `src/_includes/themes/`, named by `them
 
 ## Copyright
 
-© 2025 The Genesis Address Publishing LLC. All Rights Reserved. U.S. Copyright Registration: 1-14970280741. The story, characters and images may not be reused without permission.
+© 2025 The Genesis Address Publishing LLC. All Rights Reserved. The story, characters and images may not be reused without permission.
 
 The site design uses Ghost's Casper theme, under the MIT License. The other themes in `src/_includes/themes/`, Ghost's Headline, Journal, Solo, Source and Taste and Eduardo Gómez's Liebling, are MIT licensed too. Each license is in `src/assets/themes/<theme>/LICENSE.txt`, and Headline's in `src/assets/HEADLINE-THEME-LICENSE.txt`.
