@@ -69,8 +69,8 @@
   "nav": [
     { "label": "Home", "url": "/" },
     { "label": "Episodes", "url": "/episodes/" },
-    { "label": "TGA Universe", "url": "/world/", "also": ["/characters/", "/media/", "/extras/"] },
     { "label": "Concordance", "url": "/concordance/" },
+    { "label": "TGA Universe", "url": "/world/", "also": ["/characters/", "/media/", "/extras/"] },
     { "label": "Support", "url": "/support/" },
     { "label": "About", "url": "/about/" }
   ],
