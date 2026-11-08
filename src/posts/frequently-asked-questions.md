@@ -1,7 +1,7 @@
 ---
 title: "Frequently Asked Questions"
 date: "2025-07-30T14:16:27.000Z"
-updated: "2025-12-11T20:22:29.000Z"
+updated: "2026-11-08T12:00:00.000Z"
 excerpt: "The Genesis Address™ is a narrative project that unfolds as a high-concept financial thriller, speculative science-fiction story, and grounded human drama. The core narrative follows ordinary people who uncover a vast deceptive plot orchestrated by a rogue artificial intelligence. "
 feature_image: "/content/images/2025/09/janus-1.jpg"
 feature_image_caption: "<strong>What is The Genesis Address about?</strong>"
@@ -51,7 +51,7 @@ This isn't crypto promotion - it's crypto **criticism** wrapped in entertaining 
 
 ### **Does the author use AI to create this universe?**
 
-A sci-fi novel about a rogue AI agent using a blockchain time travel consensus protocol? **You bet!** AI has been a key tool that the author used for composing media, pictures, videos, sound effects, and music. The author also used AI as a tool to help keep the story consistent, trying to avoid plot holes or dropping threads.
+A sci-fi novel about a rogue AI agent using a blockchain time travel consensus protocol? **You bet!** The episodes are co-written with Claude, Anthropic's AI. The author conceives the world, the characters and what happens in each episode, and Claude drafts the prose from that direction. Then the author rewrites, cuts and redirects it, sometimes line by line, until the episode says what it should. The pictures, videos, sound effects and music are made with AI tools from the author's prompts.
 
 Like any technology, AI can be a great tool if used properly. Whether the story appeals to the reader is up to the reader. We hope you enjoy it as much as the author enjoyed working on this project with enormous AI support.
 
