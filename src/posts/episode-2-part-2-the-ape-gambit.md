@@ -72,7 +72,7 @@ Mrs. Chen approached the counter as Sterling prepared more tea.
 
 “This reminds me of stories my grandmother told,” she whispered back.
 
-Sterling poured her tea, the amber liquid catching morning light like liquid gold.
+Sterling poured her tea, the stream catching morning light like liquid gold.
 
 The interview was winding down. Jake asked what seemed like a routine final question: “Janus, any warnings for potential investors?”
 
