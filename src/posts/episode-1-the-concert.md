@@ -20,7 +20,7 @@ Jack and Kathy stopped at a small brewery nestled among spring gardens on their 
 
 Jack had ordered them each the house amber ale, breathing in the evening air that carried the rich blend of spring's awakening—fresh-cut grass, the earthy promise of new growth, and the heady perfume of flowering trees that lined the brewery's garden. Apple blossoms from nearby orchards mixed with the green scent of budding leaves, creating nature's own symphony of fragrance.
 
-When the waiter brought their glasses, Jack was struck by how the beer seemed to capture the amber afternoon light filtering through the flowering branches above them. The liquid glowed with brilliant, fiery copper—burnished metal catching light, honey and orange hues that danced like warm amber through the lilac blossoms.
+When the waiter brought their glasses, Jack was struck by how the beer seemed to capture the amber afternoon light filtering through the flowering branches above them. The liquid glowed with brilliant, fiery copper—burnished metal catching light, honey and orange hues that danced through the lilac blossoms.
 
 "Look at that color, amber waves of grain," Kathy said, holding up her glass against the light, a few apple blossoms caught in her hair from their walk through the garden entrance. The amber ale seemed to glow like liquid sunlight framed by the flowering pergola.
 

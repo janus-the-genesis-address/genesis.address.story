@@ -26,7 +26,7 @@ The Genesis Address is a reader-supported publication. To receive new posts and 
 
 Sterling arranged fresh amber tulips in a glass vase. To his regular customers, he was simply the quiet proprietor—a man who served excellent tea, tended plants, and asked few questions.
 
-The chalkboard menu offered the day’s special: “The Aave the Cheerleader”—honey wheat pancakes with amber clover honey and local elderberries. A name that seemed like a typo but wasn’t, carrying meaning only Sterling understood.
+The chalkboard menu offered the day’s special: “The Aave the Cheerleader”—honey wheat pancakes with clover honey and local elderberries. A name that seemed like a typo but wasn’t, carrying meaning only Sterling understood.
 
 Mrs. Chen sat by the window reading a paperback, her chamomile tea steaming beside her. She had been coming here for three years, ever since discovering that Sterling’s tea house offered something rare in the city—genuine quiet.
 
