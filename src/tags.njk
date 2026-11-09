@@ -7,6 +7,7 @@ pagination:
 permalink: "/tag/{{ topic.slug }}/"
 eleventyComputed:
   title: "{{ topic.name }}"
+  canonical: "{{ topic.slug | sectionUrl }}"
 ---
 {%- set feedPosts = topic.posts | sectionOrder(topic.slug) %}
 {%- set largeFirst = true %}

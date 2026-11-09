@@ -7,7 +7,7 @@ bodyClass: post-template
     <article class="article post image-small">
         <header class="article-header gh-canvas">
             <div class="article-tag post-card-tags">
-                {% if topics and topics.length %}<span class="post-card-primary-tag"><a href="/tag/{{ topics[0] | topicSlug }}/">{{ topics[0] | topicName }}</a></span>{% endif %}
+                {% if topics and topics.length %}<span class="post-card-primary-tag"><a href="{{ topics[0] | topicUrl }}">{{ topics[0] | topicName }}</a></span>{% endif %}
             </div>
             <h1 class="article-title">{{ title }}</h1>
             {% if excerpt %}

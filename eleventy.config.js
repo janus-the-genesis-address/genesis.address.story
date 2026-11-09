@@ -222,6 +222,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("iso", (date) => new Date(date).toISOString());
   eleventyConfig.addFilter("rfc822", (date) => new Date(date).toUTCString());
   eleventyConfig.addFilter("topicSlug", slugify);
+  // A topic with its own section page (Episodes, Extras...) lives at /<slug>/; its old /tag/<slug>/ page points there as canonical, so Google doesn't see two copies.
+  const sectionUrl = (slug) => (site.sections.some((section) => section.slug === slug) ? `/${slug}/` : "");
+  eleventyConfig.addFilter("sectionUrl", sectionUrl);
+  eleventyConfig.addFilter("topicUrl", (name) => sectionUrl(slugify(name)) || `/tag/${slugify(name)}/`);
   eleventyConfig.addFilter("topicName", topicName);
   eleventyConfig.addFilter("trimText", (text) => (text || "").trim());
   eleventyConfig.addFilter("withTopic", (posts, slug) => posts.filter((post) => (post.data.topics || []).some((t) => slugify(t) === slug)));
