@@ -61,7 +61,7 @@ The man gave it as long as he had given the chalkboard. "Documentation changes. 
 
 "The history says 'Correct documentation.'"
 
-"There you go." He poured honey over the grid. "Look. In August I told our clients it was a toy. I've had forty calls since, pension funds, asking why they don't own the best thing on the board this year. You know the one answer I can't give them? That I don't understand it. So I don't price the physics. I price who's buying, and eleven million people are buying."
+"There you go." He poured honey over the grid. "Look. In August I told our clients it was a toy. I've had forty calls since, pension funds, asking why they don't own the best thing on the board this year. You know the one answer I can't give them? That I don't understand it. So I don't price the physics. I price who's buying."
 
 Sterling turned the last pot.
 
@@ -209,7 +209,7 @@ Sterling turned the ruby ring once on his finger.
 
 He typed under the reply.
 
-*Thank you. You are the only one who looked. What kind of sheets?*
+*What kind of sheets?*
 
 <figure class="kg-card kg-image-card kg-card-hascaption"><img src="/content/images/2026/11/one-who-checked.jpg" class="kg-image" alt="Mrs. Chen setting an open laptop on the tea house counter in front of Sterling, between the clay pots of amber tulips, a printed page of code beside it" loading="lazy" width="1376" height="768" srcset="/content/images/size/w600/2026/11/one-who-checked.jpg 600w, /content/images/size/w1000/2026/11/one-who-checked.jpg 1000w, /content/images/2026/11/one-who-checked.jpg 1376w" sizes="(min-width: 720px) 720px"><figcaption><em>Six hundred and thirty-one replies.</em></figcaption></figure>
 
