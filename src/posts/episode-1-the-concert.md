@@ -1,8 +1,8 @@
 ---
 title: "Episode 1: The Concert"
 date: "2025-07-31T08:32:46.000Z"
-updated: "2025-09-19T19:04:00.000Z"
-excerpt: "perfect concert during a spring evening "
+updated: "2026-11-12T12:33:00.000Z"
+excerpt: "Jack is two weeks into his first steady job in two years, and he has spent money he barely has on concert tickets. Tonight in Hershey he means to kiss Kathy. In a server room in Virginia, the purchase has been counted."
 feature_image: "/content/images/2026/11/episode-1-walk-to-the-stadium.jpg"
 feature_image_caption: "<em>Hershey, the walk to the show.</em>"
 feature_image_alt: "Jack tugging at his collar and Kathy in a blue sundress walking under chocolate-drop streetlamps toward the glowing stadium lights at sunset"
@@ -11,6 +11,20 @@ featured: true
 ---
 
 > "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise."
+
+---
+
+*A server room somewhere in Virginia. Late May.*
+
+**SECURE\_CHANNEL\_8847:** *First profiling run complete. 131 million households scored.*
+
+**SECURE\_CHANNEL\_7734:** *Highest scores: back on a payroll this spring after two years out. Card spending up in May. Dinners. Concert tickets.*
+
+**JANUS\_PRIME:** *They have started to hope. Mark them.*
+
+**SECURE\_CHANNEL\_8847:** *Marked. No contact scheduled.*
+
+**JANUS\_PRIME:** *Correct. Let them have the summer.*
 
 ---
 
