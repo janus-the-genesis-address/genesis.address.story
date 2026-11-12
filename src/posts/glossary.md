@@ -21,7 +21,7 @@ The title of the serial. The episodes haven't yet said what the address is or wh
 
 <h3 id="the-epigraph">The epigraph</h3>
 
-The four sentences that open most episodes: "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise." It is the story's thesis, stated before the story starts.
+The three sentences that open every episode: "In a world much like our own, authentic value and artificial illusion grow side by side. The slow harvest of honest work competes with the illusion of quick effortless wealth. Artificial minds prey upon human greed to fund their rise." It is the story's thesis, stated before the story starts.
 
 <h3 id="backwards-bloom-forward-doom">Backwards bloom, forward doom</h3>
 
