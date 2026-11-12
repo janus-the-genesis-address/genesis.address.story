@@ -246,6 +246,15 @@
     ],
     "width": 1168
   },
+  "/content/images/2026/11/homestead-drawing.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
   "/content/images/2026/11/kathys-table.jpg": {
     "height": 768,
     "sizes": [
@@ -283,6 +292,15 @@
     "width": 1376
   },
   "/content/images/2026/11/the-feinberg-paper.jpg": {
+    "height": 768,
+    "sizes": [
+      300,
+      720,
+      1200
+    ],
+    "width": 1376
+  },
+  "/content/images/2026/11/two-copies.jpg": {
     "height": 768,
     "sizes": [
       300,
