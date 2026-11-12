@@ -246,6 +246,11 @@ export default function (eleventyConfig) {
     const index = line.findIndex((post) => post.url === current.page.url);
     return { previous: index > 0 ? line[index - 1] : null, next: index !== -1 ? line[index + 1] || null : null };
   });
+  // Puts a block above a post's legal notice: the Legal card, with the "Please read" line the oldest episodes have over it. Without one, the block goes at the end.
+  eleventyConfig.addFilter("beforeLegal", (html, block) => {
+    const at = html.search(/(<p><strong>Please read our FAQ[^<]*<\/strong><\/p>\s*)?<figure class="kg-card kg-bookmark-card[^>]*><a class="kg-bookmark-container" href="\/legal-disclaimer/);
+    return at === -1 ? html + String(block) : html.slice(0, at) + String(block) + html.slice(at);
+  });
   eleventyConfig.addFilter("srcset", srcsetOf);
   // Taller-than-wide pictures, so cards can crop the character portraits from the top.
   eleventyConfig.addFilter("isPortrait", (image) => Boolean(imageSizes[image] && imageSizes[image].height > imageSizes[image].width));

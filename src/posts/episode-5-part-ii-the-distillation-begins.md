@@ -127,8 +127,6 @@ Right. Dinner. He texted back a confirmation and tried to refocus on work.
 
 But everywhere he looked, everyone he talked to—they were all in. All making money. All benefiting from something he'd somehow missed by choosing to be happy.
 
-<!-- signup -->
-
 ---
 
 Kathy's apartment smelled like garlic and herbs when Jack arrived carrying a bottle of wine. She stood at the stove, stirring something that made his mouth water.

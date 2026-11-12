@@ -31,7 +31,7 @@ bodyClass: post-template
         </header>
 
         <section class="gh-content gh-canvas is-body">
-            {{ content | safe }}
+            {% include "post-content.njk" %}
         </section>
     </article>
 </main>

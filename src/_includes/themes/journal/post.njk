@@ -25,7 +25,7 @@ bodyClass: post-template
         </header>
 
         <div class="gh-content gh-canvas">
-            {{ content | safe }}
+            {% include "post-content.njk" %}
         </div>
 
         <footer class="gh-article-footer gh-canvas">

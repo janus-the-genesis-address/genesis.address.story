@@ -100,8 +100,6 @@ The words hung in the air like a challenge to everything Sterling had once belie
 
 Together: "One people."
 
-<!-- signup -->
-
 The livestream ended with the Concordance seal filling every screen, its geometric perfection suggesting order that was really control, unity that was really conformity, protection that was really imprisonment.
 
 The tea house erupted in discussion.

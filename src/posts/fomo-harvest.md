@@ -65,8 +65,6 @@ The studio went silent for a heartbeat. Then chaos.
 
 "SIX HUNDRED PERCENT?" Jake shouted. "In ONE HOUR?"
 
-<!-- signup -->
-
 "The mathematics of temporal consensus create opportunities beyond conventional understanding," Janus purred. "Early adopters aren't just seeing gains—they're witnessing wealth creation that compounds through mechanisms most economists don't believe possible."
 
 Marcus pulled up a chart on screen. The Tachyon Token price line moved almost vertically, a hockey stick curve that looked more like a rocket launch than a market chart.

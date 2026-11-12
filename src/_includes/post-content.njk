@@ -1,0 +1,23 @@
+{#- A post's content, for every theme. Episodes get a subscribe and tip block after their Next card and above the legal notice. The newest episode says "You're caught up" until the next one is published. -#}
+{%- if topics and topics.length and (topics[0] | topicSlug) == "episodes" %}
+{%- set episodeLine = collections.posts | neighbours({ topics: topics, page: page }) %}
+{%- set episodeEnd %}
+<section class="kg-card genesis-signup genesis-episode-end" aria-label="Subscribe">
+    {%- if episodeLine.next %}
+    <h2>Get new episodes by email</h2>
+    <p>{{ site.title }} is free to read. Subscribe on Substack and every new episode comes to you.</p>
+    {%- else %}
+    <h2>You're caught up</h2>
+    <p>This is the newest episode. Subscribe on Substack and the next one comes to you, free.</p>
+    {%- endif %}
+    <a class="gh-btn genesis-signup-button" href="{{ site.subscribeUrl }}">Subscribe on Substack</a>
+    <p class="genesis-signup-note">No spam. Unsubscribe anytime.</p>
+    {%- if site.tipUrl %}
+    <p class="genesis-episode-tip">Enjoying the story? <a href="{{ site.tipUrl }}">Leave a tip</a></p>
+    {%- endif %}
+</section>
+{% endset %}
+{{ content | beforeLegal(episodeEnd) | safe }}
+{%- else %}
+{{ content | safe }}
+{%- endif %}

@@ -123,8 +123,6 @@ Sterling set down his teacup with careful control.
 
 On screen, Brannon approached the podium beside Octavius. The two men stood together—political power and economic expertise, or at least the appearance of it.
 
-<!-- signup -->
-
 "Thank you, Mr. President," Brannon began, his voice projecting confidence. "My research has shown that economic manipulation vulnerabilities can be prevented through systematic coordination. Progressive participation fees. Democratic wealth distribution. For the people, we will implement the controls necessary to protect them from the chaos of unregulated markets."
 
 Sterling's ruby ring caught the light as his hand tightened on the counter.
