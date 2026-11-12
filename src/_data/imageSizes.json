@@ -335,5 +335,69 @@
       1200
     ],
     "width": 1376
+  },
+  "/content/images/notes/2026/11/2026-11-16-reel-episode-1.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-17-reel-episode-2.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-18-reel-episode-3.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-19-reel-episode-4.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-20-reel-episode-5.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-23-reel-episode-6-part-1.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-24-reel-episode-6-part-2.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
+  },
+  "/content/images/notes/2026/11/2026-11-25-reel-episode-7.jpg": {
+    "height": 1350,
+    "sizes": [
+      300,
+      720
+    ],
+    "width": 1080
   }
 }
