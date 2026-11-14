@@ -41,7 +41,7 @@ Sterling warmed the pot, weighed the tea, laid two sage leaves on top and set th
 
 "Botanical economics."
 
-"Of course you were." He said it kindly, and turned the tablet so Sterling could see his name under the title. *$TACHYON: Initiating at Overweight.* "That goes out at four."
+"Of course you were." He said it kindly, and turned the tablet so Sterling could see his research note. *$TACHYON: Initiating at Overweight.* His name was under the title. "That goes out at four PM."
 
 The pancakes came off the griddle. The man cut them into a grid and nodded at the laptop at the end of the counter.
 
@@ -71,7 +71,7 @@ Sterling turned the last pot.
 
 "Every year."
 
-"That's a business." The man left two twenties under the saucer and tucked the tablet under his arm. "I'm on at five. Put it on for your regulars."
+"That's a business." The man left two twenties under the saucer and tucked the tablet under his arm. "I'm on at five PM. Put it on for your regulars."
 
 At the door he pointed at the chalkboard again. "S. Not A."
 
@@ -107,7 +107,7 @@ He sent it. The picture of the board stayed on his phone.
 
 ---
 
-At five on Thursday Dave had the closing-bell show on the break room television and most of the office standing in front of it.
+At five PM on Thursday Dave had the closing-bell show on the break room television and most of the office standing in front of it.
 
 The anchor read the note off the screen. The bank had initiated coverage of $TACHYON with an overweight rating and a year-end price target of $5,000. The token closed at $1,688.40. It was the fourth large bank to cover the token since Labor Day, and all four rated it a buy. From Monday the bank would accept the token as collateral for client loans, at fifty cents on the dollar.
 
@@ -175,7 +175,7 @@ Kathy didn't wake.
 
 ---
 
-Sterling had put it on at five, as asked. Rowan Justice had watched it from the table nearest the counter and approved. "Four banks. Those people get sued when they're wrong. Somebody did the homework." When the anchor reached the loans, Sterling had looked up at his own chalkboard.
+Sterling had put it on at five PM, as asked. Rowan Justice had watched it from the table nearest the counter and approved. "Four banks. Those people get sued when they're wrong. Somebody did the homework." When the anchor reached the loans, Sterling had looked up at his own chalkboard.
 
 On Friday Mrs. Chen read all six hundred and thirty-one replies. It took her the morning and two pots of chamomile at the window table, with Sterling's laptop. Sterling had given up at the fortieth.
 
