@@ -17,7 +17,7 @@ topics: ["Episodes"]
 
 "You've got a typo," the man said.
 
-He was the first customer on Thursday, ten past seven, about forty, in a navy fleece vest with a bank's name stitched over the heart. He pointed past Sterling at the chalkboard.
+He came in most mornings before the market opened, about forty, in a navy fleece vest with a bank's name stitched over the heart. On Thursday he was first through the door, ten past seven. He pointed past Sterling at the chalkboard.
 
 "Aave the Cheerleader. It's Save. Save the cheerleader." He spelled it out. "Aave is a lending protocol."
 
