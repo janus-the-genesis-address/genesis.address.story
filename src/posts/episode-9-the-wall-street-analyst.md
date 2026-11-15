@@ -61,7 +61,11 @@ The man gave it as long as he had given the chalkboard. "Documentation changes. 
 
 "The history says 'Correct documentation.'"
 
-"There you go." He poured honey over the grid. "Look. In August I told our clients it was a toy. I've had forty calls since, pension funds, asking why they don't own the best thing on the board this year. You know the one answer I can't give them? That I don't understand it. So I don't price the physics. I price who's buying."
+"There you go." He poured honey over the grid. "In August I told our clients it was a toy. I've had forty calls since, pension funds, asking why they don't own the best thing on the board this year. You know the one answer I can't give them?"
+
+Sterling waited.
+
+"That I don't understand it. So I don't price the physics. I price who's buying."
 
 Sterling turned the last pot.
 
@@ -155,7 +159,7 @@ He knew it without the calculator. "Twenty-five thousand. About."
 
 She cut the bread. "Is he wrong?"
 
-"Not about the price. Four minutes, and nobody asked him what it earns. It doesn't earn anything, Kath. The only money coming in is the next person's."
+"Not about the price. Four minutes, and nobody asked him what it earns."
 
 "You sound like yourself." She put two slices on his plate and sat down. "Seventeen thousand dollars, Jack. That's my car paid off. And I'm the one who said half."
 
