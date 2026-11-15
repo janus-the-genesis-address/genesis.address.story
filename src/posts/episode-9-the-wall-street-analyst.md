@@ -201,7 +201,7 @@ Sterling read door_schedule's two lines and opened the white paper. Section 2.2,
 
 "Eleven million people have this."
 
-"Then nobody hid it. They left it where the buyers read and took it out where you read." She tapped the reply count. "And six hundred people called you a liar."
+"They left it where the buyers read." She tapped the reply count. "And took it out where you read. Six hundred people called you a liar."
 
 Sterling turned the ruby ring once on his finger.
 
