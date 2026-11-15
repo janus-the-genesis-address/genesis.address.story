@@ -2,7 +2,7 @@
 title: "Brannon"
 date: "2025-09-19T19:02:54.000Z"
 updated: "2025-09-19T19:02:54.000Z"
-excerpt: "He provides pseudo-intellectual framework"
+excerpt: "Brannon: The Concordance's Finance Minister, a 45-year-old lawyer who passes as an economist. He built his name on Dr. Sterling's stolen thesis, says \"For the people\" before every new tax, and treats every expert warning as interference."
 feature_image: "/content/images/2025/09/9566d898-d447-462c-bf8a-e79164e63e5e.jpg"
 topics: ["characters"]
 ---

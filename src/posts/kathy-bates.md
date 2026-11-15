@@ -2,7 +2,7 @@
 title: "Kathy Bates"
 date: "2025-09-19T17:33:08.000Z"
 updated: "2025-09-19T19:03:17.000Z"
-excerpt: "Kathy Bates"
+excerpt: "Kathy Bates: A 29-year-old hospital nurse who trusts what she can see and check. She notices what others miss, from the color of a glass of ale to a man who doubts himself, and she values real things that take real time."
 feature_image: "/content/images/2025/09/kathy-1.jpg"
 topics: ["characters"]
 featured: true

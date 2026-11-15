@@ -2,7 +2,7 @@
 title: "Jack Miller"
 date: "2025-09-19T17:25:37.000Z"
 updated: "2025-09-19T17:30:41.000Z"
-excerpt: "Jack Miller reviews technical drawings at his drafting desk - steady work after years of struggle, but his eyes occasionally drift to his phone screen."
+excerpt: "Jack Miller: A 32-year-old drafter climbing back from a financial crisis that gutted his old job. Careful with money and with his heart, he has steady work again, a woman who believes in him, and a phone he can't quite leave alone."
 feature_image: "/content/images/2025/09/jack2.jpg"
 feature_image_caption: "<em>Jack Miller reviews technical drawings at his drafting desk - steady work after years of struggle, but his eyes occasionally drift to his phone screen.</em>"
 topics: ["characters"]
