@@ -185,9 +185,9 @@ On Friday Mrs. Chen read all six hundred and thirty-one replies. It took her the
 
 She carried the laptop back to the counter with one reply open.
 
-"The man on television yesterday. He was in here."
+"Your Earl Grey man was on television."
 
-"He had the special. He told me he has two people who read the code."
+"He ordered the typo. He told me he has two people who read the code."
 
 "What did they tell him?"
 
