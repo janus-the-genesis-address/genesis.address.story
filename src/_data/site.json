@@ -110,7 +110,7 @@
   ],
   "sections": [
     { "name": "Episodes", "slug": "episodes", "readingOrder": true },
-    { "name": "Characters", "slug": "characters", "universe": true },
+    { "name": "Characters", "slug": "characters", "universe": true, "postOrder": ["janus-ai-agent-7-6", "sterling", "kathy-bates", "jack-miller", "president-octavius", "brannon"] },
     { "name": "TGA Universe", "slug": "world", "universe": true },
     { "name": "Concordance", "slug": "concordance", "readingOrder": true, "style": "channel" },
     { "name": "Extras", "slug": "extras", "universe": true }

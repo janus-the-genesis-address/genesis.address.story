@@ -230,9 +230,18 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("trimText", (text) => (text || "").trim());
   eleventyConfig.addFilter("withTopic", (posts, slug) => posts.filter((post) => (post.data.topics || []).some((t) => slugify(t) === slug)));
   // Sections marked readingOrder in site.json, such as Episodes, list their posts oldest first.
-  eleventyConfig.addFilter("sectionOrder", (posts, slug) =>
-    site.sections.some((section) => section.slug === slug && section.readingOrder) ? [...posts].sort((a, b) => a.date - b.date) : posts,
-  );
+  // A section with a "postOrder" list of slugs in site.json, such as Characters, lists those posts first, in that order.
+  eleventyConfig.addFilter("sectionOrder", (posts, slug) => {
+    const section = site.sections.find((s) => s.slug === slug) || {};
+    if (section.postOrder) {
+      const rank = (post) => {
+        const i = section.postOrder.indexOf(post.fileSlug);
+        return i === -1 ? section.postOrder.length : i;
+      };
+      return [...posts].sort((a, b) => rank(a) - rank(b) || b.date - a.date);
+    }
+    return section.readingOrder ? [...posts].sort((a, b) => a.date - b.date) : posts;
+  });
   // Sections with "style": "channel" in site.json, such as the Concordance, are drawn as a locked chat channel.
   eleventyConfig.addFilter("isChannel", (slug) => site.sections.some((section) => section.slug === slug && section.style === "channel"));
   eleventyConfig.addFilter("readNext", (posts, current) => {
